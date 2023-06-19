@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>karya | Landing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./landingPage.css" />
+  </head>
+  <body>
+    <div class="karya-container">
+      <section class="karya-section carousel-section">
+        <div
+          id="carouselIndicators"
+          class="carousel slide h-100"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="0"
+              class="me-2 active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner h-100">
+            <div
+              class="carousel-item active carousel-talent h-100"
+              data-bs-interval="5000"
+            >
+              <nav
+                class="w-100 d-flex align-items-center justify-content-between karya-px"
+              >
+                <img
+                  src="../assets/images/logo_karya.png"
+                  alt="logo"
+                  class="brand"
+                />
+                <ul class="m-0 p-0">
+                  <li class="">
+                    <a href="#"> Get Hired </a>
+                  </li>
+                  <li class="ms-4">
+                    <a href=""> Get Talent </a>
+                  </li>
+                  <li class="ms-4">
+                    <a href=""> Pricing Plans </a>
+                  </li>
+                  <li class="ms-4">
+                    <a href=""> Log In </a>
+                  </li>
+                  <li class="ms-4">
+                    <a href=""> Join </a>
+                  </li>
+                </ul>
+                <i
+                  class="fa fa-bars menu-icon"
+                  aria-hidden="true"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasMenu"
+                  aria-controls="offcanvasMenu"
+                ></i>
+              </nav>
+              <div class="headers w-100 karya-px">
+                <h1 class="font-kai text-white mb-md-2 mb-lg-3">
+                  Where passion meets purpose
+                </h1>
+                <h4 class="font-cd pri-clr fw-600">
+                  Connecting extraordinary talents with inspiring companies.
+                </h4>
+              </div>
+              <div class="talent-card">
+                <h6 class="font-kai text-white mb-0"># Get Talent</h6>
+              </div>
+            </div>
+
+            <div
+              class="carousel-item carousel-hired h-100"
+              data-bs-interval="5000"
+            >
+              <nav
+                class="w-100 d-flex align-items-center justify-content-between karya-px"
+              >
+                <img
+                  src="../assets/images/logo_karya.png"
+                  alt="logo"
+                  class="brand"
+                />
+                <ul class="m-0 p-0">
+                  <li class="">
+                    <a href="#"> Get Hired </a>
+                  </li>
+                  <li class="ms-4">
+                    <a href=""> Get Talent </a>
+                  </li>
+                  <li class="ms-4">
+                    <a href=""> Pricing Plans </a>
+                  </li>
+                  <li class="ms-4">
+                    <a href=""> Log In </a>
+                  </li>
+                  <li class="ms-4">
+                    <a href=""> Join </a>
+                  </li>
+                </ul>
+                <i
+                  class="fa fa-bars menu-icon"
+                  aria-hidden="true"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasMenu"
+                  aria-controls="offcanvasMenu"
+                ></i>
+              </nav>
+              <div class="headers w-100 karya-px">
+                <h1 class="font-kai pri-clr mb-md-2 mb-lg-3">
+                  Unlocking hidden talent
+                </h1>
+                <div class="d-flex">
+                  <h4 class="font-cd pri-clr fw-600">
+                    Empowering you to achieve your potential while earning
+                    passive income.
+                  </h4>
+                  <img src="../assets/images/hero-image-02.png" alt="woman" />
+                </div>
+              </div>
+              <div class="hired-card">
+                <h6 class="font-kai text-white mb-0"># Get Hired</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- offcanvas menu -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasMenu"
+          aria-labelledby="offcanvasMenuLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="m-0 p-0">
+              <li class="">
+                <a href="#"> Get Hired </a>
+              </li>
+              <li class="">
+                <a href=""> Get Talent </a>
+              </li>
+              <li class="">
+                <a href=""> Pricing Plans </a>
+              </li>
+              <li class="">
+                <a href=""> Log In </a>
+              </li>
+              <li class="">
+                <a href=""> Join </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ends::offcanvas menu -->
+      </section>
+
+      <section class="karya-section hired-talent-form-section">
+        <div class="row h-100 gx-0">
+          <div class="col-12 col-md-6">
+            <div class="hired-sub-section sec-bg h-100 position-relative">
+              <div class="karya-px content">
+                <h1 class="font-kai text-white title">Get Hired</h1>
+                <h6 class="pri-clr details">
+                  With our insights, we can assist you in finding the ideal
+                  position that matches your personality, skills and career
+                  aspirations. Our tool will assist you in providing that
+                  perfect pitch for your interview.
+                </h6>
+                <form action="">
+                  <div class="mb-3">
+                    <label
+                      for="career-role"
+                      class="form-label text-uppercase text-white"
+                    >
+                      career role
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="career-role"
+                      aria-describedby="careerRole"
+                      placeholder="Enter Targeted Job Role"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="location"
+                      class="form-label text-uppercase text-white"
+                    >
+                      location
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="location"
+                      aria-describedby="location"
+                      placeholder="Enter City"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn karya-btn pri-bg text-white submit-btn"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="talent-sub-section pri-bg h-100 position-relative">
+              <div class="karya-px content">
+                <h1 class="font-kai text-white title">Get Talent</h1>
+                <h6 class="pri-clr details">
+                  With the right partner by your side, finding the right talent
+                  for your organisation is not a complex task. Our tool will
+                  connect you with outstanding candidates who can materialise
+                  your projects and plans.
+                </h6>
+                <form action="">
+                  <div class="mb-3">
+                    <label
+                      for="talent-career-role"
+                      class="form-label text-uppercase text-white"
+                    >
+                      career role
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="talent-career-role"
+                      aria-describedby="careerRole"
+                      placeholder="Enter Vacant Position"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="talent-location"
+                      class="form-label text-uppercase text-white"
+                    >
+                      location
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="talent-location"
+                      aria-describedby="location"
+                      placeholder="Enter City"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn karya-btn sec-bg text-white submit-btn"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="karya-section about-section pri-bg">
+        <div class="row h-100 gx-0">
+          <div class="col-12 col-md-6">
+            <div class="etymology-sub-section pri-bg h-100 karya-py">
+              <div class="etymology-dets mb-4 mb-md-5">
+                <h6 class="yellow-clr">Etymology</h6>
+                <h6 class="text-white d-flex flex-column points">
+                  <span> From Malay; (karya), </span>
+                  <span> From Old Malay; (karyya), </span>
+                  <span> From Sanskrit; (karya). </span>
+                </h6>
+              </div>
+              <div class="pronunciation-dets">
+                <h6 class="yellow-clr">Pronunciation</h6>
+                <h6 class="text-white points">
+                  IPA (key): Karia, karja, kariya.
+                </h6>
+              </div>
+              <div class="noun-dets">
+                <h6 class="text-white points">Noun</h6>
+                <ul class="p-0 m-0 text-white">
+                  <li>Work, product; the result of effort.</li>
+                  <li>A literary, artistic, or intellectual production.</li>
+                  <li>Outcome of a particular action.</li>
+                  <li>To perform deeds.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="about-sub-section pri-bg h-100 karya-py">
+              <h6 class="text-white mb-4 mb-md-5 points">
+                <span class="sec-clr">Karya.asia</span> is a talent marketplace
+                platform that transcends the boundaries of artificial
+                intelligence, science, and art to connect job seekers with
+                employers.
+              </h6>
+              <h6 class="text-white points">
+                Our mission is to revolutionise the way talent is discovered and
+                matched with the best opportunities. By harnessing the power of
+                Al in the GPT model and data-driven insights through personality
+                profiling and people skills evaluation, we assist individuals to
+                unlock their full potential in their careers and enable
+                organisations to build teams that are truly aligned with their
+                values and vision.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="karya-section what-section bg-white">
+        <div class="row h-100 gx-0">
+          <div class="col-12 col-md-6">
+            <div class="what-sub-section h-100 karya-py">
+              <h1 class="font-kai pri-clr mb-2 mb-md-3 mb-lg-4">What we do</h1>
+              <h6 class="">Revolutionising the recruitment experience!</h6>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="video-sub-section h-100 karya-py">
+              <video
+                controls
+                poster="../assets/images/poster.jpg"
+                class="w-100 hoverable"
+              >
+                <source src="../assets/images/video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="../script.js"></script>
+</html>

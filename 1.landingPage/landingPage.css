@@ -1,0 +1,907 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Abeatbykai";
+  src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
+}
+/* Light */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Normal */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+/* Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+html,
+body {
+  font-family: "Abeatbykai", sans-serif;
+  font-family: "CreatoDisplay", sans-serif;
+  font-size: 16px;
+}
+
+.font-kai {
+  font-family: "Abeatbykai", sans-serif;
+}
+
+.font-cd {
+  font-family: "CreatoDisplay", sans-serif;
+}
+
+.pri-clr {
+  color: #263650;
+}
+
+.pri-bg {
+  background-color: #263650;
+}
+
+.sec-clr {
+  color: #8dcdcb;
+}
+
+.sec-bg {
+  background-color: #8dcdcb;
+}
+
+.yellow-clr {
+  color: #f4d552;
+}
+
+.yellow-bg {
+  background-color: #f4d552;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.5625rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+}
+
+.fs-11 {
+  font-size: 0.6875rem !important;
+}
+
+.fs-12 {
+  font-size: 0.75rem !important;
+}
+
+.fs-13 {
+  font-size: 0.8125rem !important;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-15 {
+  font-size: 0.9375rem !important;
+}
+
+.fs-16 {
+  font-size: 1rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263650;
+}
+
+::-webkit-scrollbar-track {
+  background: #939ba8;
+}
+
+body {
+  scrollbar-face-color: #263650;
+  scrollbar-track-color: #939ba8;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.karya-px {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.karya-py {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.karya-p {
+  padding: 4rem;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+.hoverable:hover {
+  opacity: 0.7;
+}
+
+.karya-btn {
+  padding: 0.2rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.karya-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.karya-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "Abeatbykai";
+  src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
+}
+/* Light */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Normal */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+/* Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+html,
+body {
+  font-family: "Abeatbykai", sans-serif;
+  font-family: "CreatoDisplay", sans-serif;
+  font-size: 16px;
+}
+
+.font-kai {
+  font-family: "Abeatbykai", sans-serif;
+}
+
+.font-cd {
+  font-family: "CreatoDisplay", sans-serif;
+}
+
+.pri-clr {
+  color: #263650;
+}
+
+.pri-bg {
+  background-color: #263650;
+}
+
+.sec-clr {
+  color: #8dcdcb;
+}
+
+.sec-bg {
+  background-color: #8dcdcb;
+}
+
+.yellow-clr {
+  color: #f4d552;
+}
+
+.yellow-bg {
+  background-color: #f4d552;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.5625rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+}
+
+.fs-11 {
+  font-size: 0.6875rem !important;
+}
+
+.fs-12 {
+  font-size: 0.75rem !important;
+}
+
+.fs-13 {
+  font-size: 0.8125rem !important;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-15 {
+  font-size: 0.9375rem !important;
+}
+
+.fs-16 {
+  font-size: 1rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263650;
+}
+
+::-webkit-scrollbar-track {
+  background: #939ba8;
+}
+
+body {
+  scrollbar-face-color: #263650;
+  scrollbar-track-color: #939ba8;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.karya-px {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.karya-py {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.karya-p {
+  padding: 4rem;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+.hoverable:hover {
+  opacity: 0.7;
+}
+
+.karya-btn {
+  padding: 0.2rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.karya-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.karya-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
+nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+nav .brand {
+  width: 10rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+nav ul a:hover {
+  opacity: 0.7;
+}
+nav .menu-icon {
+  display: none;
+  color: #263650;
+  cursor: pointer;
+}
+nav .menu-icon:hover {
+  opacity: 0.7;
+}
+
+#offcanvasMenu {
+  display: none;
+  width: 15rem;
+  background: linear-gradient(rgb(50, 201, 194), rgb(50, 201, 194));
+}
+#offcanvasMenu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+#offcanvasMenu ul li {
+  margin-bottom: 1.5rem;
+}
+#offcanvasMenu ul a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#offcanvasMenu ul a:hover {
+  opacity: 0.7;
+}
+
+.offcanvas-backdrop {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #offcanvasMenu,
+  .offcanvas-backdrop {
+    display: block;
+  }
+  nav .brand {
+    width: 9rem;
+  }
+  nav ul {
+    display: none !important;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #offcanvasMenu {
+    width: 10rem;
+  }
+  #offcanvasMenu ul li {
+    margin-bottom: 1rem;
+  }
+  #offcanvasMenu ul a {
+    font-size: 0.8rem;
+  }
+}
+.carousel-section #offcanvasMenu ul a {
+  color: #263650;
+}
+.carousel-section .carousel-indicators button {
+  background-color: #fff;
+  opacity: 1;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+}
+.carousel-section .carousel-indicators button:hover {
+  opacity: 0.7;
+}
+.carousel-section .carousel-indicators .active {
+  background-color: #263650;
+}
+.carousel-section .carousel-talent {
+  background: linear-gradient(rgba(50, 201, 194, 0.9), rgba(50, 201, 194, 0.9)), url(../assets/images/hero-image-01.jpg);
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.carousel-section .carousel-talent nav ul a {
+  color: #dbdbdb;
+}
+.carousel-section .carousel-talent .talent-card {
+  background: linear-gradient(rgb(204, 24, 93), rgb(111, 13, 51));
+}
+.carousel-section .carousel-hired {
+  background-color: #f4d552;
+  position: relative;
+}
+.carousel-section .carousel-hired nav ul a {
+  color: #263650;
+}
+.carousel-section .carousel-hired .headers {
+  top: auto;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+}
+.carousel-section .carousel-hired .headers h4 {
+  color: #4aacaa;
+}
+.carousel-section .carousel-hired .headers img {
+  width: 20rem;
+  margin-left: 2.5rem;
+}
+.carousel-section .carousel-hired .hired-card {
+  background: linear-gradient(rgb(47, 209, 209), rgb(10, 131, 128));
+}
+.carousel-section .headers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel-section .headers h1 {
+  font-size: 4rem;
+}
+.carousel-section .headers h4 {
+  font-size: 2rem;
+  width: 50%;
+}
+.carousel-section .talent-card,
+.carousel-section .hired-card {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  padding: 4rem 1.5rem;
+}
+.carousel-section .talent-card h6,
+.carousel-section .hired-card h6 {
+  font-size: 1.2rem;
+}
+
+.hired-talent-form-section ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a6a6a6;
+  opacity: 1; /* Firefox */
+  font-size: 0.8rem;
+}
+
+.hired-talent-form-section ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a6a6a6;
+  opacity: 1; /* Firefox */
+  font-size: 0.8rem;
+}
+.hired-talent-form-section .hired-sub-section .content,
+.hired-talent-form-section .talent-sub-section .content {
+  position: absolute;
+  bottom: 4rem;
+}
+.hired-talent-form-section .hired-sub-section .content .title,
+.hired-talent-form-section .talent-sub-section .content .title {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+.hired-talent-form-section .hired-sub-section .content .details,
+.hired-talent-form-section .talent-sub-section .content .details {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+.hired-talent-form-section .hired-sub-section .content form input,
+.hired-talent-form-section .talent-sub-section .content form input {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #bac0c0;
+  font-weight: 500;
+  color: #7f7f7f;
+  width: auto;
+}
+.hired-talent-form-section .hired-sub-section .content form input:focus,
+.hired-talent-form-section .talent-sub-section .content form input:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #7f7f7f;
+}
+.hired-talent-form-section .hired-sub-section .content form .submit-btn,
+.hired-talent-form-section .talent-sub-section .content form .submit-btn {
+  border: 1px solid #263650 !important;
+}
+.hired-talent-form-section .hired-sub-section .content form .submit-btn:hover,
+.hired-talent-form-section .talent-sub-section .content form .submit-btn:hover {
+  border: 1px solid #263650 !important;
+  background-color: #263650;
+}
+.hired-talent-form-section .hired-sub-section .content form .submit-btn:active,
+.hired-talent-form-section .talent-sub-section .content form .submit-btn:active {
+  border: 1px solid #263650 !important;
+  background-color: #263650 !important;
+}
+.hired-talent-form-section .talent-sub-section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.hired-talent-form-section .talent-sub-section .content .title {
+  text-align: right;
+}
+.hired-talent-form-section .talent-sub-section .content .details {
+  color: #4aacaa;
+  text-align: right;
+}
+.hired-talent-form-section .talent-sub-section .content form {
+  text-align: right;
+}
+.hired-talent-form-section .talent-sub-section .content form input {
+  text-align: right;
+  border-bottom: 2px solid #545558;
+}
+
+.about-section .etymology-sub-section {
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+.about-section .about-sub-section {
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+.about-section h6 {
+  font-size: 1.5rem;
+}
+.about-section .points {
+  font-size: 1.3rem;
+}
+.about-section ul {
+  font-size: 1.2rem;
+  list-style: none;
+}
+.about-section ul li::before {
+  content: "■";
+  color: #f4d552;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.2rem;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 2px;
+}
+
+.what-section .what-sub-section,
+.what-section .video-sub-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.what-section .what-sub-section {
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+.what-section .what-sub-section h1 {
+  font-size: 3.5rem;
+}
+.what-section .what-sub-section h6 {
+  color: #4aacaa;
+  font-size: 1.6rem;
+}
+.what-section .video-sub-section {
+  padding-right: 4rem;
+  padding-left: 2rem;
+}
+.what-section .video-sub-section video {
+  border: 0.5rem solid #263650;
+  border-radius: 0.4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .carousel-section .headers h1 {
+    font-size: 3.5rem;
+  }
+  .carousel-section .headers h4 {
+    font-size: 1.5rem;
+  }
+  .carousel-section .carousel-hired .headers img {
+    width: 17rem;
+  }
+  .carousel-section .talent-card,
+  .carousel-section .hired-card {
+    padding: 3.5rem 1rem;
+  }
+  .carousel-section .talent-card h6,
+  .carousel-section .hired-card h6 {
+    font-size: 1rem;
+  }
+  .what-section .what-sub-section {
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+  .what-section .what-sub-section h1 {
+    font-size: 3rem;
+  }
+  .what-section .what-sub-section h6 {
+    font-size: 1.4rem;
+  }
+  .what-section .video-sub-section {
+    padding-right: 4rem;
+    padding-left: 2rem;
+  }
+  .what-section .video-sub-section video {
+    border: 0.5rem solid #263650;
+    border-radius: 0.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-section .headers h1 {
+    font-size: 2.5rem;
+  }
+  .carousel-section .headers h4 {
+    font-size: 1.2rem;
+  }
+  .carousel-section .carousel-hired .headers img {
+    width: 16rem;
+  }
+  .carousel-section .talent-card,
+  .carousel-section .hired-card {
+    padding: 3rem 1rem;
+  }
+  .carousel-section .talent-card h6,
+  .carousel-section .hired-card h6 {
+    font-size: 1rem;
+  }
+  .hired-talent-form-section .hired-sub-section .content,
+  .hired-talent-form-section .talent-sub-section .content {
+    padding: 4rem;
+    position: unset;
+  }
+  .hired-talent-form-section .hired-sub-section .content .title,
+  .hired-talent-form-section .talent-sub-section .content .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .hired-talent-form-section .hired-sub-section .content .details,
+  .hired-talent-form-section .talent-sub-section .content .details {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  .hired-talent-form-section .row {
+    overflow: auto;
+  }
+  .about-section .row {
+    overflow: auto;
+  }
+  .about-section .etymology-sub-section {
+    padding-right: 4rem;
+  }
+  .about-section .about-sub-section {
+    padding-top: 0;
+    padding-left: 4rem;
+  }
+  .about-section h6 {
+    font-size: 1.3rem;
+  }
+  .about-section .points {
+    font-size: 1.1rem;
+  }
+  .about-section ul {
+    font-size: 1rem;
+  }
+  .what-section .row {
+    overflow: auto;
+    height: auto !important;
+  }
+  .what-section .what-sub-section {
+    padding: 4rem;
+  }
+  .what-section .what-sub-section h1 {
+    font-size: 2.5rem;
+  }
+  .what-section .what-sub-section h6 {
+    font-size: 1.2rem;
+  }
+  .what-section .video-sub-section {
+    padding: 4rem;
+    padding-top: 0;
+  }
+  .what-section .video-sub-section video {
+    border: 0.4rem solid #263650;
+    border-radius: 0.3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .karya-px {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .carousel-section .carousel-indicators button {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .carousel-section .headers h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .carousel-section .headers h4 {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .carousel-section .carousel-hired .headers {
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+  .carousel-section .carousel-hired .headers img {
+    display: none;
+  }
+  .carousel-section .talent-card,
+  .carousel-section .hired-card {
+    padding: 2rem 0.8rem;
+  }
+  .carousel-section .talent-card h6,
+  .carousel-section .hired-card h6 {
+    font-size: 0.8rem;
+  }
+  .hired-talent-form-section .hired-sub-section .content,
+  .hired-talent-form-section .talent-sub-section .content {
+    padding: 1rem;
+    align-items: start;
+  }
+  .hired-talent-form-section .hired-sub-section .content .title,
+  .hired-talent-form-section .talent-sub-section .content .title {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    text-align: center;
+  }
+  .hired-talent-form-section .hired-sub-section .content .details,
+  .hired-talent-form-section .talent-sub-section .content .details {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  .hired-talent-form-section .hired-sub-section .content form,
+  .hired-talent-form-section .talent-sub-section .content form {
+    text-align: left;
+  }
+  .hired-talent-form-section .hired-sub-section .content form input,
+  .hired-talent-form-section .talent-sub-section .content form input {
+    text-align: left;
+  }
+  .about-section .row {
+    overflow: auto;
+  }
+  .about-section .etymology-sub-section,
+  .about-section .about-sub-section {
+    padding: 1rem;
+  }
+  .about-section h6 {
+    font-size: 1rem;
+  }
+  .about-section .points {
+    font-size: 0.9rem;
+  }
+  .about-section ul {
+    font-size: 0.8rem;
+  }
+  .what-section .what-sub-section {
+    padding: 1rem;
+  }
+  .what-section .what-sub-section h1 {
+    font-size: 2rem;
+  }
+  .what-section .what-sub-section h6 {
+    color: #4aacaa;
+    font-size: 1rem;
+  }
+  .what-section .video-sub-section {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .talent-card,
+  .hired-card {
+    display: none;
+  }
+}/*# sourceMappingURL=landingPage.css.map */
