@@ -1,0 +1,998 @@
+@font-face {
+  font-family: "Abeatbykai";
+  src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
+}
+/* Light */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Normal */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+/* Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+html,
+body {
+  font-family: "Abeatbykai", sans-serif;
+  font-family: "CreatoDisplay", sans-serif;
+  font-size: 16px;
+}
+
+.font-kai {
+  font-family: "Abeatbykai", sans-serif;
+}
+
+.font-cd {
+  font-family: "CreatoDisplay", sans-serif;
+}
+
+.pri-clr {
+  color: #263650;
+}
+
+.pri-bg {
+  background-color: #263650;
+}
+
+.sec-clr {
+  color: #8dcdcb;
+}
+
+.sec-bg {
+  background-color: #8dcdcb;
+}
+
+.yellow-clr {
+  color: #f4d552;
+}
+
+.yellow-bg {
+  background-color: #f4d552;
+}
+
+.lite-white {
+  color: #f2f2f2;
+}
+
+.black-clr {
+  color: #000000;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.5625rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+}
+
+.fs-11 {
+  font-size: 0.6875rem !important;
+}
+
+.fs-12 {
+  font-size: 0.75rem !important;
+}
+
+.fs-13 {
+  font-size: 0.8125rem !important;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-15 {
+  font-size: 0.9375rem !important;
+}
+
+.fs-16 {
+  font-size: 1rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263650;
+}
+
+::-webkit-scrollbar-track {
+  background: #939ba8;
+}
+
+body {
+  scrollbar-face-color: #263650;
+  scrollbar-track-color: #939ba8;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.karya-px {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.karya-py {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.karya-p {
+  padding: 4rem;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+.hoverable:hover {
+  opacity: 0.7;
+}
+
+.karya-btn {
+  padding: 0.2rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
+
+.karya-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.karya-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: "Abeatbykai";
+  src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
+}
+/* Light */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Normal */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+/* Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+html,
+body {
+  font-family: "Abeatbykai", sans-serif;
+  font-family: "CreatoDisplay", sans-serif;
+  font-size: 16px;
+}
+
+.font-kai {
+  font-family: "Abeatbykai", sans-serif;
+}
+
+.font-cd {
+  font-family: "CreatoDisplay", sans-serif;
+}
+
+.pri-clr {
+  color: #263650;
+}
+
+.pri-bg {
+  background-color: #263650;
+}
+
+.sec-clr {
+  color: #8dcdcb;
+}
+
+.sec-bg {
+  background-color: #8dcdcb;
+}
+
+.yellow-clr {
+  color: #f4d552;
+}
+
+.yellow-bg {
+  background-color: #f4d552;
+}
+
+.lite-white {
+  color: #f2f2f2;
+}
+
+.black-clr {
+  color: #000000;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.5625rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+}
+
+.fs-11 {
+  font-size: 0.6875rem !important;
+}
+
+.fs-12 {
+  font-size: 0.75rem !important;
+}
+
+.fs-13 {
+  font-size: 0.8125rem !important;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-15 {
+  font-size: 0.9375rem !important;
+}
+
+.fs-16 {
+  font-size: 1rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263650;
+}
+
+::-webkit-scrollbar-track {
+  background: #939ba8;
+}
+
+body {
+  scrollbar-face-color: #263650;
+  scrollbar-track-color: #939ba8;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.karya-px {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.karya-py {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.karya-p {
+  padding: 4rem;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+.hoverable:hover {
+  opacity: 0.7;
+}
+
+.karya-btn {
+  padding: 0.2rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
+
+.karya-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.karya-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+}
+nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+nav .brand {
+  width: 10rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+nav ul a:hover {
+  opacity: 0.7;
+}
+nav .menu-icon {
+  display: none;
+  color: #263650;
+  cursor: pointer;
+}
+nav .menu-icon:hover {
+  opacity: 0.7;
+}
+
+#offcanvasMenu {
+  display: none;
+  width: 15rem;
+  background: linear-gradient(rgb(50, 201, 194), rgb(50, 201, 194));
+}
+#offcanvasMenu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+#offcanvasMenu ul li {
+  margin-bottom: 1.5rem;
+}
+#offcanvasMenu ul a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#offcanvasMenu ul a:hover {
+  opacity: 0.7;
+}
+
+.offcanvas-backdrop {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #offcanvasMenu,
+  .offcanvas-backdrop {
+    display: block;
+  }
+  nav .brand {
+    width: 9rem;
+  }
+  nav ul {
+    display: none !important;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #offcanvasMenu {
+    width: 10rem;
+  }
+  #offcanvasMenu ul li {
+    margin-bottom: 1rem;
+  }
+  #offcanvasMenu ul a {
+    font-size: 0.8rem;
+  }
+}
+.maths-section {
+  background: linear-gradient(to bottom, #fff 0%, #fff 65%, #8ccecb 65%, #8ccecb 100%);
+  height: 100%;
+  overflow: auto;
+}
+.maths-section .section-info .title {
+  font-size: 4rem;
+}
+.maths-section .section-info .helper-txt {
+  font-size: 1.4rem;
+  color: #3c8c8a;
+}
+.maths-section .income-calc .slidecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Special styling for WebKit/Blink */
+  /* All the same stuff for Firefox */
+  /* All the same stuff for IE */
+}
+.maths-section .income-calc .slidecontainer input {
+  margin: 2rem 0;
+  width: 18rem;
+}
+.maths-section .income-calc .slidecontainer input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 100%;
+  width: 3rem;
+  border-radius: 15rem;
+  margin-top: 0;
+  background: #ffffff;
+  border-color: #fff;
+  cursor: pointer;
+}
+.maths-section .income-calc .slidecontainer input[type=range]::-webkit-slider-thumb:active {
+  background: #ffffff !important;
+  box-shadow: none !important;
+  border-color: #fff !important;
+  outline: none !important;
+}
+.maths-section .income-calc .slidecontainer input[type=range]::-webkit-slider-thumb:focus {
+  background: #ffffff !important;
+  box-shadow: none !important;
+  border-color: #fff !important;
+  outline: none !important;
+}
+.maths-section .income-calc .slidecontainer input[type=range]::-moz-range-thumb {
+  height: 100%;
+  width: 3rem;
+  border-radius: 15rem;
+  margin-top: 0;
+  background: #ffffff;
+  border-color: #fff;
+  cursor: pointer;
+}
+.maths-section .income-calc .slidecontainer input[type=range]::-ms-thumb {
+  height: 100%;
+  width: 3rem;
+  border-radius: 15rem;
+  margin-top: 0;
+  background: #ffffff;
+  border-color: #fff;
+  cursor: pointer;
+}
+.maths-section .income-calc input[type=range]::-webkit-slider-runnable-track {
+  height: 3rem;
+  cursor: pointer;
+  background-color: #263650;
+  border-radius: 5rem;
+}
+.maths-section .income-calc input[type=range]:focus::-webkit-slider-runnable-track {
+  background-color: #263650;
+}
+.maths-section .income-calc input[type=range]::-moz-range-track {
+  height: 4rem;
+  cursor: pointer;
+  background-color: #263650;
+  border-radius: 5rem;
+}
+.maths-section .income-calc input[type=range]::-ms-track {
+  height: 4rem;
+  cursor: pointer;
+  background-color: #263650;
+  border-radius: 5rem;
+}
+.maths-section .income-calc input[type=range]::-ms-fill-lower {
+  height: 4rem;
+  cursor: pointer;
+  background-color: #263650;
+  border-radius: 5rem;
+}
+.maths-section .income-calc input[type=range]:focus::-ms-fill-lower {
+  background-color: #263650;
+}
+.maths-section .income-calc input[type=range]::-ms-fill-upper {
+  height: 4rem;
+  cursor: pointer;
+  background-color: #263650;
+  border-radius: 5rem;
+}
+.maths-section .income-calc input[type=range]:focus::-ms-fill-upper {
+  background-color: #263650;
+}
+.maths-section .income-calc .ranges .selected-value {
+  position: relative;
+  top: -1rem;
+}
+.maths-section .income-calc .result .profiles-result {
+  margin-right: 2rem;
+}
+.maths-section .income-calc .result .profiles-result h3 {
+  background-color: #6abebc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+}
+.maths-section .income-calc .result .profiles-result h3 .value {
+  font-size: 2rem;
+}
+.maths-section .income-calc .result .profiles-result h3 .label {
+  font-size: 1rem;
+}
+.maths-section .income-calc .result .income-result {
+  margin-top: 5rem;
+}
+.maths-section .income-calc .result .income-result h3 {
+  background-color: #263650;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 100%;
+}
+.maths-section .income-calc .result .income-result h3 .value {
+  font-size: 2rem;
+}
+.maths-section .income-calc .result .income-result h3 .label {
+  font-size: 1rem;
+}
+
+.outcomes-section {
+  max-height: 100%;
+  overflow: auto;
+}
+.outcomes-section .section-info .title {
+  font-size: 4rem;
+}
+.outcomes-section .section-info .helper-txt {
+  font-size: 1.4rem;
+}
+.outcomes-section .explore-card {
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+.outcomes-section .explore-card .outcomeCard {
+  background-color: #cfebe5;
+}
+.outcomes-section .business-card {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.outcomes-section .business-card .outcomeCard {
+  background-color: #acdcd3;
+}
+.outcomes-section .corporate-card {
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+.outcomes-section .corporate-card .outcomeCard {
+  background-color: #90cabf;
+}
+.outcomes-section .outcomeCard {
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+.outcomes-section .outcomeCard .header-data {
+  margin-bottom: 1.5rem;
+}
+.outcomes-section .outcomeCard .header-data .title {
+  font-size: 1.5rem;
+  color: #cf174c;
+}
+.outcomes-section .outcomeCard .header-data .plan {
+  font-size: 2.5rem;
+  color: #1c4554;
+}
+.outcomes-section .outcomeCard .header-data .plan-text {
+  font-size: 1.1rem;
+  color: #29384f;
+}
+.outcomes-section .outcomeCard .card-body .outcome-list {
+  list-style: none;
+}
+.outcomes-section .outcomeCard .card-body .outcome-list li {
+  color: #2e3d53;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.outcomes-section .outcomeCard .card-body .outcome-list li .fa-check-circle {
+  color: #15807e;
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+.outcomes-section .outcomeCard .card-body .outcome-list li .outcome-type {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .maths-section .section-info .title {
+    font-size: 3.2rem;
+  }
+  .maths-section .section-info .helper-txt {
+    font-size: 1.2rem;
+  }
+  .outcomes-section .section-info .title {
+    font-size: 3.2rem;
+  }
+  .outcomes-section .section-info .helper-txt {
+    font-size: 1.2rem;
+  }
+  .outcomes-section .business-card {
+    padding-right: 4rem;
+  }
+  .outcomes-section .corporate-card {
+    padding-top: 0;
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .maths-section .section-info .title {
+    font-size: 2.8rem;
+  }
+  .maths-section .section-info .helper-txt {
+    font-size: 1rem;
+  }
+  .maths-section .income-calc {
+    flex-direction: column;
+  }
+  .maths-section .income-calc .result {
+    align-items: center;
+  }
+  .maths-section .income-calc .result .profiles-result h3 {
+    width: 6rem;
+    height: 6rem;
+  }
+  .maths-section .income-calc .result .profiles-result h3 .value {
+    font-size: 1.5rem;
+  }
+  .maths-section .income-calc .result .profiles-result h3 .label {
+    font-size: 0.8rem;
+  }
+  .maths-section .income-calc .result .income-result {
+    margin-top: 0;
+  }
+  .maths-section .income-calc .result .income-result h3 {
+    width: 9rem;
+    height: 9rem;
+  }
+  .maths-section .income-calc .result .income-result h3 .value {
+    font-size: 1.5rem;
+  }
+  .maths-section .income-calc .result .income-result h3 .label {
+    font-size: 0.8rem;
+  }
+  .outcomes-section .section-info .title {
+    font-size: 2.8rem;
+  }
+  .outcomes-section .section-info .helper-txt {
+    font-size: 1rem;
+  }
+  .outcomes-section .explore-card {
+    padding-right: 4rem;
+  }
+  .outcomes-section .business-card {
+    padding-top: 0;
+    padding-left: 4rem;
+  }
+  .outcomes-section .corporate-card {
+    padding-right: 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .maths-section {
+    background: #fff;
+  }
+  .maths-section .section-info {
+    padding: 1rem;
+  }
+  .maths-section .section-info .title {
+    font-size: 1.8rem;
+  }
+  .maths-section .section-info .helper-txt {
+    font-size: 0.8rem;
+  }
+  .maths-section .income-calc {
+    padding: 1rem !important;
+    flex-direction: column-reverse;
+  }
+  .maths-section .income-calc input[type=range]::-webkit-slider-thumb {
+    width: 2rem !important;
+  }
+  .maths-section .income-calc input[type=range]::-webkit-slider-runnable-track {
+    height: 2rem;
+    cursor: pointer;
+    background-color: #263650;
+    border-radius: 5rem;
+  }
+  .maths-section .income-calc .slidecontainer label,
+  .maths-section .income-calc .slidecontainer .ranges {
+    font-size: 0.8rem;
+  }
+  .maths-section .income-calc .slidecontainer label .selected-value,
+  .maths-section .income-calc .slidecontainer .ranges .selected-value {
+    top: -0.3rem;
+  }
+  .maths-section .income-calc .slidecontainer input {
+    margin: 0.5rem 0;
+    width: 14rem;
+  }
+  .maths-section .income-calc .result {
+    margin-bottom: 2rem;
+  }
+  .maths-section .income-calc .result .profiles-result {
+    margin-right: 1rem;
+  }
+  .maths-section .income-calc .result .profiles-result h3 {
+    width: 5rem;
+    height: 5rem;
+  }
+  .maths-section .income-calc .result .profiles-result h3 .value {
+    font-size: 1.2rem;
+  }
+  .maths-section .income-calc .result .profiles-result h3 .label {
+    font-size: 0.7rem;
+  }
+  .maths-section .income-calc .result .income-result h3 {
+    width: 8rem;
+    height: 8rem;
+  }
+  .maths-section .income-calc .result .income-result h3 .value {
+    font-size: 1.2rem;
+  }
+  .maths-section .income-calc .result .income-result h3 .label {
+    font-size: 0.7rem;
+  }
+  .outcomes-section .section-info {
+    padding: 1rem;
+  }
+  .outcomes-section .section-info .title {
+    font-size: 1.8rem;
+  }
+  .outcomes-section .section-info .helper-txt {
+    font-size: 0.8rem;
+  }
+  .outcomes-section .explore-card,
+  .outcomes-section .business-card,
+  .outcomes-section .corporate-card,
+  .outcomes-section .outcomeCard {
+    padding: 1rem;
+  }
+  .outcomes-section .explore-card .header-data,
+  .outcomes-section .business-card .header-data,
+  .outcomes-section .corporate-card .header-data,
+  .outcomes-section .outcomeCard .header-data {
+    margin-bottom: 1rem;
+  }
+  .outcomes-section .explore-card .header-data .title,
+  .outcomes-section .business-card .header-data .title,
+  .outcomes-section .corporate-card .header-data .title,
+  .outcomes-section .outcomeCard .header-data .title {
+    font-size: 1.2rem;
+  }
+  .outcomes-section .explore-card .header-data .plan,
+  .outcomes-section .business-card .header-data .plan,
+  .outcomes-section .corporate-card .header-data .plan,
+  .outcomes-section .outcomeCard .header-data .plan {
+    font-size: 2rem;
+  }
+  .outcomes-section .explore-card .header-data .plan-txt,
+  .outcomes-section .business-card .header-data .plan-txt,
+  .outcomes-section .corporate-card .header-data .plan-txt,
+  .outcomes-section .outcomeCard .header-data .plan-txt {
+    font-size: 0.9rem;
+  }
+  .outcomes-section .explore-card .card-body .outcome-list li,
+  .outcomes-section .business-card .card-body .outcome-list li,
+  .outcomes-section .corporate-card .card-body .outcome-list li,
+  .outcomes-section .outcomeCard .card-body .outcome-list li {
+    margin-bottom: 0.2rem;
+  }
+  .outcomes-section .explore-card .card-body .outcome-list li .fa-check-circle,
+  .outcomes-section .business-card .card-body .outcome-list li .fa-check-circle,
+  .outcomes-section .corporate-card .card-body .outcome-list li .fa-check-circle,
+  .outcomes-section .outcomeCard .card-body .outcome-list li .fa-check-circle {
+    font-size: 1.1rem;
+    margin-right: 0.2rem;
+  }
+  .outcomes-section .explore-card .card-body .outcome-list li .outcome-type,
+  .outcomes-section .business-card .card-body .outcome-list li .outcome-type,
+  .outcomes-section .corporate-card .card-body .outcome-list li .outcome-type,
+  .outcomes-section .outcomeCard .card-body .outcome-list li .outcome-type {
+    font-size: 0.9rem;
+  }
+  .outcomes-section .explore-card,
+  .outcomes-section .business-card {
+    padding-bottom: 0;
+  }
+}/*# sourceMappingURL=pricingPlans.css.map */

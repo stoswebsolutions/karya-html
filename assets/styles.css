@@ -80,6 +80,10 @@ body {
   color: #f2f2f2;
 }
 
+.black-clr {
+  color: #000000;
+}
+
 .fs-8 {
   font-size: 0.5rem !important;
 }
@@ -233,6 +237,11 @@ label {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
+}
 @media screen and (max-width: 576px) {
   .d-none-mobile {
     display: none;

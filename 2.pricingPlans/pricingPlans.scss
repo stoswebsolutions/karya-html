@@ -1,0 +1,464 @@
+// styles
+@import '../assets/styles.scss';
+
+// nav
+@import '../assets/nav.scss';
+
+.maths-section {
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 65%,
+    #8ccecb 65%,
+    #8ccecb 100%
+  );
+  height: 100%;
+  overflow: auto;
+
+  .section-info {
+    .title {
+      font-size: 4rem;
+    }
+    .helper-txt {
+      font-size: 1.4rem;
+      color: #3c8c8a;
+    }
+  }
+
+  .income-calc {
+    .slidecontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        margin: 2rem 0;
+        width: 18rem;
+      }
+      /* Special styling for WebKit/Blink */
+      input[type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 100%;
+        width: 3rem;
+        border-radius: 15rem;
+        margin-top: 0;
+        background: #ffffff;
+        border-color: #fff;
+        cursor: pointer;
+        &:active {
+          background: #ffffff !important;
+          box-shadow: none !important;
+          border-color: #fff !important;
+          outline: none !important;
+        }
+        &:focus {
+          background: #ffffff !important;
+          box-shadow: none !important;
+          border-color: #fff !important;
+          outline: none !important;
+        }
+      }
+
+      /* All the same stuff for Firefox */
+      input[type='range']::-moz-range-thumb {
+        height: 100%;
+        width: 3rem;
+        border-radius: 15rem;
+        margin-top: 0;
+        background: #ffffff;
+        border-color: #fff;
+        cursor: pointer;
+      }
+
+      /* All the same stuff for IE */
+      input[type='range']::-ms-thumb {
+        height: 100%;
+        width: 3rem;
+        border-radius: 15rem;
+        margin-top: 0;
+        background: #ffffff;
+        border-color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    // FOR TRACKER
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 3rem;
+      cursor: pointer;
+      background-color: #263650;
+      border-radius: 5rem;
+    }
+
+    input[type='range']:focus::-webkit-slider-runnable-track {
+      background-color: #263650;
+    }
+
+    input[type='range']::-moz-range-track {
+      height: 4rem;
+      cursor: pointer;
+      background-color: #263650;
+      border-radius: 5rem;
+    }
+
+    input[type='range']::-ms-track {
+      height: 4rem;
+      cursor: pointer;
+      background-color: #263650;
+      border-radius: 5rem;
+    }
+    input[type='range']::-ms-fill-lower {
+      height: 4rem;
+      cursor: pointer;
+      background-color: #263650;
+      border-radius: 5rem;
+    }
+    input[type='range']:focus::-ms-fill-lower {
+      background-color: #263650;
+    }
+    input[type='range']::-ms-fill-upper {
+      height: 4rem;
+      cursor: pointer;
+      background-color: #263650;
+      border-radius: 5rem;
+    }
+    input[type='range']:focus::-ms-fill-upper {
+      background-color: #263650;
+    }
+    .ranges {
+      .selected-value {
+        position: relative;
+        top: -1rem;
+      }
+    }
+    .result {
+      .profiles-result {
+        margin-right: 2rem;
+        h3 {
+          background-color: #6abebc;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 8rem;
+          height: 8rem;
+          border-radius: 100%;
+          .value {
+            font-size: 2rem;
+          }
+          .label {
+            font-size: 1rem;
+          }
+        }
+      }
+      .income-result {
+        margin-top: 5rem;
+        h3 {
+          background-color: #263650;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 12rem;
+          height: 12rem;
+          border-radius: 100%;
+          .value {
+            font-size: 2rem;
+          }
+          .label {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.outcomes-section {
+  max-height: 100%;
+  overflow: auto;
+  .section-info {
+    .title {
+      font-size: 4rem;
+    }
+    .helper-txt {
+      font-size: 1.4rem;
+    }
+  }
+  .explore-card {
+    padding-left: 4rem;
+    padding-right: 2rem;
+    .outcomeCard {
+      background-color: #cfebe5;
+    }
+  }
+  .business-card {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .outcomeCard {
+      background-color: #acdcd3;
+    }
+  }
+  .corporate-card {
+    padding-left: 2rem;
+    padding-right: 4rem;
+    .outcomeCard {
+      background-color: #90cabf;
+    }
+  }
+  .outcomeCard {
+    padding: 2rem;
+    border-radius: 1.5rem;
+    .header-data {
+      margin-bottom: 1.5rem;
+      .title {
+        font-size: 1.5rem;
+        color: #cf174c;
+      }
+      .plan {
+        font-size: 2.5rem;
+        color: #1c4554;
+      }
+      .plan-text {
+        font-size: 1.1rem;
+        color: #29384f;
+      }
+    }
+    .card-body {
+      .outcome-list {
+        list-style: none;
+        li {
+          color: #2e3d53;
+          display: flex;
+          margin-bottom: 0.5rem;
+          .fa-check-circle {
+            color: #15807e;
+            font-size: 1.4rem;
+            margin-right: 0.4rem;
+          }
+          .outcome-type {
+            font-size: 1rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .maths-section {
+    .section-info {
+      .title {
+        font-size: 3.2rem;
+      }
+      .helper-txt {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .outcomes-section {
+    .section-info {
+      .title {
+        font-size: 3.2rem;
+      }
+      .helper-txt {
+        font-size: 1.2rem;
+      }
+    }
+    .business-card {
+      padding-right: 4rem;
+    }
+    .corporate-card {
+      padding-top: 0;
+      padding-left: 4rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .maths-section {
+    .section-info {
+      .title {
+        font-size: 2.8rem;
+      }
+      .helper-txt {
+        font-size: 1rem;
+      }
+    }
+    .income-calc {
+      flex-direction: column;
+      .result {
+        align-items: center;
+        .profiles-result {
+          h3 {
+            width: 6rem;
+            height: 6rem;
+            .value {
+              font-size: 1.5rem;
+            }
+            .label {
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .income-result {
+          margin-top: 0;
+          h3 {
+            width: 9rem;
+            height: 9rem;
+            .value {
+              font-size: 1.5rem;
+            }
+            .label {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .outcomes-section {
+    .section-info {
+      .title {
+        font-size: 2.8rem;
+      }
+      .helper-txt {
+        font-size: 1rem;
+      }
+    }
+    .explore-card {
+      padding-right: 4rem;
+    }
+    .business-card {
+      padding-top: 0;
+      padding-left: 4rem;
+    }
+    .corporate-card {
+      padding-right: 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .maths-section {
+    background: #fff;
+    .section-info {
+      padding: 1rem;
+      .title {
+        font-size: 1.8rem;
+      }
+      .helper-txt {
+        font-size: 0.8rem;
+      }
+    }
+    .income-calc {
+      padding: 1rem !important;
+      flex-direction: column-reverse;
+      input[type='range']::-webkit-slider-thumb {
+        width: 2rem !important;
+      }
+
+      input[type='range']::-webkit-slider-runnable-track {
+        height: 2rem;
+        cursor: pointer;
+        background-color: #263650;
+        border-radius: 5rem;
+      }
+      .slidecontainer {
+        label,
+        .ranges {
+          font-size: 0.8rem;
+          .selected-value {
+            top: -0.3rem;
+          }
+        }
+        input {
+          margin: 0.5rem 0;
+          width: 14rem;
+        }
+      }
+      .result {
+        margin-bottom: 2rem;
+        .profiles-result {
+          margin-right: 1rem;
+          h3 {
+            width: 5rem;
+            height: 5rem;
+            .value {
+              font-size: 1.2rem;
+            }
+            .label {
+              font-size: 0.7rem;
+            }
+          }
+        }
+        .income-result {
+          h3 {
+            width: 8rem;
+            height: 8rem;
+            .value {
+              font-size: 1.2rem;
+            }
+            .label {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .outcomes-section {
+    .section-info {
+      padding: 1rem;
+      .title {
+        font-size: 1.8rem;
+      }
+      .helper-txt {
+        font-size: 0.8rem;
+      }
+    }
+    .explore-card,
+    .business-card,
+    .corporate-card,
+    .outcomeCard {
+      padding: 1rem;
+      .header-data {
+        margin-bottom: 1rem;
+        .title {
+          font-size: 1.2rem;
+        }
+        .plan {
+          font-size: 2rem;
+        }
+        .plan-txt {
+          font-size: 0.9rem;
+        }
+      }
+      .card-body {
+        .outcome-list {
+          li {
+            margin-bottom: 0.2rem;
+            .fa-check-circle {
+              font-size: 1.1rem;
+              margin-right: 0.2rem;
+            }
+            .outcome-type {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+    .explore-card,
+    .business-card {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 280px) {
+}

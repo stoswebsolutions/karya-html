@@ -88,6 +88,11 @@ $lite-white: #f2f2f2;
   color: $lite-white;
 }
 
+$black-color: #000000;
+.black-clr {
+  color: $black-color;
+}
+
 .fs-8 {
   font-size: 0.5rem !important;
 }
@@ -252,6 +257,9 @@ label {
 }
 
 @media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
