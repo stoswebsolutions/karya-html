@@ -170,6 +170,17 @@
           text-align: right;
           border-bottom: 2px solid #545558;
         }
+        .submit-btn {
+          border: 1px solid $secondary-color !important;
+          &:hover {
+            border: 1px solid $secondary-color !important;
+            background-color: $secondary-color;
+          }
+          &:active {
+            border: 1px solid $secondary-color !important;
+            background-color: $secondary-color !important;
+          }
+        }
       }
     }
   }
@@ -239,6 +250,235 @@
   }
 }
 
+.job-section,
+.employer-section {
+  .row {
+    max-height: 100%;
+    overflow: auto;
+  }
+  .section-title {
+    font-size: 4rem;
+  }
+  .info-card {
+    .circle-icon {
+      background-color: white;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      .minus-icon {
+        height: 0.4rem;
+        width: 50%;
+        background-color: #1b3c3e;
+      }
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 2rem 0;
+      color: #4aacaa;
+    }
+    h6 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1b3c3e;
+    }
+  }
+  .discover-card,
+  .understanding-card {
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+  .guided-card,
+  .talent-card {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .connect-card,
+  .save-card {
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+}
+
+.job-steps-section,
+.employer-steps-section {
+  .row {
+    max-height: 100%;
+    overflow: auto;
+  }
+  .stepper-card {
+    .step {
+      h1 {
+        color: #0f2d33;
+        font-size: 7.5rem;
+        font-weight: 600;
+        padding-right: 2rem;
+      }
+    }
+    .details {
+      .title {
+        color: #419997;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
+      }
+      .about {
+        color: #4b7779;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    }
+  }
+  .strengths-card,
+  .onboard-card {
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+  .showcase-card,
+  .discover-card {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .explore-card,
+  .discover-card2 {
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+  .higlighted-line {
+    h6 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.employer-section {
+  .info-card {
+    .circle-icon {
+      background-color: $secondary-color;
+    }
+    h1 {
+      color: #d3175a;
+    }
+    h6 {
+      color: white;
+    }
+  }
+}
+
+.employer-steps-section {
+  .stepper-card {
+    .step {
+      h1 {
+        color: $primary-color;
+      }
+    }
+    .details {
+      .title {
+        color: #f14582;
+      }
+      .about {
+        color: #4b7779;
+      }
+    }
+  }
+}
+
+.contact-section {
+  max-height: 100%;
+  overflow: auto;
+  .contact-message {
+    padding-left: 4rem;
+    padding-right: 2rem;
+    .title {
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+    .message {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+  .contact-form {
+    padding-left: 2rem;
+    padding-right: 4rem;
+    ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #cdd7d6;
+      opacity: 1; /* Firefox */
+      font-size: 0.8rem;
+    }
+    form {
+      label {
+        font-size: 0.9rem;
+      }
+      input {
+        padding: 0;
+        border-radius: 0;
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid #9cb4b4;
+        font-weight: 500;
+        color: #fff;
+        // width: auto;
+        &:focus {
+          box-shadow: none;
+          border-bottom: 2px solid #7f7f7f;
+        }
+      }
+      .privacy-check {
+        label {
+          cursor: pointer;
+          font-size: 0.8rem;
+        }
+      }
+      #terms-check {
+        cursor: pointer;
+        border: 2px solid $yellow-color;
+        width: 1rem;
+        border-radius: 4px;
+        height: 1rem;
+      }
+      .submit-btn {
+        font-size: 0.9rem;
+        border: 1px solid $yellow-color !important;
+        &:hover {
+          border: 1px solid $yellow-color !important;
+          background-color: $yellow-color;
+        }
+        &:active {
+          border: 1px solid $yellow-color !important;
+          background-color: $yellow-color !important;
+        }
+      }
+    }
+  }
+  .links-address {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .logo {
+      width: 10rem;
+    }
+    .abt-karya {
+      font-size: 0.9rem;
+    }
+    ul {
+      list-style: none;
+    }
+    .anchor-link {
+      font-size: 0.8rem;
+      &:hover {
+        color: $lite-white;
+      }
+    }
+    .contact {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .carousel-section {
     .headers {
@@ -266,6 +506,7 @@
       }
     }
   }
+
   .what-section {
     .what-sub-section {
       padding-left: 4rem;
@@ -283,6 +524,82 @@
       video {
         border: 0.5rem solid $primary-color;
         border-radius: 0.4rem;
+      }
+    }
+  }
+
+  .job-section,
+  .employer-section {
+    .section-title {
+      font-size: 3.2rem;
+    }
+    .info-card {
+      .circle-icon {
+        width: 3rem;
+        height: 3rem;
+        .minus-icon {
+          height: 0.3rem;
+        }
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+      h6 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .job-steps-section,
+  .employer-steps-section {
+    .stepper-card {
+      .step {
+        h1 {
+          font-size: 6rem;
+        }
+      }
+      .details {
+        .title {
+          font-size: 1.3rem;
+        }
+        .about {
+          font-size: 1rem;
+        }
+      }
+    }
+    .higlighted-line {
+      h6 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .contact-section {
+    .contact-message {
+      .title {
+        font-size: 2rem;
+      }
+      .message {
+        font-size: 1.1rem;
+      }
+    }
+    .contact-form {
+      form {
+        label {
+          font-size: 0.8rem;
+        }
+        input {
+          font-size: 0.9rem;
+        }
+        .privacy-check {
+          label {
+            cursor: pointer;
+            font-size: 0.8rem;
+          }
+        }
+        .submit-btn {
+          font-size: 0.8rem;
+        }
       }
     }
   }
@@ -364,6 +681,7 @@
     .row {
       overflow: auto;
       height: auto !important;
+      max-height: 100%;
     }
     .what-sub-section {
       padding: 4rem;
@@ -381,6 +699,87 @@
         border: 0.4rem solid $primary-color;
         border-radius: 0.3rem;
       }
+    }
+  }
+
+  .job-section,
+  .employer-section {
+    .section-title {
+      font-size: 2.8rem;
+    }
+    .info-card {
+      margin-bottom: 2rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      .circle-icon {
+        width: 2.8rem;
+        height: 2.8rem;
+        .minus-icon {
+          height: 0.3rem;
+        }
+      }
+      h1 {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+      }
+      h6 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .job-steps-section,
+  .employer-steps-section {
+    .karya-py {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    .stepper-card {
+      .step {
+        h1 {
+          font-size: 4rem;
+          padding-right: 1.5rem;
+        }
+      }
+      .details {
+        .title {
+          font-size: 1.1rem;
+        }
+        .about {
+          font-size: 1rem;
+        }
+      }
+    }
+    .strengths-card,
+    .showcase-card,
+    .explore-card,
+    .onboard-card,
+    .discover-card,
+    .discover-card2 {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+    .higlighted-line {
+      h6 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .contact-section {
+    .contact-message {
+      padding-right: 4rem;
+      padding-bottom: 0rem;
+      .title {
+        font-size: 1.8rem;
+      }
+      .message {
+        font-size: 1rem;
+      }
+    }
+    .contact-form {
+      padding-top: 2rem;
+      padding-left: 4rem;
     }
   }
 }
@@ -493,6 +892,145 @@
       padding: 1rem;
     }
   }
+
+  .job-section,
+  .employer-section {
+    .karya-p {
+      padding: 1rem;
+    }
+    .section-title {
+      font-size: 1.8rem;
+    }
+    .info-card {
+      margin-bottom: 2rem;
+      .circle-icon {
+        background-color: white;
+        width: 2rem;
+        height: 2rem;
+        .minus-icon {
+          height: 0.25rem;
+        }
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+      }
+      h6 {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+    .discover-card,
+    .guided-card,
+    .connect-card,
+    .understanding-card,
+    .talent-card,
+    .save-card {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  .job-steps-section,
+  .employer-steps-section {
+    align-items: stretch !important;
+    .karya-py {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .stepper-card {
+      .step {
+        h1 {
+          font-size: 3rem;
+          padding-right: 1rem;
+        }
+      }
+      .details {
+        .title {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        .about {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .strengths-card,
+    .showcase-card,
+    .explore-card,
+    .onboard-card,
+    .discover-card,
+    .discover-card2 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .higlighted-line {
+      padding: 2rem 1rem;
+      h6 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .contact-section {
+    .contact-message {
+      padding: 1rem;
+      padding-bottom: 0;
+      .title {
+        font-size: 1.5rem;
+      }
+      .message {
+        font-size: 0.9rem;
+      }
+    }
+    .contact-form {
+      padding: 1rem;
+      form {
+        label {
+          font-size: 0.7rem;
+        }
+        input {
+          font-size: 0.8;
+        }
+        .privacy-check {
+          label {
+            cursor: pointer;
+            font-size: 0.8rem;
+          }
+        }
+        .submit-btn {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .links-address {
+      padding: 1rem;
+      .logo {
+        width: 8rem;
+      }
+      .abt-karya {
+        margin-bottom: 1.2rem;
+        .msg-txt {
+          font-size: 0.8rem;
+          margin-bottom: 0.2rem;
+        }
+      }
+      .anchor-link {
+        font-size: 0.7rem;
+      }
+      .contact {
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .links,
+    .contact {
+      h6 {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 280px) {
@@ -500,8 +1038,4 @@
   .hired-card {
     display: none;
   }
-
-  //   .what-section {
-  //     padding: 2rem 0;
-  //   }
 }

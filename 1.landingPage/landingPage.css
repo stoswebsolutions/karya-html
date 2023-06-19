@@ -77,6 +77,10 @@ body {
   background-color: #f4d552;
 }
 
+.lite-white {
+  color: #f2f2f2;
+}
+
 .fs-8 {
   font-size: 0.5rem !important;
 }
@@ -138,6 +142,13 @@ body {
   width: 100vw;
 }
 
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
 ::-webkit-scrollbar {
   width: 0.3em;
   height: 0.3em;
@@ -187,6 +198,12 @@ label {
   font-weight: 500;
   font-size: 1rem;
 }
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
 
 .karya-container {
   height: 100vh;
@@ -200,6 +217,28 @@ label {
   height: 100vh;
 }
 
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+}
 @font-face {
   font-family: "Abeatbykai";
   src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
@@ -278,6 +317,10 @@ body {
   background-color: #f4d552;
 }
 
+.lite-white {
+  color: #f2f2f2;
+}
+
 .fs-8 {
   font-size: 0.5rem !important;
 }
@@ -339,6 +382,13 @@ body {
   width: 100vw;
 }
 
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
 ::-webkit-scrollbar {
   width: 0.3em;
   height: 0.3em;
@@ -388,6 +438,12 @@ label {
   font-weight: 500;
   font-size: 1rem;
 }
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
 
 .karya-container {
   height: 100vh;
@@ -401,6 +457,28 @@ label {
   height: 100vh;
 }
 
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+}
 nav {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -639,6 +717,17 @@ nav .menu-icon:hover {
   text-align: right;
   border-bottom: 2px solid #545558;
 }
+.hired-talent-form-section .talent-sub-section .content form .submit-btn {
+  border: 1px solid #8dcdcb !important;
+}
+.hired-talent-form-section .talent-sub-section .content form .submit-btn:hover {
+  border: 1px solid #8dcdcb !important;
+  background-color: #8dcdcb;
+}
+.hired-talent-form-section .talent-sub-section .content form .submit-btn:active {
+  border: 1px solid #8dcdcb !important;
+  background-color: #8dcdcb !important;
+}
 
 .about-section .etymology-sub-section {
   padding-left: 4rem;
@@ -695,6 +784,229 @@ nav .menu-icon:hover {
   border-radius: 0.4rem;
 }
 
+.job-section .row,
+.employer-section .row {
+  max-height: 100%;
+  overflow: auto;
+}
+.job-section .section-title,
+.employer-section .section-title {
+  font-size: 4rem;
+}
+.job-section .info-card .circle-icon,
+.employer-section .info-card .circle-icon {
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+.job-section .info-card .circle-icon .minus-icon,
+.employer-section .info-card .circle-icon .minus-icon {
+  height: 0.4rem;
+  width: 50%;
+  background-color: #1b3c3e;
+}
+.job-section .info-card h1,
+.employer-section .info-card h1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: #4aacaa;
+}
+.job-section .info-card h6,
+.employer-section .info-card h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1b3c3e;
+}
+.job-section .discover-card,
+.job-section .understanding-card,
+.employer-section .discover-card,
+.employer-section .understanding-card {
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+.job-section .guided-card,
+.job-section .talent-card,
+.employer-section .guided-card,
+.employer-section .talent-card {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.job-section .connect-card,
+.job-section .save-card,
+.employer-section .connect-card,
+.employer-section .save-card {
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+
+.job-steps-section .row,
+.employer-steps-section .row {
+  max-height: 100%;
+  overflow: auto;
+}
+.job-steps-section .stepper-card .step h1,
+.employer-steps-section .stepper-card .step h1 {
+  color: #0f2d33;
+  font-size: 7.5rem;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+.job-steps-section .stepper-card .details .title,
+.employer-steps-section .stepper-card .details .title {
+  color: #419997;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.job-steps-section .stepper-card .details .about,
+.employer-steps-section .stepper-card .details .about {
+  color: #4b7779;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.job-steps-section .strengths-card,
+.job-steps-section .onboard-card,
+.employer-steps-section .strengths-card,
+.employer-steps-section .onboard-card {
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+.job-steps-section .showcase-card,
+.job-steps-section .discover-card,
+.employer-steps-section .showcase-card,
+.employer-steps-section .discover-card {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.job-steps-section .explore-card,
+.job-steps-section .discover-card2,
+.employer-steps-section .explore-card,
+.employer-steps-section .discover-card2 {
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+.job-steps-section .higlighted-line h6,
+.employer-steps-section .higlighted-line h6 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.employer-section .info-card .circle-icon {
+  background-color: #8dcdcb;
+}
+.employer-section .info-card h1 {
+  color: #d3175a;
+}
+.employer-section .info-card h6 {
+  color: white;
+}
+
+.employer-steps-section .stepper-card .step h1 {
+  color: #263650;
+}
+.employer-steps-section .stepper-card .details .title {
+  color: #f14582;
+}
+.employer-steps-section .stepper-card .details .about {
+  color: #4b7779;
+}
+
+.contact-section {
+  max-height: 100%;
+  overflow: auto;
+}
+.contact-section .contact-message {
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+.contact-section .contact-message .title {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.contact-section .contact-message .message {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.contact-section .contact-form {
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+.contact-section .contact-form ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cdd7d6;
+  opacity: 1; /* Firefox */
+  font-size: 0.8rem;
+}
+.contact-section .contact-form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cdd7d6;
+  opacity: 1; /* Firefox */
+  font-size: 0.8rem;
+}
+.contact-section .contact-form form label {
+  font-size: 0.9rem;
+}
+.contact-section .contact-form form input {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #9cb4b4;
+  font-weight: 500;
+  color: #fff;
+}
+.contact-section .contact-form form input:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #7f7f7f;
+}
+.contact-section .contact-form form .privacy-check label {
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.contact-section .contact-form form #terms-check {
+  cursor: pointer;
+  border: 2px solid #f4d552;
+  width: 1rem;
+  border-radius: 4px;
+  height: 1rem;
+}
+.contact-section .contact-form form .submit-btn {
+  font-size: 0.9rem;
+  border: 1px solid #f4d552 !important;
+}
+.contact-section .contact-form form .submit-btn:hover {
+  border: 1px solid #f4d552 !important;
+  background-color: #f4d552;
+}
+.contact-section .contact-form form .submit-btn:active {
+  border: 1px solid #f4d552 !important;
+  background-color: #f4d552 !important;
+}
+.contact-section .links-address {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.contact-section .links-address .logo {
+  width: 10rem;
+}
+.contact-section .links-address .abt-karya {
+  font-size: 0.9rem;
+}
+.contact-section .links-address ul {
+  list-style: none;
+}
+.contact-section .links-address .anchor-link {
+  font-size: 0.8rem;
+}
+.contact-section .links-address .anchor-link:hover {
+  color: #f2f2f2;
+}
+.contact-section .links-address .contact p {
+  font-size: 0.8rem;
+}
+
 @media screen and (max-width: 992px) {
   .carousel-section .headers h1 {
     font-size: 3.5rem;
@@ -730,6 +1042,62 @@ nav .menu-icon:hover {
   .what-section .video-sub-section video {
     border: 0.5rem solid #263650;
     border-radius: 0.4rem;
+  }
+  .job-section .section-title,
+  .employer-section .section-title {
+    font-size: 3.2rem;
+  }
+  .job-section .info-card .circle-icon,
+  .employer-section .info-card .circle-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  .job-section .info-card .circle-icon .minus-icon,
+  .employer-section .info-card .circle-icon .minus-icon {
+    height: 0.3rem;
+  }
+  .job-section .info-card h1,
+  .employer-section .info-card h1 {
+    font-size: 1.7rem;
+  }
+  .job-section .info-card h6,
+  .employer-section .info-card h6 {
+    font-size: 1.1rem;
+  }
+  .job-steps-section .stepper-card .step h1,
+  .employer-steps-section .stepper-card .step h1 {
+    font-size: 6rem;
+  }
+  .job-steps-section .stepper-card .details .title,
+  .employer-steps-section .stepper-card .details .title {
+    font-size: 1.3rem;
+  }
+  .job-steps-section .stepper-card .details .about,
+  .employer-steps-section .stepper-card .details .about {
+    font-size: 1rem;
+  }
+  .job-steps-section .higlighted-line h6,
+  .employer-steps-section .higlighted-line h6 {
+    font-size: 1.3rem;
+  }
+  .contact-section .contact-message .title {
+    font-size: 2rem;
+  }
+  .contact-section .contact-message .message {
+    font-size: 1.1rem;
+  }
+  .contact-section .contact-form form label {
+    font-size: 0.8rem;
+  }
+  .contact-section .contact-form form input {
+    font-size: 0.9rem;
+  }
+  .contact-section .contact-form form .privacy-check label {
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .contact-section .contact-form form .submit-btn {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -790,6 +1158,7 @@ nav .menu-icon:hover {
   .what-section .row {
     overflow: auto;
     height: auto !important;
+    max-height: 100%;
   }
   .what-section .what-sub-section {
     padding: 4rem;
@@ -807,6 +1176,85 @@ nav .menu-icon:hover {
   .what-section .video-sub-section video {
     border: 0.4rem solid #263650;
     border-radius: 0.3rem;
+  }
+  .job-section .section-title,
+  .employer-section .section-title {
+    font-size: 2.8rem;
+  }
+  .job-section .info-card,
+  .employer-section .info-card {
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .job-section .info-card .circle-icon,
+  .employer-section .info-card .circle-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .job-section .info-card .circle-icon .minus-icon,
+  .employer-section .info-card .circle-icon .minus-icon {
+    height: 0.3rem;
+  }
+  .job-section .info-card h1,
+  .employer-section .info-card h1 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+  .job-section .info-card h6,
+  .employer-section .info-card h6 {
+    font-size: 1rem;
+  }
+  .job-steps-section .karya-py,
+  .employer-steps-section .karya-py {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .job-steps-section .stepper-card .step h1,
+  .employer-steps-section .stepper-card .step h1 {
+    font-size: 4rem;
+    padding-right: 1.5rem;
+  }
+  .job-steps-section .stepper-card .details .title,
+  .employer-steps-section .stepper-card .details .title {
+    font-size: 1.1rem;
+  }
+  .job-steps-section .stepper-card .details .about,
+  .employer-steps-section .stepper-card .details .about {
+    font-size: 1rem;
+  }
+  .job-steps-section .strengths-card,
+  .job-steps-section .showcase-card,
+  .job-steps-section .explore-card,
+  .job-steps-section .onboard-card,
+  .job-steps-section .discover-card,
+  .job-steps-section .discover-card2,
+  .employer-steps-section .strengths-card,
+  .employer-steps-section .showcase-card,
+  .employer-steps-section .explore-card,
+  .employer-steps-section .onboard-card,
+  .employer-steps-section .discover-card,
+  .employer-steps-section .discover-card2 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .job-steps-section .higlighted-line h6,
+  .employer-steps-section .higlighted-line h6 {
+    font-size: 1.1rem;
+  }
+  .contact-section .contact-message {
+    padding-right: 4rem;
+    padding-bottom: 0rem;
+  }
+  .contact-section .contact-message .title {
+    font-size: 1.8rem;
+  }
+  .contact-section .contact-message .message {
+    font-size: 1rem;
+  }
+  .contact-section .contact-form {
+    padding-top: 2rem;
+    padding-left: 4rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -897,6 +1345,148 @@ nav .menu-icon:hover {
   }
   .what-section .video-sub-section {
     padding: 1rem;
+  }
+  .job-section .karya-p,
+  .employer-section .karya-p {
+    padding: 1rem;
+  }
+  .job-section .section-title,
+  .employer-section .section-title {
+    font-size: 1.8rem;
+  }
+  .job-section .info-card,
+  .employer-section .info-card {
+    margin-bottom: 2rem;
+  }
+  .job-section .info-card .circle-icon,
+  .employer-section .info-card .circle-icon {
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+  }
+  .job-section .info-card .circle-icon .minus-icon,
+  .employer-section .info-card .circle-icon .minus-icon {
+    height: 0.25rem;
+  }
+  .job-section .info-card h1,
+  .employer-section .info-card h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  .job-section .info-card h6,
+  .employer-section .info-card h6 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .job-section .discover-card,
+  .job-section .guided-card,
+  .job-section .connect-card,
+  .job-section .understanding-card,
+  .job-section .talent-card,
+  .job-section .save-card,
+  .employer-section .discover-card,
+  .employer-section .guided-card,
+  .employer-section .connect-card,
+  .employer-section .understanding-card,
+  .employer-section .talent-card,
+  .employer-section .save-card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .job-steps-section,
+  .employer-steps-section {
+    align-items: stretch !important;
+  }
+  .job-steps-section .karya-py,
+  .employer-steps-section .karya-py {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .job-steps-section .stepper-card .step h1,
+  .employer-steps-section .stepper-card .step h1 {
+    font-size: 3rem;
+    padding-right: 1rem;
+  }
+  .job-steps-section .stepper-card .details .title,
+  .employer-steps-section .stepper-card .details .title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .job-steps-section .stepper-card .details .about,
+  .employer-steps-section .stepper-card .details .about {
+    font-size: 0.8rem;
+  }
+  .job-steps-section .strengths-card,
+  .job-steps-section .showcase-card,
+  .job-steps-section .explore-card,
+  .job-steps-section .onboard-card,
+  .job-steps-section .discover-card,
+  .job-steps-section .discover-card2,
+  .employer-steps-section .strengths-card,
+  .employer-steps-section .showcase-card,
+  .employer-steps-section .explore-card,
+  .employer-steps-section .onboard-card,
+  .employer-steps-section .discover-card,
+  .employer-steps-section .discover-card2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .job-steps-section .higlighted-line,
+  .employer-steps-section .higlighted-line {
+    padding: 2rem 1rem;
+  }
+  .job-steps-section .higlighted-line h6,
+  .employer-steps-section .higlighted-line h6 {
+    font-size: 1.1rem;
+  }
+  .contact-section .contact-message {
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  .contact-section .contact-message .title {
+    font-size: 1.5rem;
+  }
+  .contact-section .contact-message .message {
+    font-size: 0.9rem;
+  }
+  .contact-section .contact-form {
+    padding: 1rem;
+  }
+  .contact-section .contact-form form label {
+    font-size: 0.7rem;
+  }
+  .contact-section .contact-form form input {
+    font-size: 0.8;
+  }
+  .contact-section .contact-form form .privacy-check label {
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .contact-section .contact-form form .submit-btn {
+    font-size: 0.7rem;
+  }
+  .contact-section .links-address {
+    padding: 1rem;
+  }
+  .contact-section .links-address .logo {
+    width: 8rem;
+  }
+  .contact-section .links-address .abt-karya {
+    margin-bottom: 1.2rem;
+  }
+  .contact-section .links-address .abt-karya .msg-txt {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+  .contact-section .links-address .anchor-link {
+    font-size: 0.7rem;
+  }
+  .contact-section .links-address .contact p {
+    font-size: 0.7rem;
+  }
+  .contact-section .links h6,
+  .contact-section .contact h6 {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 280px) {
