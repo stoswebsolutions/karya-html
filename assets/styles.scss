@@ -275,6 +275,10 @@ label {
   }
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .d-none-tab {
     display: none;
@@ -284,5 +288,8 @@ label {
 @media screen and (max-width: 576px) {
   .d-none-mobile {
     display: none;
+  }
+  .mobile-only {
+    display: block;
   }
 }

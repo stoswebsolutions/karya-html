@@ -256,6 +256,10 @@ label {
   border: 1px solid #8dcdcb !important;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .d-none-tab {
     display: none;
@@ -264,5 +268,8 @@ label {
 @media screen and (max-width: 576px) {
   .d-none-mobile {
     display: none;
+  }
+  .mobile-only {
+    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -65,6 +65,7 @@ $('.assessment-qstn .qstn-choices label').click(function () {
 $('.personal-info-next').click(function () {
   $('.personal-info-form').addClass('d-none');
   $('.upload-resume-form').removeClass('d-none');
+  $('.personal-info .progress-lines').addClass('completed');
 });
 
 $('.resume-back').click(function () {
@@ -74,9 +75,65 @@ $('.resume-back').click(function () {
 $('.resume-next').click(function () {
   $('.upload-resume-form').addClass('d-none');
   $('.personality-assessment-section').removeClass('d-none');
+  $('.upload-resume .progress-lines').addClass('completed');
 });
 
 $('.assessment-back').click(function () {
   $('.personality-assessment-section').addClass('d-none');
   $('.upload-resume-form').removeClass('d-none');
+});
+$('.assessment-next').click(function () {
+  $('.personality-assessment-section').addClass('d-none');
+  $('.interview-prep-section').removeClass('d-none');
+  $('.personality-assessment .progress-lines').addClass('completed');
+});
+
+$('.interview-prep-back').click(function () {
+  $('.interview-prep-section').addClass('d-none');
+  $('.interview-pitches, .interview-pitches-accordion').addClass('d-none');
+  $('.interview-prep-section .intro, .for-stepper').removeClass('d-none');
+  $('.personality-assessment-section').removeClass('d-none');
+});
+$('.interview-prep-next').click(function () {
+  $('.interview-prep-section').addClass('d-none');
+  $('.interview-pitches, .interview-pitches-accordion').addClass('d-none');
+  $('.interview-prep-section .intro, .for-stepper').removeClass('d-none');
+  $('.upload-video-pitch-section').removeClass('d-none');
+  $('.interview-prep .progress-lines').addClass('completed');
+});
+
+$('.upload-video-back').click(function () {
+  $('.upload-video-pitch-section').addClass('d-none');
+  $('.interview-prep-section').removeClass('d-none');
+});
+$('.upload-video-next').click(function () {
+  $('.upload-video-pitch-section').addClass('d-none');
+  $('.generate-eval-section').removeClass('d-none');
+  $('.upload-vid .progress-lines').addClass('completed');
+});
+
+$('.eval-back').click(function () {
+  $('.generate-eval-section, .eval-dtls').addClass('d-none');
+  $('.generate-eval-section .intro, .for-stepper').removeClass('d-none');
+  $('.upload-video-pitch-section').removeClass('d-none');
+});
+$('.eval-next').click(function () {
+  $('.generate-eval-section, .generate-eval-section .eval-dtls').addClass(
+    'd-none'
+  );
+  $('.generate-eval-section .intro, .for-stepper').removeClass('d-none');
+  $('.congrats-note-section').removeClass('d-none');
+  $('.incomplete').addClass('complete');
+});
+
+$('.interview-prep-section .okay-btn').click(function () {
+  $('.interview-prep-section .intro, .for-stepper').addClass('d-none');
+  $(
+    '.interview-prep-section .interview-pitches, .interview-pitches-accordion'
+  ).removeClass('d-none');
+});
+
+$('.generate-eval-section .generate-btn').click(function () {
+  $('.generate-eval-section .intro, .for-stepper').addClass('d-none');
+  $('.generate-eval-section .eval-dtls').removeClass('d-none');
 });

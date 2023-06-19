@@ -256,6 +256,10 @@ label {
   border: 1px solid #8dcdcb !important;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .d-none-tab {
     display: none;
@@ -264,6 +268,9 @@ label {
 @media screen and (max-width: 576px) {
   .d-none-mobile {
     display: none;
+  }
+  .mobile-only {
+    display: block;
   }
 }
 @font-face {
@@ -524,6 +531,10 @@ label {
   border: 1px solid #8dcdcb !important;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .d-none-tab {
     display: none;
@@ -532,6 +543,9 @@ label {
 @media screen and (max-width: 576px) {
   .d-none-mobile {
     display: none;
+  }
+  .mobile-only {
+    display: block;
   }
 }
 nav {
@@ -876,6 +890,10 @@ label {
   border: 1px solid #8dcdcb !important;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .d-none-tab {
     display: none;
@@ -884,6 +902,9 @@ label {
 @media screen and (max-width: 576px) {
   .d-none-mobile {
     display: none;
+  }
+  .mobile-only {
+    display: block;
   }
 }
 .stepper-container {
@@ -1682,6 +1703,208 @@ label {
   align-items: center;
   text-align: justify;
 }
+.get-hired-section .dashboard .profile-data .interview-prep-section .intro {
+  max-height: calc(100vh - 352px);
+  overflow: auto;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .intro .interview-prep-intor-hdr {
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 100%;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .intro .interview-prep-intor-hdr p {
+  text-align: justify;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .intro .okay-btn {
+  width: 7rem;
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #263650;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches .nav-item {
+  flex: 1 1 0;
+  background-color: #b0dedd;
+  max-width: 16rem;
+  padding: 0;
+  display: flex;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches .nav-item .nav-link {
+  color: #27364d;
+  font-weight: 600;
+  background-color: #b0dedd;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  position: relative;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches .nav-item .active::after {
+  content: "";
+  width: 50%;
+  height: 0.2rem;
+  background-color: #d3175a;
+  display: block;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches #interview-prep-tabContent {
+  max-height: calc(100vh - 313px);
+  overflow: auto;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches #interview-prep-tabContent .tab-pane {
+  color: #27364d;
+  font-weight: 600;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches #interview-prep-tabContent .tab-pane .spot-qstns-list {
+  padding-left: 1rem;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches-accordion .accordion-button {
+  background-color: #b0dedd;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #27364d;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches-accordion .accordion-button:after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches-accordion .accordion-body {
+  color: #27364d;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches-accordion .accordion-body .spot-qstns-list {
+  padding-left: 0.7rem;
+}
+.get-hired-section .dashboard .profile-data .upload-video-pitch-section {
+  margin-top: 1rem;
+  max-height: calc(100vh - 368px);
+  overflow: auto;
+}
+.get-hired-section .dashboard .profile-data .upload-video-pitch-section .video-pitch-hdr {
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem 0 0;
+  text-align: justify;
+}
+.get-hired-section .dashboard .profile-data .upload-video-pitch-section .video-pitch-hdr .highlight {
+  color: #e63e66;
+}
+.get-hired-section .dashboard .profile-data .upload-video-pitch-section .upload-btns {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem 0 2rem;
+}
+.get-hired-section .dashboard .profile-data .upload-video-pitch-section .video-btn {
+  border: 2px solid #cbcbcb;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.get-hired-section .dashboard .profile-data .upload-video-pitch-section .video-btn .custom-file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.get-hired-section .dashboard .profile-data .upload-video-pitch-section .video-btn .custom-file-upload .btn {
+  margin-left: 0.5rem;
+  width: calc(100% - 7.1rem);
+  line-height: 1.2rem;
+}
+.get-hired-section .dashboard .profile-data .upload-video-pitch-section .video-btn .custom-file-upload input[type=file]::file-selector-button {
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  color: #263650;
+  box-shadow: none;
+}
+.get-hired-section .dashboard .profile-data .upload-video-pitch-section .publish-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #5ac2ca;
+}
+.get-hired-section .dashboard .profile-data .generate-eval-section .intro {
+  max-height: calc(100vh - 352px);
+  overflow: auto;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get-hired-section .dashboard .profile-data .generate-eval-section .intro .generate-eval-intro-hdr {
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 100%;
+}
+.get-hired-section .dashboard .profile-data .generate-eval-section .intro .generate-eval-intro-hdr p {
+  text-align: justify;
+}
+.get-hired-section .dashboard .profile-data .generate-eval-section .intro .generate-btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #263650;
+}
+.get-hired-section .dashboard .profile-data .generate-eval-section .eval-dtls .hdr-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #10b0ac;
+  text-decoration: underline;
+}
+.get-hired-section .dashboard .profile-data .generate-eval-section .eval-dtls .eval .hdr {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.get-hired-section .dashboard .profile-data .generate-eval-section .eval-dtls .eval .txt {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.get-hired-section .dashboard .profile-data .generate-eval-section .eval-dtls .eval ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+.get-hired-section .dashboard .profile-data .generate-eval-section .eval-dtls .req-coach-btn {
+  border: 0;
+  font-size: 1.1rem;
+}
+.get-hired-section .dashboard .profile-data .congrats-note-section .intro {
+  max-height: calc(100vh - 352px);
+  overflow: auto;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get-hired-section .dashboard .profile-data .congrats-note-section .intro .congrats-hdr {
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 100%;
+}
+.get-hired-section .dashboard .profile-data .congrats-note-section .intro .congrats-hdr p {
+  text-align: justify;
+}
+.get-hired-section .dashboard .profile-data .congrats-note-section .intro .my-profile-btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #263650;
+  border: 0;
+  font-size: 1.1rem;
+}
 .get-hired-section .dashboard .profile-data .to-fro-btns {
   display: flex;
   justify-content: end;
@@ -1715,6 +1938,26 @@ label {
 @media screen and (max-width: 1101px) {
   .get-hired-section .dashboard {
     height: calc(100vh - 194px);
+  }
+  .get-hired-section .dashboard .profile-data .personal-info-form {
+    max-height: calc(100vh - 371px);
+  }
+  .get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches #interview-prep-tabContent {
+    max-height: calc(100vh - 332px);
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section {
+    max-height: calc(100vh - 387px);
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .intro {
+    max-height: calc(100vh - 371px);
+  }
+  .get-hired-section .dashboard .profile-data .congrats-note-section .intro {
+    max-height: calc(100vh - 371px);
+  }
+}
+@media screen and (max-width: 1071px) {
+  .get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches #interview-prep-tabContent {
+    max-height: calc(100vh - 356px);
   }
 }
 @media screen and (max-width: 992px) {
@@ -1769,6 +2012,9 @@ label {
   .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .indicator .title {
     font-size: 0.7rem;
   }
+  .get-hired-section .dashboard .profile-data .personal-info-form {
+    max-height: calc(100vh - 329px);
+  }
   .get-hired-section .dashboard .profile-data .upload-resume-form {
     max-height: calc(100vh - 345px);
     padding-right: 0.5rem;
@@ -1792,6 +2038,38 @@ label {
   }
   .get-hired-section .dashboard .profile-data .personality-assessment-section .qstn-types-lst .qstn-type {
     width: 60%;
+  }
+  .get-hired-section .dashboard .profile-data .interview-prep-section .intro {
+    max-height: calc(100vh - 329px);
+  }
+  .get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches #interview-prep-tabContent {
+    max-height: calc(100vh - 310px);
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section {
+    max-height: calc(100vh - 345px);
+    padding-right: 0.5rem;
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section .video-pitch-hdr {
+    padding: 0;
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section .upload-btns {
+    display: block;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section .video-btn {
+    width: 100%;
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .intro {
+    max-height: calc(100vh - 329px);
+  }
+  .get-hired-section .dashboard .profile-data .congrats-note-section .intro {
+    max-height: calc(100vh - 329px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches .nav-item .nav-link {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1871,10 +2149,29 @@ label {
   .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .indicator .title {
     font-size: 0.65rem;
   }
+  .get-hired-section .dashboard .profile-data .personal-info-form {
+    max-height: calc(100vh - 317px);
+  }
   .get-hired-section .dashboard .profile-data .upload-resume-form {
     margin-top: 0;
     max-height: calc(100vh - 317px);
     padding-right: 0.5rem;
+  }
+  .get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches #interview-prep-tabContent {
+    max-height: calc(100vh - 269px);
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section {
+    margin-top: 0;
+    max-height: calc(100vh - 317px);
+    padding-right: 0.5rem;
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .intro {
+    max-height: calc(100vh - 313px);
+  }
+}
+@media screen and (max-width: 654px) {
+  .get-hired-section .dashboard .profile-data .interview-prep-section .interview-pitches #interview-prep-tabContent {
+    max-height: calc(100vh - 288px);
   }
 }
 @media screen and (max-width: 576px) {
@@ -2067,6 +2364,77 @@ label {
     border-left: 3px solid #27364d;
   }
   .get-hired-section .dashboard .profile-data .personality-assessment-section .thanks-note .thanks-hdr {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .profile-data .interview-prep-section .intro {
+    max-height: calc(100vh - 256px);
+    overflow: auto;
+    padding-right: 0.25rem;
+  }
+  .get-hired-section .dashboard .profile-data .interview-prep-section .intro .interview-prep-intor-hdr {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .profile-data .interview-prep-section .intro .okay-btn {
+    width: 5rem;
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section {
+    margin-top: 0;
+    max-height: calc(100vh - 244px);
+    padding-right: 0.5rem;
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section .video-pitch-hdr {
+    font-size: 1rem;
+    margin-top: 0rem;
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section .upload-btns {
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section .upload-btns .video-btn .custom-file-upload input[type=file]::file-selector-button {
+    font-size: 0.8rem;
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section .upload-btns .video-btn .form-control,
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section .upload-btns .video-btn .btn {
+    font-size: 0.8rem;
+  }
+  .get-hired-section .dashboard .profile-data .upload-video-pitch-section .upload-btns .publish-btn {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .intro {
+    max-height: calc(100vh - 254px);
+    padding-right: 0.25rem;
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .intro .generate-eval-intro-hdr {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .intro .generate-btn {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .eval-dtls .hdr-title {
+    font-size: 1.2rem;
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .eval-dtls .eval .hdr {
+    font-size: 1.1rem;
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .eval-dtls .eval .txt {
+    font-size: 0.9rem;
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .eval-dtls .eval ul {
+    padding-left: 1.2rem;
+  }
+  .get-hired-section .dashboard .profile-data .generate-eval-section .eval-dtls .req-coach-btn {
+    border: 0;
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .profile-data .congrats-note-section .intro {
+    max-height: calc(100vh - 254px);
+    padding-right: 0.25rem;
+  }
+  .get-hired-section .dashboard .profile-data .congrats-note-section .intro .congrats-hdr {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .profile-data .congrats-note-section .intro .my-profile-btn {
     font-size: 1rem;
   }
   .get-hired-section .dashboard .profile-data .to-fro-btns {
