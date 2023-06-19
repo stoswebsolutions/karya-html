@@ -1,0 +1,308 @@
+// styles
+@import '../assets/styles.scss';
+
+.stepper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 3.2rem 1.5rem;
+  border: 2px solid #263650;
+  border-radius: 1.5rem;
+  .hor-line {
+    display: block;
+    width: 5rem;
+    height: 0.1rem;
+    background-color: #7f7f7f;
+  }
+  .ver-line {
+    display: block;
+    width: 0.16rem;
+    height: 1rem;
+    background-color: #7f7f7f;
+  }
+  .start {
+    display: flex;
+    align-items: center;
+    margin-right: 0.3rem;
+    .txt {
+      margin-right: 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #27364d;
+    }
+    .circle {
+      width: 0.5rem;
+      height: 0.5rem;
+      display: block;
+      background-color: $primary-color;
+      border-radius: 100%;
+      box-shadow: 0px 0px 0px 0.35rem $yellow-color;
+    }
+  }
+  .personal-info {
+    .progress-lines {
+      .hor-line {
+        width: 2.5rem;
+      }
+    }
+    &:after {
+      content: 'Personal\aInformation';
+      position: absolute;
+      top: 1.5rem;
+      left: 28%;
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 0.8rem;
+      color: #2e3c53;
+    }
+  }
+  .upload-resume {
+    &:after {
+      content: 'Upload\aResume';
+      position: absolute;
+      top: 1.5rem;
+      left: 70%;
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 0.8rem;
+      color: #2e3c53;
+    }
+  }
+  .personality-assessment {
+    &:after {
+      content: 'Personality\a Assessment';
+      position: absolute;
+      top: 1.5rem;
+      left: 59%;
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 0.8rem;
+      color: #2e3c53;
+    }
+  }
+  .interview-prep {
+    &:after {
+      content: 'Interview\a Preperation';
+      position: absolute;
+      top: 1.5rem;
+      left: 63%;
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 0.8rem;
+      color: #2e3c53;
+    }
+  }
+  .upload-vid {
+    &:after {
+      content: 'Upload\a Video';
+      position: absolute;
+      top: 1.5rem;
+      left: 75%;
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 0.8rem;
+      color: #2e3c53;
+    }
+  }
+  .incomplete {
+    display: flex;
+    align-items: center;
+    .hor-line {
+      width: 2.5rem;
+    }
+    .txt {
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-left: 1rem;
+      color: #27364d;
+    }
+    .circle {
+      width: 0.5rem;
+      height: 0.5rem;
+      display: block;
+      background-color: #fff;
+      border-radius: 100%;
+      box-shadow: 0px 0px 0px 0.35rem #7f7f7f;
+    }
+  }
+  .complete {
+    .hor-line {
+      background-color: $yellow-color;
+    }
+    .circle {
+      background-color: $primary-color;
+      box-shadow: 0px 0px 0px 0.35rem $yellow-color;
+    }
+  }
+  .completed {
+    .hor-line,
+    .ver-line {
+      background-color: $yellow-color;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .get-hired-section {
+    .dashboard {
+      .profile-data {
+        .for-stepper {
+          overflow: auto;
+          justify-content: unset !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .get-hired-section {
+    .dashboard {
+      .profile-data {
+        .for-stepper {
+          overflow: auto;
+          justify-content: center !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 626px) {
+  .get-hired-section {
+    .dashboard {
+      .profile-data {
+        .for-stepper {
+          justify-content: unset !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .get-hired-section {
+    .dashboard {
+      .profile-data {
+        .for-stepper {
+          justify-content: center !important;
+        }
+      }
+    }
+  }
+
+  .stepper-container {
+    border: 1.5px solid #263650;
+    padding: 0.8rem 0.8rem 1.9rem 0.8rem;
+    border-radius: 0.5rem;
+    .hor-line {
+      width: 3rem;
+    }
+    .ver-line {
+      height: 0.6rem;
+      width: 0.1rem;
+    }
+    .start {
+      margin-right: 0.25rem;
+      .txt {
+        font-size: 0.6rem;
+        margin-right: 0.5rem;
+      }
+      .circle {
+        width: 0.3rem;
+        height: 0.3rem;
+        box-shadow: 0px 0px 0px 0.25rem $yellow-color;
+      }
+    }
+    .personal-info {
+      .progress-lines {
+        .hor-line {
+          width: 1.5rem;
+        }
+      }
+      &:after {
+        font-size: 0.6rem;
+        line-height: 0.6rem;
+        top: 0.7rem;
+        left: -7%;
+      }
+    }
+    .upload-resume {
+      &:after {
+        color: #2e3c53;
+        font-size: 0.6rem;
+        line-height: 0.6rem;
+        top: 0.7rem;
+        left: 58%;
+      }
+    }
+    .personality-assessment {
+      &:after {
+        font-size: 0.6rem;
+        line-height: 0.6rem;
+        top: 0.7rem;
+        left: 40%;
+      }
+    }
+    .interview-prep {
+      &:after {
+        font-size: 0.6rem;
+        line-height: 0.6rem;
+        top: 0.7rem;
+        left: 59%;
+      }
+    }
+    .upload-vid {
+      &:after {
+        font-size: 0.6rem;
+        line-height: 0.6rem;
+        top: 0.7rem;
+        left: 66%;
+      }
+    }
+    .incomplete {
+      .hor-line {
+        width: 1.5rem;
+      }
+      .circle {
+        width: 0.3rem;
+        height: 0.3rem;
+        box-shadow: 0px 0px 0px 0.25rem #7f7f7f;
+      }
+      .txt {
+        font-size: 0.6rem;
+        margin-left: 0.5rem;
+      }
+    }
+    .complete {
+      .hor-line {
+        width: 1.5rem;
+      }
+      .circle {
+        background-color: $primary-color;
+        box-shadow: 0px 0px 0px 0.25rem $yellow-color;
+      }
+      .txt {
+        font-size: 0.6rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .get-hired-section {
+    .dashboard {
+      .profile-data {
+        .for-stepper {
+          justify-content: unset !important;
+        }
+      }
+    }
+  }
+}

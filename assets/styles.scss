@@ -256,6 +256,21 @@ label {
   }
 }
 
+.gx-5rem {
+  --bs-gutter-x: 5rem;
+}
+
+.karya-select {
+  border: 1px solid $secondary-color;
+  color: $primary-color;
+  font-size: 0.8rem;
+  font-weight: 500;
+  &:focus {
+    box-shadow: none;
+    border: 1px solid $secondary-color !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .d-none-tab {
     display: none;

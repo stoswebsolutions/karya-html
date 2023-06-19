@@ -237,6 +237,21 @@ label {
   text-align: center;
 }
 
+.gx-5rem {
+  --bs-gutter-x: 5rem;
+}
+
+.karya-select {
+  border: 1px solid #8dcdcb;
+  color: #263650;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.karya-select:focus {
+  box-shadow: none;
+  border: 1px solid #8dcdcb !important;
+}
+
 @media screen and (max-width: 768px) {
   .d-none-tab {
     display: none;

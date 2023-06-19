@@ -1,0 +1,1821 @@
+@font-face {
+  font-family: "Abeatbykai";
+  src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
+}
+/* Light */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Normal */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+/* Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+html,
+body {
+  font-family: "Abeatbykai", sans-serif;
+  font-family: "CreatoDisplay", sans-serif;
+  font-size: 16px;
+}
+
+.font-kai {
+  font-family: "Abeatbykai", sans-serif;
+}
+
+.font-cd {
+  font-family: "CreatoDisplay", sans-serif;
+}
+
+.pri-clr {
+  color: #263650;
+}
+
+.pri-bg {
+  background-color: #263650;
+}
+
+.sec-clr {
+  color: #8dcdcb;
+}
+
+.sec-bg {
+  background-color: #8dcdcb;
+}
+
+.yellow-clr {
+  color: #f4d552;
+}
+
+.yellow-bg {
+  background-color: #f4d552;
+}
+
+.lite-white {
+  color: #f2f2f2;
+}
+
+.black-clr {
+  color: #000000;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.5625rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+}
+
+.fs-11 {
+  font-size: 0.6875rem !important;
+}
+
+.fs-12 {
+  font-size: 0.75rem !important;
+}
+
+.fs-13 {
+  font-size: 0.8125rem !important;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-15 {
+  font-size: 0.9375rem !important;
+}
+
+.fs-16 {
+  font-size: 1rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263650;
+}
+
+::-webkit-scrollbar-track {
+  background: #939ba8;
+}
+
+body {
+  scrollbar-face-color: #263650;
+  scrollbar-track-color: #939ba8;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.karya-px {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.karya-py {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.karya-p {
+  padding: 4rem;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+.hoverable:hover {
+  opacity: 0.7;
+}
+
+.karya-btn {
+  padding: 0.2rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
+
+.karya-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.karya-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+.gx-5rem {
+  --bs-gutter-x: 5rem;
+}
+
+.karya-select {
+  border: 1px solid #8dcdcb;
+  color: #263650;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.karya-select:focus {
+  box-shadow: none;
+  border: 1px solid #8dcdcb !important;
+}
+
+@media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: "Abeatbykai";
+  src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
+}
+/* Light */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Normal */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+/* Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+html,
+body {
+  font-family: "Abeatbykai", sans-serif;
+  font-family: "CreatoDisplay", sans-serif;
+  font-size: 16px;
+}
+
+.font-kai {
+  font-family: "Abeatbykai", sans-serif;
+}
+
+.font-cd {
+  font-family: "CreatoDisplay", sans-serif;
+}
+
+.pri-clr {
+  color: #263650;
+}
+
+.pri-bg {
+  background-color: #263650;
+}
+
+.sec-clr {
+  color: #8dcdcb;
+}
+
+.sec-bg {
+  background-color: #8dcdcb;
+}
+
+.yellow-clr {
+  color: #f4d552;
+}
+
+.yellow-bg {
+  background-color: #f4d552;
+}
+
+.lite-white {
+  color: #f2f2f2;
+}
+
+.black-clr {
+  color: #000000;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.5625rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+}
+
+.fs-11 {
+  font-size: 0.6875rem !important;
+}
+
+.fs-12 {
+  font-size: 0.75rem !important;
+}
+
+.fs-13 {
+  font-size: 0.8125rem !important;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-15 {
+  font-size: 0.9375rem !important;
+}
+
+.fs-16 {
+  font-size: 1rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263650;
+}
+
+::-webkit-scrollbar-track {
+  background: #939ba8;
+}
+
+body {
+  scrollbar-face-color: #263650;
+  scrollbar-track-color: #939ba8;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.karya-px {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.karya-py {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.karya-p {
+  padding: 4rem;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+.hoverable:hover {
+  opacity: 0.7;
+}
+
+.karya-btn {
+  padding: 0.2rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
+
+.karya-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.karya-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+.gx-5rem {
+  --bs-gutter-x: 5rem;
+}
+
+.karya-select {
+  border: 1px solid #8dcdcb;
+  color: #263650;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.karya-select:focus {
+  box-shadow: none;
+  border: 1px solid #8dcdcb !important;
+}
+
+@media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+}
+nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+nav .brand {
+  width: 10rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+nav ul a:hover {
+  opacity: 0.7;
+}
+nav .menu-icon {
+  display: none;
+  color: #263650;
+  cursor: pointer;
+}
+nav .menu-icon:hover {
+  opacity: 0.7;
+}
+
+#offcanvasMenu {
+  display: none;
+  width: 15rem;
+  background: linear-gradient(rgb(50, 201, 194), rgb(50, 201, 194));
+}
+#offcanvasMenu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+#offcanvasMenu ul li {
+  margin-bottom: 1.5rem;
+}
+#offcanvasMenu ul a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#offcanvasMenu ul a:hover {
+  opacity: 0.7;
+}
+
+.offcanvas-backdrop {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #offcanvasMenu,
+  .offcanvas-backdrop {
+    display: block;
+  }
+  nav .brand {
+    width: 9rem;
+  }
+  nav ul {
+    display: none !important;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #offcanvasMenu {
+    width: 10rem;
+  }
+  #offcanvasMenu ul li {
+    margin-bottom: 1rem;
+  }
+  #offcanvasMenu ul a {
+    font-size: 0.8rem;
+  }
+}
+@font-face {
+  font-family: "Abeatbykai";
+  src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
+}
+/* Light */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Normal */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+/* Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+html,
+body {
+  font-family: "Abeatbykai", sans-serif;
+  font-family: "CreatoDisplay", sans-serif;
+  font-size: 16px;
+}
+
+.font-kai {
+  font-family: "Abeatbykai", sans-serif;
+}
+
+.font-cd {
+  font-family: "CreatoDisplay", sans-serif;
+}
+
+.pri-clr {
+  color: #263650;
+}
+
+.pri-bg {
+  background-color: #263650;
+}
+
+.sec-clr {
+  color: #8dcdcb;
+}
+
+.sec-bg {
+  background-color: #8dcdcb;
+}
+
+.yellow-clr {
+  color: #f4d552;
+}
+
+.yellow-bg {
+  background-color: #f4d552;
+}
+
+.lite-white {
+  color: #f2f2f2;
+}
+
+.black-clr {
+  color: #000000;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.5625rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+}
+
+.fs-11 {
+  font-size: 0.6875rem !important;
+}
+
+.fs-12 {
+  font-size: 0.75rem !important;
+}
+
+.fs-13 {
+  font-size: 0.8125rem !important;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-15 {
+  font-size: 0.9375rem !important;
+}
+
+.fs-16 {
+  font-size: 1rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263650;
+}
+
+::-webkit-scrollbar-track {
+  background: #939ba8;
+}
+
+body {
+  scrollbar-face-color: #263650;
+  scrollbar-track-color: #939ba8;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.karya-px {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.karya-py {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.karya-p {
+  padding: 4rem;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+.hoverable:hover {
+  opacity: 0.7;
+}
+
+.karya-btn {
+  padding: 0.2rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
+
+.karya-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.karya-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+.gx-5rem {
+  --bs-gutter-x: 5rem;
+}
+
+.karya-select {
+  border: 1px solid #8dcdcb;
+  color: #263650;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.karya-select:focus {
+  box-shadow: none;
+  border: 1px solid #8dcdcb !important;
+}
+
+@media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+}
+.stepper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 3.2rem 1.5rem;
+  border: 2px solid #263650;
+  border-radius: 1.5rem;
+}
+.stepper-container .hor-line {
+  display: block;
+  width: 5rem;
+  height: 0.1rem;
+  background-color: #7f7f7f;
+}
+.stepper-container .ver-line {
+  display: block;
+  width: 0.16rem;
+  height: 1rem;
+  background-color: #7f7f7f;
+}
+.stepper-container .start {
+  display: flex;
+  align-items: center;
+  margin-right: 0.3rem;
+}
+.stepper-container .start .txt {
+  margin-right: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #27364d;
+}
+.stepper-container .start .circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  background-color: #263650;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px 0.35rem #f4d552;
+}
+.stepper-container .personal-info .progress-lines .hor-line {
+  width: 2.5rem;
+}
+.stepper-container .personal-info:after {
+  content: "Personal\aInformation";
+  position: absolute;
+  top: 1.5rem;
+  left: 28%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .upload-resume:after {
+  content: "Upload\aResume";
+  position: absolute;
+  top: 1.5rem;
+  left: 70%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .personality-assessment:after {
+  content: "Personality\a Assessment";
+  position: absolute;
+  top: 1.5rem;
+  left: 59%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .interview-prep:after {
+  content: "Interview\aPreperation";
+  position: absolute;
+  top: 1.5rem;
+  left: 63%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .upload-vid:after {
+  content: "Upload\aVideo";
+  position: absolute;
+  top: 1.5rem;
+  left: 75%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .incomplete {
+  display: flex;
+  align-items: center;
+}
+.stepper-container .incomplete .hor-line {
+  width: 2.5rem;
+}
+.stepper-container .incomplete .txt {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  color: #27364d;
+}
+.stepper-container .incomplete .circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px 0.35rem #7f7f7f;
+}
+.stepper-container .complete .hor-line {
+  background-color: #f4d552;
+}
+.stepper-container .complete .circle {
+  background-color: #263650;
+  box-shadow: 0px 0px 0px 0.35rem #f4d552;
+}
+.stepper-container .completed .hor-line,
+.stepper-container .completed .ver-line {
+  background-color: #f4d552;
+}
+
+@media screen and (max-width: 860px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    overflow: auto;
+    justify-content: unset !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    overflow: auto;
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 626px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    justify-content: unset !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    justify-content: center !important;
+  }
+  .stepper-container {
+    border: 1.5px solid #263650;
+    padding: 0.8rem 0.8rem 1.9rem 0.8rem;
+    border-radius: 0.5rem;
+  }
+  .stepper-container .hor-line {
+    width: 3rem;
+  }
+  .stepper-container .ver-line {
+    height: 0.6rem;
+    width: 0.1rem;
+  }
+  .stepper-container .start {
+    margin-right: 0.25rem;
+  }
+  .stepper-container .start .txt {
+    font-size: 0.6rem;
+    margin-right: 0.5rem;
+  }
+  .stepper-container .start .circle {
+    width: 0.3rem;
+    height: 0.3rem;
+    box-shadow: 0px 0px 0px 0.25rem #f4d552;
+  }
+  .stepper-container .personal-info .progress-lines .hor-line {
+    width: 1.5rem;
+  }
+  .stepper-container .personal-info:after {
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: -7%;
+  }
+  .stepper-container .upload-resume:after {
+    color: #2e3c53;
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 58%;
+  }
+  .stepper-container .personality-assessment:after {
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 40%;
+  }
+  .stepper-container .interview-prep:after {
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 59%;
+  }
+  .stepper-container .upload-vid:after {
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 66%;
+  }
+  .stepper-container .incomplete .hor-line {
+    width: 1.5rem;
+  }
+  .stepper-container .incomplete .circle {
+    width: 0.3rem;
+    height: 0.3rem;
+    box-shadow: 0px 0px 0px 0.25rem #7f7f7f;
+  }
+  .stepper-container .incomplete .txt {
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+  }
+  .stepper-container .complete .hor-line {
+    width: 1.5rem;
+  }
+  .stepper-container .complete .circle {
+    background-color: #263650;
+    box-shadow: 0px 0px 0px 0.25rem #f4d552;
+  }
+  .stepper-container .complete .txt {
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 398px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    justify-content: unset !important;
+  }
+}
+.karya-container {
+  scroll-snap-align: unset;
+  overflow-y: auto;
+}
+.karya-container .karya-section {
+  scroll-snap-align: unset;
+}
+
+.get-hired-section nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.get-hired-section nav ul a {
+  color: #263650;
+}
+.get-hired-section .user-details {
+  padding-bottom: 1rem;
+}
+.get-hired-section .user-details .user-greet {
+  margin-right: 2rem;
+}
+.get-hired-section .user-details .user-greet .greeting {
+  font-size: 3.4rem;
+  margin-right: 8rem;
+}
+.get-hired-section .user-details .user-greet .username {
+  font-size: 2.2rem;
+}
+.get-hired-section .user-details .status .status-txt {
+  font-size: 0.8rem;
+}
+.get-hired-section .switchToggle input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.get-hired-section .switchToggle label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 5rem;
+  max-width: 5rem;
+  height: 1.5rem;
+  background: #263650;
+  display: block;
+  border-radius: 15rem;
+  position: relative;
+}
+.get-hired-section .switchToggle label:after {
+  content: "";
+  position: absolute;
+  top: 6%;
+  left: 3%;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: #f4d552;
+  border-radius: 15rem;
+  transition: all 0.3s;
+}
+.get-hired-section .switchToggle input:checked + label,
+.get-hired-section .switchToggle input:checked + input + label {
+  background: #263650;
+}
+.get-hired-section .switchToggle input + label:before,
+.get-hired-section .switchToggle input + input + label:before {
+  content: "OFF";
+  position: absolute;
+  top: 15%;
+  right: 25%;
+  font-size: 0.8rem;
+  border-radius: 15rem;
+  transition: 0.3s;
+  text-indent: 0;
+  color: #fff;
+}
+.get-hired-section .switchToggle input:checked + label:before,
+.get-hired-section .switchToggle input:checked + input + label:before {
+  content: "ON";
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  font-size: 0.8rem;
+  border-radius: 15rem;
+  transition: 0.3s;
+  text-indent: 0;
+  color: #fff;
+}
+.get-hired-section .switchToggle input:checked + label:after,
+.get-hired-section .switchToggle input:checked + input + label:after {
+  top: 6%;
+  right: 2%;
+  left: auto;
+  background-color: #fff;
+}
+.get-hired-section .switchToggle label:active:after {
+  width: 60px;
+}
+.get-hired-section .toggle-switchArea {
+  margin: 10px 0 10px 0;
+}
+.get-hired-section #offcanvasMenu ul a {
+  color: #263650;
+}
+.get-hired-section .dashboard {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f9f9f9;
+}
+.get-hired-section .dashboard .menu {
+  padding-left: 4rem;
+  padding-right: 2rem;
+  flex: 0 0 auto;
+}
+.get-hired-section .dashboard .menu .menu-items {
+  list-style: none;
+}
+.get-hired-section .dashboard .menu .menu-items .menu-item {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #313f55;
+  position: relative;
+  cursor: pointer;
+}
+.get-hired-section .dashboard .menu .menu-items .profile,
+.get-hired-section .dashboard .menu .menu-items .myAccount {
+  padding: 0;
+}
+.get-hired-section .dashboard .menu .menu-items .active::before {
+  content: "";
+  position: absolute;
+  width: 0.3rem;
+  height: 1.5rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: #f4d552;
+  left: -1.5rem;
+}
+.get-hired-section .dashboard .menu .menu-items .menu-item:first-child {
+  padding-top: 0 !important;
+  color: #3c8c8a;
+  font-size: 1.2rem;
+}
+.get-hired-section .dashboard .menu .menu-items .forDashboard::before {
+  top: 3%;
+  transform: unset;
+}
+.get-hired-section .dashboard .menu .menu-items .profile-dropdown .profile-dropdown-toggle,
+.get-hired-section .dashboard .menu .menu-items .profile-dropdown .myAcc-dropdown-toggle,
+.get-hired-section .dashboard .menu .menu-items .myAcc-dropdown .profile-dropdown-toggle,
+.get-hired-section .dashboard .menu .menu-items .myAcc-dropdown .myAcc-dropdown-toggle {
+  width: 100%;
+  background: transparent;
+  padding: 1rem 0;
+  text-align: left;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #313f55;
+  text-transform: uppercase;
+}
+.get-hired-section .dashboard .menu .menu-items .profile-dropdown .profile-dropdown-toggle::after,
+.get-hired-section .dashboard .menu .menu-items .profile-dropdown .myAcc-dropdown-toggle::after,
+.get-hired-section .dashboard .menu .menu-items .myAcc-dropdown .profile-dropdown-toggle::after,
+.get-hired-section .dashboard .menu .menu-items .myAcc-dropdown .myAcc-dropdown-toggle::after {
+  position: absolute;
+  top: 38%;
+  left: 90%;
+  font-size: 1rem;
+}
+.get-hired-section .dashboard .menu .menu-items .profile-dropdown ul,
+.get-hired-section .dashboard .menu .menu-items .myAcc-dropdown ul {
+  border: 0px;
+  padding: 0;
+  border-radius: 0;
+}
+.get-hired-section .dashboard .menu .menu-items .profile-dropdown ul button,
+.get-hired-section .dashboard .menu .menu-items .myAcc-dropdown ul button {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 1rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #313f55;
+  position: relative;
+  cursor: pointer;
+}
+.get-hired-section .dashboard .select-menu {
+  display: none;
+}
+.get-hired-section .dashboard .data {
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+.get-hired-section .dashboard .dashboard-data .info {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.get-hired-section .dashboard .dashboard-data .step .step-banner {
+  background-color: #f7f7f7;
+  color: #ff214f;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+.get-hired-section .dashboard .dashboard-data .step .step-num {
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+.get-hired-section .dashboard .dashboard-data .step .fa {
+  color: #a6a6a6;
+  font-size: 2rem;
+}
+.get-hired-section .dashboard .dashboard-data .step .title {
+  color: #3d8c8a;
+  text-align: center;
+  font-weight: 600;
+}
+.get-hired-section .dashboard .dashboard-data .step .step-info {
+  color: #27364d;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 600;
+}
+.get-hired-section .dashboard .status-data {
+  width: 100%;
+}
+.get-hired-section .dashboard .status-data .info {
+  margin-bottom: 1rem;
+}
+.get-hired-section .dashboard .status-data .stats-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #d6f2ef;
+  border-radius: 1rem;
+  border: 2px solid #d8dede;
+}
+.get-hired-section .dashboard .status-data .stats-card h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+  color: #27364d;
+}
+.get-hired-section .dashboard .status-data .stats-card h6 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+  color: #344459;
+}
+.get-hired-section .dashboard .status-data .stats-card img {
+  width: 100%;
+}
+.get-hired-section .dashboard .status-data .h-48 {
+  height: 48.5%;
+}
+.get-hired-section .dashboard .status-data .jobs-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.get-hired-section .dashboard .status-data .jobs-card .stats-sub-card {
+  margin: 0.5rem;
+}
+.get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .content {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  border: 2px solid #d8dede;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+.get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .content h1 {
+  font-size: 3.2rem;
+}
+.get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .content h6 {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+.get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .indicator .title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #595959;
+}
+.get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .matches-indicator,
+.get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .applied-indicator {
+  display: block;
+  border-radius: 0.2rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #f5d755;
+}
+.get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .applied-indicator {
+  background-color: #27364d;
+}
+.get-hired-section .dashboard .profile-data {
+  width: 100%;
+}
+.get-hired-section .dashboard .profile-data .for-stepper {
+  padding-bottom: 1rem;
+}
+.get-hired-section .dashboard .profile-data .profile-form {
+  max-height: calc(100vh - 352px);
+  overflow: auto;
+}
+.get-hired-section .dashboard .profile-data .profile-form ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a6a6a6;
+  opacity: 1; /* Firefox */
+  font-size: 0.8rem;
+}
+.get-hired-section .dashboard .profile-data .profile-form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a6a6a6;
+  opacity: 1; /* Firefox */
+  font-size: 0.8rem;
+}
+.get-hired-section .dashboard .profile-data .profile-form input,
+.get-hired-section .dashboard .profile-data .profile-form select {
+  border: 1px solid #c9ced1;
+  color: #263650;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.get-hired-section .dashboard .profile-data .profile-form input:focus,
+.get-hired-section .dashboard .profile-data .profile-form select:focus {
+  box-shadow: none !important;
+}
+.get-hired-section .dashboard .profile-data .profile-form .fa {
+  color: #a6a6a6;
+}
+.get-hired-section .dashboard .profile-data .profile-form form {
+  padding: 1rem 1rem 0 1rem;
+}
+.get-hired-section .dashboard .profile-data .profile-form .form-2 select {
+  border-bottom-left-radius: 0;
+}
+.get-hired-section .dashboard .profile-data .profile-form .form-2 .info-txt {
+  background-color: #f2f4fa;
+  color: #7b7b7c;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border: 1px solid #c9ced1;
+  border-top: 0;
+  border-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-left: 0.1% !important;
+}
+.get-hired-section .dashboard .profile-data .profile-form .vacancy-details {
+  padding: 1rem;
+}
+.get-hired-section .dashboard .profile-data .profile-form .vacancy-details .vacancy-hdr {
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.get-hired-section .dashboard .profile-data .profile-form .vacancy-details .vacancy-btns {
+  border: 2px solid #cbcbcb;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.get-hired-section .dashboard .profile-data .profile-form .vacancy-details .vacancy-btns .btn {
+  border: 2px solid #7f7f7f;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.get-hired-section .dashboard .profile-data .profile-form .vacancy-details .vacancy-btns .btn:hover {
+  opacity: 0.7;
+}
+.get-hired-section .dashboard .profile-data .profile-form .vacancy-details .vacancy-btns .activeBtn {
+  margin-bottom: 0.25rem;
+  background-color: #f4d552;
+  color: #263650;
+}
+.get-hired-section .dashboard .profile-data .profile-form .vacancy-details .vacancy-btns .inactiveBtn {
+  background-color: #d9d9d9;
+  color: #7f7f7f;
+  pointer-events: none;
+}
+.get-hired-section .dashboard .profile-data .to-fro-btns {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+.get-hired-section .dashboard .profile-data .to-fro-btns .btn {
+  background-color: #5ac2ca;
+  color: #fff;
+  border: 2px solid #000000;
+  font-size: 0.7rem;
+  font-weight: 500;
+  width: 5.5rem;
+}
+.get-hired-section .dashboard .profile-data .to-fro-btns .btn:hover {
+  opacity: 0.7;
+}
+.get-hired-section .dashboard .profile-data .to-fro-btns .back-btn {
+  margin-right: 1rem;
+}
+.get-hired-section .dashboard {
+  height: calc(100vh - 175px);
+}
+.get-hired-section .dashboard .menu,
+.get-hired-section .dashboard .data {
+  max-height: calc(100vh - 175px);
+}
+.get-hired-section .dashboard .data {
+  overflow: auto;
+}
+
+@media screen and (max-width: 1101px) {
+  .get-hired-section .dashboard {
+    height: calc(100vh - 194px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .get-hired-section .user-details .user-greet {
+    margin-right: 2rem;
+  }
+  .get-hired-section .user-details .user-greet .greeting {
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+  .get-hired-section .user-details .user-greet .username {
+    font-size: 1.3rem;
+  }
+  .get-hired-section .dashboard {
+    height: calc(100vh - 148px);
+  }
+  .get-hired-section .dashboard .menu .menu-items .menu-item {
+    font-size: 0.8rem;
+  }
+  .get-hired-section .dashboard .menu .menu-items .menu-item:first-child {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .gx-5rem {
+    --bs-gutter-x: 2rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .info {
+    font-size: 1.1rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .step .title {
+    font-size: 1.1rem;
+  }
+  .get-hired-section .dashboard .status-data .info {
+    font-size: 1.1rem;
+  }
+  .get-hired-section .dashboard .status-data .stats-card h1 {
+    font-size: 2.5rem;
+  }
+  .get-hired-section .dashboard .status-data .stats-card h6 {
+    font-size: 0.75rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .content h1 {
+    font-size: 2.2rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .content h6 {
+    font-size: 0.7rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .matches-indicator,
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .applied-indicator {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .indicator .title {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .get-hired-section nav {
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  .get-hired-section nav .brand {
+    width: 6rem;
+  }
+  .get-hired-section .user-details {
+    padding: 1rem;
+  }
+  .get-hired-section .user-details .user-greet {
+    margin-right: 1rem;
+  }
+  .get-hired-section .user-details .user-greet .greeting {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+  .get-hired-section .user-details .user-greet .username {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: calc(100vh - 119px);
+    flex-direction: column;
+  }
+  .get-hired-section .dashboard .data {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .get-hired-section .dashboard .menu {
+    display: none;
+  }
+  .get-hired-section .dashboard .select-menu {
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    justify-content: end;
+  }
+  .get-hired-section .dashboard .select-menu select {
+    width: auto;
+  }
+  .get-hired-section .dashboard .dashboard-data .gx-5rem {
+    --bs-gutter-x: 2rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .info {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .step .title {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .status-data .stats .gx-3 {
+    --bs-gutter-x: 0.5rem;
+  }
+  .get-hired-section .dashboard .status-data .info {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .status-data .stats-card h1 {
+    font-size: 2.2rem;
+  }
+  .get-hired-section .dashboard .status-data .stats-card h6 {
+    font-size: 0.7rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .content h1 {
+    font-size: 1.9rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .content h6 {
+    font-size: 0.65rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .matches-indicator,
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .applied-indicator {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .indicator .title {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .get-hired-section nav .brand {
+    width: 5rem;
+  }
+  .get-hired-section .user-details .user-greet {
+    margin-right: 0.5rem;
+  }
+  .get-hired-section .user-details .user-greet .greeting {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  .get-hired-section .user-details .user-greet .username {
+    font-size: 0.8rem;
+  }
+  .get-hired-section .user-details .status .status-txt {
+    font-size: 0.6rem;
+  }
+  .get-hired-section .switchToggle label {
+    width: 4rem;
+    max-width: 4rem;
+    height: 1rem;
+  }
+  .get-hired-section .switchToggle input + label:before,
+  .get-hired-section .get-hired-section .switchToggle input + input + label:before {
+    top: 14%;
+    right: 20%;
+    font-size: 0.6rem;
+  }
+  .get-hired-section .switchToggle label:after {
+    top: 2%;
+    left: 3%;
+    width: 1rem;
+    height: 1rem;
+  }
+  .get-hired-section .switchToggle input:checked + label:before,
+  .get-hired-section .get-hired-section .switchToggle input:checked + input + label:before {
+    top: 14%;
+    left: 20%;
+    font-size: 0.6rem;
+  }
+  .get-hired-section .switchToggle input:checked + label:after,
+  .get-hired-section .get-hired-section .switchToggle input:checked + input + label:after {
+    top: 2%;
+    right: 3%;
+    left: auto;
+  }
+  .get-hired-section .dashboard {
+    height: calc(100vh - 108px);
+  }
+  .get-hired-section .dashboard .data {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .info {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .step .step-banner {
+    padding: 0.8rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .step .step-num {
+    font-size: 0.9rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .step .fa {
+    font-size: 1.5rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .step .title {
+    font-size: 0.9rem;
+  }
+  .get-hired-section .dashboard .dashboard-data .step .step-info {
+    font-size: 0.7rem;
+  }
+  .get-hired-section .dashboard .status-data .info {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .get-hired-section .dashboard .status-data .stats .stats-row-1 {
+    margin-bottom: 0.6rem !important;
+  }
+  .get-hired-section .dashboard .status-data .h-48 {
+    height: 47.8%;
+  }
+  .get-hired-section .dashboard .status-data .stats-card h1 {
+    font-size: 1.8rem;
+  }
+  .get-hired-section .dashboard .status-data .stats-card h6 {
+    font-size: 0.6rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .content h1 {
+    font-size: 1.5rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .content h6 {
+    font-size: 0.6rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .matches-indicator,
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .applied-indicator {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .get-hired-section .dashboard .status-data .jobs-card .stats-sub-card .indicator .title {
+    font-size: 0.6rem;
+  }
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    padding-bottom: 0.5rem;
+  }
+  .get-hired-section .dashboard .profile-data .profile-form {
+    max-height: calc(100vh - 257px);
+  }
+  .get-hired-section .dashboard .profile-data .profile-form form {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+  .get-hired-section .dashboard .profile-data .profile-form .vacancy-details {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .get-hired-section .dashboard .profile-data .profile-form .vacancy-details .vacancy-hdr {
+    padding-top: 0;
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .profile-data .profile-form .vacancy-details .vacancy-btns .btn {
+    font-size: 0.8rem;
+  }
+  .get-hired-section .dashboard .profile-data .to-fro-btns {
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .get-hired-section .dashboard {
+    height: calc(100vh - 109px);
+  }
+  .get-hired-section .dashboard .profile-data .profile-form {
+    max-height: calc(100vh - 270px);
+  }
+}
+@media screen and (max-width: 398px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    margin-bottom: 0.5rem;
+  }
+}/*# sourceMappingURL=getHired.css.map */

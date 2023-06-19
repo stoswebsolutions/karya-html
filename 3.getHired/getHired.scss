@@ -1,0 +1,827 @@
+// styles
+@import '../assets/styles.scss';
+
+// nav
+@import '../assets/nav.scss';
+
+// stepper
+@import '../assets/stepper.scss';
+
+.karya-container {
+  scroll-snap-align: unset;
+  overflow-y: auto;
+  .karya-section {
+    scroll-snap-align: unset;
+  }
+}
+
+.get-hired-section {
+  nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    ul {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .user-details {
+    padding-bottom: 1rem;
+    .user-greet {
+      margin-right: 2rem;
+      .greeting {
+        font-size: 3.4rem;
+        margin-right: 8rem;
+      }
+      .username {
+        font-size: 2.2rem;
+      }
+    }
+    .status {
+      .status-txt {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  // for ON OFF switch
+  .switchToggle input[type='checkbox'] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+  .switchToggle label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 5rem;
+    max-width: 5rem;
+    height: 1.5rem;
+    background: $primary-color;
+    display: block;
+    border-radius: 15rem;
+    position: relative;
+  }
+  .switchToggle label:after {
+    content: '';
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: $yellow-color;
+    border-radius: 15rem;
+    transition: all 0.3s;
+  }
+  .switchToggle input:checked + label,
+  .switchToggle input:checked + input + label {
+    background: $primary-color;
+  }
+  .switchToggle input + label:before,
+  .switchToggle input + input + label:before {
+    content: 'OFF';
+    position: absolute;
+    top: 15%;
+    right: 25%;
+    font-size: 0.8rem;
+    border-radius: 15rem;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+  }
+  .switchToggle input:checked + label:before,
+  .switchToggle input:checked + input + label:before {
+    content: 'ON';
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    font-size: 0.8rem;
+    border-radius: 15rem;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+  }
+  .switchToggle input:checked + label:after,
+  .switchToggle input:checked + input + label:after {
+    top: 6%;
+    right: 2%;
+    left: auto;
+    background-color: #fff;
+  }
+  .switchToggle label:active:after {
+    width: 60px;
+  }
+  .toggle-switchArea {
+    margin: 10px 0 10px 0;
+  }
+  // ends::for ON OFF switch
+
+  #offcanvasMenu {
+    ul {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .dashboard {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #f9f9f9;
+    .menu {
+      padding-left: 4rem;
+      padding-right: 2rem;
+      flex: 0 0 auto;
+      .menu-items {
+        list-style: none;
+        .menu-item {
+          border-bottom: 1px solid #c4c4c4;
+          padding: 1rem 0;
+          font-size: 0.8rem;
+          font-weight: 600;
+          color: #313f55;
+          position: relative;
+          cursor: pointer;
+        }
+        .profile,
+        .myAccount {
+          padding: 0;
+        }
+        .active::before {
+          content: '';
+          position: absolute;
+          width: 0.3rem;
+          height: 1.5rem;
+          top: 50%;
+          transform: translate(0, -50%);
+          background: $yellow-color;
+          left: -1.5rem;
+        }
+        .menu-item:first-child {
+          padding-top: 0 !important;
+          color: #3c8c8a;
+          font-size: 1.2rem;
+        }
+        .forDashboard::before {
+          top: 3%;
+          transform: unset;
+        }
+        .profile-dropdown,
+        .myAcc-dropdown {
+          .profile-dropdown-toggle,
+          .myAcc-dropdown-toggle {
+            width: 100%;
+            background: transparent;
+            padding: 1rem 0;
+            text-align: left;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #313f55;
+            text-transform: uppercase;
+            &::after {
+              position: absolute;
+              top: 38%;
+              left: 90%;
+              font-size: 1rem;
+            }
+          }
+          ul {
+            border: 0px;
+            padding: 0;
+            border-radius: 0;
+            // top: 0.5rem !important;
+            button {
+              border-bottom: 1px solid #c4c4c4;
+              padding: 1rem 0.5rem;
+              font-size: 0.8rem;
+              font-weight: 600;
+              color: #313f55;
+              position: relative;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .select-menu {
+      display: none;
+    }
+    .data {
+      padding-left: 2rem;
+      padding-right: 4rem;
+    }
+    .dashboard-data {
+      .info {
+        text-align: justify;
+        margin-bottom: 1rem;
+      }
+      .step {
+        .step-banner {
+          background-color: #f7f7f7;
+          color: #ff214f;
+          font-size: 1rem;
+          font-weight: 600;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        .step-num {
+          margin-bottom: 0.2rem;
+          text-align: center;
+        }
+        .fa {
+          color: #a6a6a6;
+          font-size: 2rem;
+        }
+        .title {
+          color: #3d8c8a;
+          text-align: center;
+          font-weight: 600;
+        }
+        .step-info {
+          color: #27364d;
+          text-align: center;
+          font-size: 0.8rem;
+          line-height: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+    .status-data {
+      width: 100%;
+      .info {
+        margin-bottom: 1rem;
+      }
+      .stats-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        background-color: #d6f2ef;
+        border-radius: 1rem;
+        border: 2px solid #d8dede;
+        h1 {
+          font-size: 3.5rem;
+          font-weight: 600;
+          text-align: center;
+          margin-bottom: 0;
+          color: #27364d;
+        }
+        h6 {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          text-align: center;
+          margin-bottom: 0;
+          color: #344459;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .h-48 {
+        height: 48.5%;
+      }
+      .jobs-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .stats-sub-card {
+          margin: 0.5rem;
+          .content {
+            background-color: #fff;
+            border-radius: 0.8rem;
+            border: 2px solid #d8dede;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+            h1 {
+              font-size: 3.2rem;
+            }
+            h6 {
+              font-size: 0.75rem;
+              text-transform: capitalize;
+            }
+          }
+
+          .indicator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .title {
+              font-size: 0.75rem;
+              font-weight: 600;
+              color: #595959;
+            }
+          }
+          .matches-indicator,
+          .applied-indicator {
+            display: block;
+            border-radius: 0.2rem;
+            width: 0.75rem;
+            height: 0.75rem;
+            background-color: #f5d755;
+          }
+          .applied-indicator {
+            background-color: #27364d;
+          }
+        }
+      }
+    }
+    .profile-data {
+      width: 100%;
+      .for-stepper {
+        padding-bottom: 1rem;
+      }
+      .profile-form {
+        max-height: calc(100vh - 352px);
+        overflow: auto;
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #a6a6a6;
+          opacity: 1; /* Firefox */
+          font-size: 0.8rem;
+        }
+        //for select placeholder
+        input,
+        select {
+          border: 1px solid #c9ced1;
+          color: $primary-color;
+          font-size: 0.8rem;
+          font-weight: 500;
+          &:focus {
+            box-shadow: none !important;
+          }
+        }
+        .fa {
+          color: #a6a6a6;
+        }
+        form {
+          padding: 1rem 1rem 0 1rem;
+        }
+        .form-2 {
+          select {
+            border-bottom-left-radius: 0;
+          }
+          .info-txt {
+            background-color: #f2f4fa;
+            color: #7b7b7c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+            border: 1px solid #c9ced1;
+            border-top: 0;
+            border-radius: 0.25rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-left: 0.1% !important;
+          }
+        }
+        .vacancy-details {
+          padding: 1rem;
+          .vacancy-hdr {
+            font-size: 1.2rem;
+            font-weight: 600;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+          }
+          .vacancy-btns {
+            border: 2px solid #cbcbcb;
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+            .btn {
+              border: 2px solid #7f7f7f;
+              font-weight: 600;
+              font-size: 0.9rem;
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+            .activeBtn {
+              margin-bottom: 0.25rem;
+              background-color: $yellow-color;
+              color: $primary-color;
+            }
+            .inactiveBtn {
+              background-color: #d9d9d9;
+              color: #7f7f7f;
+              pointer-events: none;
+            }
+          }
+        }
+      }
+      .to-fro-btns {
+        display: flex;
+        justify-content: end;
+        padding: 1rem;
+        .btn {
+          background-color: #5ac2ca;
+          color: #fff;
+          border: 2px solid $black-color;
+          font-size: 0.7rem;
+          font-weight: 500;
+          width: 5.5rem;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        .back-btn {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  .dashboard {
+    height: calc(100vh - 175px);
+    .menu,
+    .data {
+      max-height: calc(100vh - 175px);
+      // overflow: auto;
+    }
+    .data {
+      overflow: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1101px) {
+  .get-hired-section {
+    .dashboard {
+      height: calc(100vh - 194px);
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .get-hired-section {
+    .user-details {
+      .user-greet {
+        margin-right: 2rem;
+        .greeting {
+          font-size: 2rem;
+          margin-right: 2rem;
+        }
+        .username {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .dashboard {
+      height: calc(100vh - 148px);
+      .menu {
+        .menu-items {
+          .menu-item {
+            font-size: 0.8rem;
+          }
+          .menu-item:first-child {
+            font-size: 1rem;
+          }
+        }
+      }
+      .dashboard-data {
+        .gx-5rem {
+          --bs-gutter-x: 2rem;
+        }
+        .info {
+          font-size: 1.1rem;
+        }
+        .step {
+          .title {
+            font-size: 1.1rem;
+          }
+        }
+      }
+      .status-data {
+        .info {
+          font-size: 1.1rem;
+        }
+        .stats-card {
+          h1 {
+            font-size: 2.5rem;
+          }
+          h6 {
+            font-size: 0.75rem;
+          }
+        }
+        .jobs-card {
+          .stats-sub-card {
+            .content {
+              h1 {
+                font-size: 2.2rem;
+              }
+              h6 {
+                font-size: 0.7rem;
+              }
+            }
+            .matches-indicator,
+            .applied-indicator {
+              width: 0.7rem;
+              height: 0.7rem;
+            }
+            .indicator {
+              .title {
+                font-size: 0.7rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .get-hired-section {
+    nav {
+      padding: 1rem;
+      padding-bottom: 0;
+      .brand {
+        width: 6rem;
+      }
+    }
+    .user-details {
+      padding: 1rem;
+      .user-greet {
+        margin-right: 1rem;
+        .greeting {
+          font-size: 1.8rem;
+          margin-right: 1rem;
+        }
+        .username {
+          font-size: 1rem;
+        }
+      }
+    }
+    .dashboard {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      height: calc(100vh - 119px);
+      flex-direction: column;
+      .data {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .menu {
+        display: none;
+      }
+      .select-menu {
+        padding: 0 1rem 1rem 1rem;
+        display: flex;
+        justify-content: end;
+        select {
+          width: auto;
+        }
+      }
+      .dashboard-data {
+        .gx-5rem {
+          --bs-gutter-x: 2rem;
+        }
+        .info {
+          font-size: 1rem;
+        }
+        .step {
+          .title {
+            font-size: 1rem;
+          }
+        }
+      }
+      .status-data {
+        .stats {
+          .gx-3 {
+            --bs-gutter-x: 0.5rem;
+          }
+        }
+        .info {
+          font-size: 1rem;
+        }
+        .stats-card {
+          h1 {
+            font-size: 2.2rem;
+          }
+          h6 {
+            font-size: 0.7rem;
+          }
+        }
+        .jobs-card {
+          .stats-sub-card {
+            .content {
+              h1 {
+                font-size: 1.9rem;
+              }
+              h6 {
+                font-size: 0.65rem;
+              }
+            }
+            .matches-indicator,
+            .applied-indicator {
+              width: 0.65rem;
+              height: 0.65rem;
+            }
+            .indicator {
+              .title {
+                font-size: 0.65rem;
+              }
+            }
+          }
+        }
+      }
+      .profile-data {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .get-hired-section {
+    nav {
+      .brand {
+        width: 5rem;
+      }
+    }
+    .user-details {
+      .user-greet {
+        margin-right: 0.5rem;
+        .greeting {
+          font-size: 1.5rem;
+          margin-right: 0.5rem;
+        }
+        .username {
+          font-size: 0.8rem;
+        }
+      }
+      .status {
+        .status-txt {
+          font-size: 0.6rem;
+        }
+      }
+    }
+    .switchToggle label {
+      width: 4rem;
+      max-width: 4rem;
+      height: 1rem;
+    }
+    .switchToggle input + label:before,
+    .get-hired-section .switchToggle input + input + label:before {
+      top: 14%;
+      right: 20%;
+      font-size: 0.6rem;
+    }
+    .switchToggle label:after {
+      top: 2%;
+      left: 3%;
+      width: 1rem;
+      height: 1rem;
+    }
+    .switchToggle input:checked + label:before,
+    .get-hired-section .switchToggle input:checked + input + label:before {
+      top: 14%;
+      left: 20%;
+      font-size: 0.6rem;
+    }
+    .switchToggle input:checked + label:after,
+    .get-hired-section .switchToggle input:checked + input + label:after {
+      top: 2%;
+      right: 3%;
+      left: auto;
+    }
+    .dashboard {
+      height: calc(100vh - 108px);
+      .data {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .dashboard-data {
+        .info {
+          font-size: 0.9rem;
+          margin-bottom: 0.5rem;
+        }
+        .step {
+          .step-banner {
+            padding: 0.8rem;
+          }
+          .step-num {
+            font-size: 0.9rem;
+          }
+          .fa {
+            font-size: 1.5rem;
+          }
+          .title {
+            font-size: 0.9rem;
+          }
+          .step-info {
+            font-size: 0.7rem;
+          }
+        }
+      }
+      .status-data {
+        .info {
+          font-size: 0.9rem;
+          margin-bottom: 0.5rem;
+        }
+        .stats {
+          .stats-row-1 {
+            margin-bottom: 0.6rem !important;
+          }
+        }
+        .h-48 {
+          height: 47.8%;
+        }
+        .stats-card {
+          h1 {
+            font-size: 1.8rem;
+          }
+          h6 {
+            font-size: 0.6rem;
+          }
+        }
+        .jobs-card {
+          .stats-sub-card {
+            .content {
+              h1 {
+                font-size: 1.5rem;
+              }
+              h6 {
+                font-size: 0.6rem;
+              }
+            }
+            .matches-indicator,
+            .applied-indicator {
+              width: 0.6rem;
+              height: 0.6rem;
+            }
+            .indicator {
+              .title {
+                font-size: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+      .profile-data {
+        .for-stepper {
+          padding-bottom: 0.5rem;
+        }
+        .profile-form {
+          max-height: calc(100vh - 257px);
+          form {
+            padding: 0.5rem 0.5rem 0 0.5rem;
+          }
+          .vacancy-details {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            .vacancy-hdr {
+              padding-top: 0;
+              font-size: 1rem;
+            }
+            .vacancy-btns {
+              .btn {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+        .to-fro-btns {
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .get-hired-section {
+    .dashboard {
+      height: calc(100vh - 109px);
+      .profile-data {
+        .profile-form {
+          max-height: calc(100vh - 270px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .get-hired-section {
+    .dashboard {
+      .profile-data {
+        .for-stepper {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 280px) {
+}
