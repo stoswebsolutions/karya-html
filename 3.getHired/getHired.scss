@@ -339,7 +339,17 @@
       .for-stepper {
         padding-bottom: 1rem;
       }
-      .profile-form {
+      .profile-forms-btn {
+        border: 2px solid #7f7f7f;
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: #f4d552;
+        color: #323e4d;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      .personal-info-form {
         max-height: calc(100vh - 352px);
         overflow: auto;
         ::placeholder {
@@ -400,23 +410,186 @@
             flex-direction: column;
             padding: 0.5rem;
             .btn {
-              border: 2px solid #7f7f7f;
-              font-weight: 600;
+              // border: 2px solid #7f7f7f;
+              // font-weight: 600;
               font-size: 0.9rem;
-              &:hover {
-                opacity: 0.7;
-              }
+              // &:hover {
+              //   opacity: 0.7;
+              // }
             }
             .activeBtn {
               margin-bottom: 0.25rem;
-              background-color: $yellow-color;
-              color: $primary-color;
+              // background-color: $yellow-color;
+              // color: $primary-color;
             }
             .inactiveBtn {
               background-color: #d9d9d9;
               color: #7f7f7f;
               pointer-events: none;
             }
+          }
+        }
+      }
+      .upload-resume-form {
+        margin-top: 1rem;
+        max-height: calc(100vh - 387px);
+        overflow: auto;
+        .resume-hdr {
+          font-size: 1.2rem;
+          font-weight: 600;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding: 0 2rem 0 0;
+          text-align: justify;
+        }
+        .upload-btns {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0 0.5rem 0 2rem;
+        }
+        .resume-btn,
+        .achievement-btn {
+          border: 2px solid #cbcbcb;
+          display: flex;
+          flex-direction: column;
+          padding: 0.5rem;
+          .custom-file-upload {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .btn {
+              margin-left: 0.5rem;
+              width: calc(100% - 7.1rem);
+              line-height: 1.2rem;
+            }
+          }
+          .custom-file-upload input[type='file']::file-selector-button {
+            // border: 1px solid #898989;
+            font-weight: 700;
+            font-size: 1rem;
+            background-color: #f9f9f9;
+            color: #263650;
+            box-shadow: none;
+            // border-radius: 0.3rem;
+          }
+          .custom-file-upload input[type='file'] {
+            // width: 7.4rem;
+          }
+        }
+      }
+      .personality-assessment-section {
+        margin: 1rem 0 0rem 0;
+        max-height: calc(100vh - 387px);
+        overflow: auto;
+        padding-right: 0.5rem;
+        .personality-assessment-hdr {
+          font-size: 1.2rem;
+          font-weight: 600;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          text-align: justify;
+        }
+        .qstn-types-lst {
+          li {
+            display: flex;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+          }
+          .qstn-type,
+          .qstn-cnt {
+            display: block;
+            line-height: 1.1rem;
+          }
+          .qstn-type {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            padding-right: 0.3rem;
+            &:before {
+              content: '';
+              width: 5px;
+              height: 5px;
+              margin-right: 16px;
+              display: block;
+              background-color: $yellow-color;
+            }
+          }
+        }
+        .discover-btn {
+          border: 0;
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: #263650;
+        }
+        .assessment-qstn {
+          .qstn-title {
+            color: #28374e;
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-align: center;
+            background-color: #b0dedd;
+            padding: 1rem;
+            border: 2px solid #27364d;
+          }
+          .qstn-choices {
+            label {
+              display: flex;
+              flex-direction: column;
+              border: none;
+              background-color: #f2f2f2;
+              padding: 1rem;
+              flex: 1 1 0px;
+              &:hover {
+                background-color: #fff;
+              }
+              .option {
+                color: #4aacaa;
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+              }
+              .option-txt {
+                color: #27364d;
+                font-size: 0.9rem;
+                font-weight: 600;
+                line-height: 1.2rem;
+              }
+            }
+            .btn-check:checked + .btn {
+              background-color: #fff;
+            }
+            .choice-a-lbl,
+            .choice-d-lbl {
+              border-radius: 0;
+            }
+            .choice-a-lbl {
+              border: 2px solid #27364d;
+              border-top: 0;
+            }
+            .choice-b-lbl,
+            .choice-c-lbl,
+            .choice-d-lbl {
+              border: 2px solid #27364d;
+              border-left: 1px solid #27364d;
+              border-top: 0;
+            }
+          }
+        }
+        .thanks-note {
+          .thanks-hdr {
+            font-size: 1.2rem;
+            font-weight: 600;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            text-align: justify;
           }
         }
       }
@@ -536,6 +709,34 @@
           }
         }
       }
+      .profile-data {
+        .upload-resume-form {
+          max-height: calc(100vh - 345px);
+          padding-right: 0.5rem;
+          .resume-hdr {
+            padding: 0;
+          }
+          .upload-btns {
+            padding: 0;
+            margin-top: 1rem;
+            .resume-btn,
+            .achievement-btn {
+              width: 100%;
+            }
+          }
+        }
+        .personality-assessment-section {
+          max-height: calc(100vh - 345px);
+          .qstn-types-lst {
+            li {
+              justify-content: flex-start;
+            }
+            .qstn-type {
+              width: 60%;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -636,6 +837,11 @@
         }
       }
       .profile-data {
+        .upload-resume-form {
+          margin-top: 0;
+          max-height: calc(100vh - 317px);
+          padding-right: 0.5rem;
+        }
       }
     }
   }
@@ -771,7 +977,7 @@
         .for-stepper {
           padding-bottom: 0.5rem;
         }
-        .profile-form {
+        .personal-info-form {
           max-height: calc(100vh - 257px);
           form {
             padding: 0.5rem 0.5rem 0 0.5rem;
@@ -790,6 +996,81 @@
             }
           }
         }
+        .upload-resume-form {
+          margin-top: 0;
+          max-height: calc(100vh - 243px);
+          padding-right: 0.5rem;
+          .resume-hdr {
+            font-size: 1rem;
+            margin-top: 0rem;
+          }
+          .upload-btns {
+            margin-bottom: 1rem;
+            justify-content: flex-start;
+            .resume-btn,
+            .achievement-btn {
+              .custom-file-upload input[type='file']::file-selector-button {
+                font-size: 0.8rem;
+              }
+              .form-control,
+              .btn {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+        .personality-assessment-section {
+          margin-top: 0;
+          max-height: calc(100vh - 256px);
+          padding-right: 0.25rem;
+          .personality-assessment-hdr {
+            font-size: 1rem;
+            margin-top: 0rem;
+          }
+          .qstn-types-lst {
+            padding-bottom: 0 !important;
+            .qstn-type,
+            .qstn-cnt {
+              font-size: 0.8rem;
+            }
+            .qstn-type {
+              width: 50%;
+            }
+          }
+          .discover-btn {
+            font-size: 1rem;
+          }
+          .assessment-qstn {
+            .qstn-title {
+              padding: 0.5rem;
+              font-size: 1.2rem;
+            }
+            .qstn-choices {
+              flex-direction: column;
+              label {
+                padding: 0.5rem;
+                .option {
+                  font-size: 1rem;
+                  margin-bottom: 0.5rem;
+                }
+                .option-txt {
+                  font-size: 0.8rem;
+                }
+              }
+              .choice-b-lbl,
+              .choice-c-lbl,
+              .choice-d-lbl {
+                border-left: 3px solid #27364d;
+              }
+            }
+          }
+          .thanks-note {
+            .thanks-hdr {
+              font-size: 1rem;
+            }
+          }
+        }
+
         .to-fro-btns {
           padding: 0.5rem;
         }
@@ -803,7 +1084,7 @@
     .dashboard {
       height: calc(100vh - 109px);
       .profile-data {
-        .profile-form {
+        .personal-info-form {
           max-height: calc(100vh - 270px);
         }
       }

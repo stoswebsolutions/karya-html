@@ -47,3 +47,36 @@ $('.menu-item-select').on('change', function () {
   $('.' + this.value).addClass('active');
   return;
 });
+
+// for assessment
+$('.discover-btn').click(function () {
+  $('.discover-details').addClass('d-none');
+  $('.assessment-qstn').removeClass('d-none');
+});
+
+$('.assessment-qstn .qstn-choices label').click(function () {
+  const selectedChoice = $(this).attr('for');
+  alert('user opted - ' + selectedChoice);
+  $('.assessment-qstn').addClass('d-none');
+  $('.thanks-note').removeClass('d-none');
+});
+
+// to-fro btns
+$('.personal-info-next').click(function () {
+  $('.personal-info-form').addClass('d-none');
+  $('.upload-resume-form').removeClass('d-none');
+});
+
+$('.resume-back').click(function () {
+  $('.upload-resume-form').addClass('d-none');
+  $('.personal-info-form').removeClass('d-none');
+});
+$('.resume-next').click(function () {
+  $('.upload-resume-form').addClass('d-none');
+  $('.personality-assessment-section').removeClass('d-none');
+});
+
+$('.assessment-back').click(function () {
+  $('.personality-assessment-section').addClass('d-none');
+  $('.upload-resume-form').removeClass('d-none');
+});

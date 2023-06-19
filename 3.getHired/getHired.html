@@ -421,8 +421,9 @@
               </div>
             </div>
             <!-- ends::stepper -->
-            <!-- profile form -->
-            <div class="profile-form">
+            <!-- profile tab -->
+            <!-- personal info -->
+            <div class="personal-info-form">
               <form action="" class="bg-white">
                 <div class="row gx-3">
                   <div class="col-12 col-sm-6">
@@ -602,7 +603,9 @@
                   </div>
                   <div class="col-12 col-sm-6">
                     <div class="vacancy-btns">
-                      <button class="btn activeBtn">Targeted Career</button>
+                      <button class="btn activeBtn profile-forms-btn">
+                        Targeted Career
+                      </button>
                       <button class="btn inactiveBtn">
                         Type in the job role
                       </button>
@@ -799,7 +802,219 @@
                 <button class="btn next-btn personal-info-next">Next</button>
               </div>
             </div>
-            <!-- ends::profile form -->
+            <!-- ends::personal info -->
+            <!-- resume -->
+            <div class="upload-resume-form d-none">
+              <div class="row gx-0">
+                <div class="col-12 col-lg-6">
+                  <h6 class="mb-0 pri-clr resume-hdr">
+                    Thank you for taking the time to fill in your personal
+                    information. We invite you to upload your resume and also
+                    pictures of your work and achievements. This will allow us
+                    to analyse your skills and qualifications more thoroughly,
+                    and provide you with a selection of most suitable career
+                    roles that suit your personality, strengths, skills and
+                    experience.
+                  </h6>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="upload-btns">
+                    <div class="resume-btn mb-2 mb-sm-3">
+                      <label class="custom-file-upload upload-resume">
+                        <input
+                          type="file"
+                          class="form-control"
+                          id="resume-file-upload"
+                        />
+                        <span class="btn profile-forms-btn">UPLOAD RESUME</span>
+                      </label>
+                    </div>
+                    <div class="achievement-btn">
+                      <label class="custom-file-upload upload-achievements">
+                        <input
+                          type="file"
+                          class="form-control"
+                          id="achievements-file-upload"
+                        />
+                        <span class="btn profile-forms-btn"
+                          >UPLOAD ACHIEVEMENTS</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="to-fro-btns">
+                <button class="btn back-btn resume-back">Go Back</button>
+                <button class="btn next-btn resume-next">Next</button>
+              </div>
+            </div>
+            <!-- ends::resume -->
+            <!-- personality assessment -->
+            <div class="personality-assessment-section d-none">
+              <div class="discover-details">
+                <div class="row gx-0">
+                  <div class="col-12">
+                    <h6 class="mb-0 pri-clr personality-assessment-hdr">
+                      Thank you for taking the time to fill in your personal
+                      information. We invite you to upload your resume and also
+                      pictures of your work and achievements. This will allow us
+                      to analyse your skills and qualifications more thoroughly,
+                      and provide you with a selection of most suitable career
+                      roles that suit your personality, strengths, skills and
+                      experience.
+                    </h6>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <ul
+                      class="m-0 px-0 py-2 py-lg-3 list-style-none qstn-types-lst"
+                    >
+                      <li>
+                        <span class="qstn-type">Core Personality Trait</span>
+                        <span class="qstn-cnt">5 questions</span>
+                      </li>
+                      <li>
+                        <span class="qstn-type">Principal Value</span>
+                        <span class="qstn-cnt">5 questions</span>
+                      </li>
+                      <li>
+                        <span class="qstn-type">Thinking Style</span>
+                        <span class="qstn-cnt">5 questions</span>
+                      </li>
+                      <li>
+                        <span class="qstn-type">Aptitude</span>
+                        <span class="qstn-cnt">5 questions</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <ul
+                      class="m-0 px-0 py-0 py-sm-2 py-lg-3 list-style-none qstn-types-lst"
+                    >
+                      <li>
+                        <span class="qstn-type">Attitude</span>
+                        <span class="qstn-cnt">5 questions</span>
+                      </li>
+                      <li>
+                        <span class="qstn-type">English Proficiency</span>
+                        <span class="qstn-cnt">5 questions</span>
+                      </li>
+                      <li>
+                        <span class="qstn-type">Skills</span>
+                        <span class="qstn-cnt">7 questions</span>
+                      </li>
+                      <li>
+                        <span class="qstn-type">Competency</span>
+                        <span class="qstn-cnt">5 questions</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="col-12 d-flex align-items-center justify-content-center pt-2 pt-lg-3"
+                  >
+                    <button class="btn profile-forms-btn discover-btn">
+                      Discover Yourself
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="assessment-qstn d-none">
+                <h1 class="qstn-title mb-0">I believe in</h1>
+                <div
+                  class="btn-group qstn-choices"
+                  role="group"
+                  aria-label="Basic radio toggle button group"
+                >
+                  <input
+                    type="radio"
+                    class="btn-check qstn-choice choice-a"
+                    name="personality-qstn"
+                    id="choice-a"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary choice-a-lbl"
+                    for="choice-a"
+                  >
+                    <span class="option">A</span>
+                    <span class="option-txt">
+                      pushing people to deliver beyond what they would be able
+                      to produce.
+                    </span>
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check qstn-choice choice-b"
+                    name="personality-qstn"
+                    id="choice-b"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary choice-b-lbl"
+                    for="choice-b"
+                  >
+                    <span class="option">B</span>
+                    <span class="option-txt">
+                      giving people the space and time for them to deliver a
+                      task that will produce outstanding results.
+                    </span>
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check qstn-choice choice-c"
+                    name="personality-qstn"
+                    id="choice-c"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary choice-c-lbl"
+                    for="choice-c"
+                  >
+                    <span class="option">C</span>
+                    <span class="option-txt">
+                      people working together with a shared and common goal will
+                      produce amazing results.
+                    </span>
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check qstn-choice choice-d"
+                    name="personality-qstn"
+                    id="choice-d"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary choice-d-lbl"
+                    for="choice-d"
+                  >
+                    <span class="option">D</span>
+                    <span class="option-txt">
+                      people giving more attention to the quality of work which
+                      will produce amazing results.
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="thanks-note d-none">
+                <h1 class="pri-clr thanks-hdr py-4 py-xl-5">
+                  Thank you for taking the time to complete our personality
+                  assessment! We appreciate your effort that will help us
+                  understand your unique strengths and abilities. We would now
+                  like to invite you to take the next step by filling in your
+                  personal information. This information is crucial in matching
+                  you with the job vacancy available.
+                </h1>
+                <div class="to-fro-btns">
+                  <button class="btn back-btn assessment-back">Go Back</button>
+                  <button class="btn next-btn assessment-next">Next</button>
+                </div>
+              </div>
+            </div>
+            <!-- ends::personality assessment -->
+            <!-- ends::profile tab -->
           </div>
         </div>
       </section>

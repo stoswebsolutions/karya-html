@@ -161,6 +161,10 @@ $black-color: #000000;
   }
 }
 
+.list-style-none {
+  list-style: none;
+}
+
 // for sleek scorllbar
 @mixin scrollbars(
   $size,

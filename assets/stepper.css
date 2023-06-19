@@ -415,7 +415,7 @@ label {
   }
   .stepper-container {
     border: 1.5px solid #263650;
-    padding: 0.8rem 0.8rem 1.9rem 0.8rem;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
     border-radius: 0.5rem;
   }
   .stepper-container .hor-line {
@@ -429,7 +429,7 @@ label {
     margin-right: 0.25rem;
   }
   .stepper-container .start .txt {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     margin-right: 0.5rem;
   }
   .stepper-container .start .circle {
@@ -441,35 +441,35 @@ label {
     width: 1.5rem;
   }
   .stepper-container .personal-info:after {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     line-height: 0.6rem;
     top: 0.7rem;
-    left: -7%;
+    left: 16%;
   }
   .stepper-container .upload-resume:after {
     color: #2e3c53;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     line-height: 0.6rem;
     top: 0.7rem;
-    left: 58%;
+    left: 68%;
   }
   .stepper-container .personality-assessment:after {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     line-height: 0.6rem;
     top: 0.7rem;
-    left: 40%;
+    left: 55%;
   }
   .stepper-container .interview-prep:after {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     line-height: 0.6rem;
     top: 0.7rem;
     left: 59%;
   }
   .stepper-container .upload-vid:after {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     line-height: 0.6rem;
     top: 0.7rem;
-    left: 66%;
+    left: 72%;
   }
   .stepper-container .incomplete .hor-line {
     width: 1.5rem;
@@ -480,7 +480,7 @@ label {
     box-shadow: 0px 0px 0px 0.25rem #7f7f7f;
   }
   .stepper-container .incomplete .txt {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     margin-left: 0.5rem;
   }
   .stepper-container .complete .hor-line {
@@ -491,7 +491,7 @@ label {
     box-shadow: 0px 0px 0px 0.25rem #f4d552;
   }
   .stepper-container .complete .txt {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     margin-left: 0.5rem;
   }
 }
