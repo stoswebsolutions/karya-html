@@ -256,6 +256,64 @@ label {
   border: 1px solid #8dcdcb !important;
 }
 
+.role-card {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+}
+.role-card h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.role-card .role {
+  color: #7a858b;
+}
+.role-card .company {
+  color: #999a9a;
+  text-decoration: underline;
+}
+.role-card .location,
+.role-card .rm,
+.role-card .expire-dets {
+  color: #fa43a6;
+}
+.role-card .expire-dets {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+.role-card .expire-dets .date {
+  font-weight: 600;
+}
+.role-card .summary-dets {
+  margin-top: 1.2rem;
+}
+.role-card .summary-dets .title {
+  color: #fa43a6;
+}
+.role-card .summary-dets .summary {
+  margin-bottom: 0.25rem;
+  color: #52513e;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.role-card .card-btn {
+  background-color: #337ab7;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 0;
+  color: #e5f7fd;
+}
+.role-card .card-btn:hover {
+  opacity: 0.7;
+}
+.role-card .card-btn:active {
+  opacity: 0.5;
+  color: #e5f7fd !important;
+  background-color: #337ab7 !important;
+}
+
 .mobile-only {
   display: none;
 }

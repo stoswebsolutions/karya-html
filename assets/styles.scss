@@ -275,6 +275,64 @@ label {
   }
 }
 
+.role-card {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .role {
+    color: #7a858b;
+  }
+  .company {
+    color: #999a9a;
+    text-decoration: underline;
+  }
+  .location,
+  .rm,
+  .expire-dets {
+    color: #fa43a6;
+  }
+  .expire-dets {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    .date {
+      font-weight: 600;
+    }
+  }
+  .summary-dets {
+    margin-top: 1.2rem;
+    .title {
+      color: #fa43a6;
+    }
+    .summary {
+      margin-bottom: 0.25rem;
+      color: #52513e;
+      font-size: 0.72rem;
+      font-weight: 500;
+    }
+  }
+  .card-btn {
+    background-color: #337ab7;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 0;
+    color: #e5f7fd;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+      color: #e5f7fd !important;
+      background-color: #337ab7 !important;
+    }
+  }
+}
+
 .mobile-only {
   display: none;
 }
