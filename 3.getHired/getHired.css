@@ -2358,6 +2358,334 @@ label {
 .get-hired-section .dashboard .explore-jobs-data .technology .nav-item .active::after {
   width: 0%;
 }
+.get-hired-section .dashboard .explore-companies-data {
+  width: 100%;
+}
+.get-hired-section .dashboard .explore-companies-data .abt-company .nav-item,
+.get-hired-section .dashboard .explore-companies-data .engagement-metrics .nav-item {
+  max-width: 100%;
+}
+.get-hired-section .dashboard .explore-companies-data .abt-company .nav-item .active::after,
+.get-hired-section .dashboard .explore-companies-data .engagement-metrics .nav-item .active::after {
+  width: 0%;
+}
+.get-hired-section .dashboard .explore-companies-data .abt-company .title,
+.get-hired-section .dashboard .explore-companies-data .engagement-metrics .title {
+  color: #27364d;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.get-hired-section .dashboard .explore-companies-data .abt-company-container {
+  background-color: #f7f7f7;
+}
+.get-hired-section .dashboard .explore-companies-data .abt-company-container .company-video .company {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #282724;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-bottom: 0.2rem solid #282724;
+}
+.get-hired-section .dashboard .explore-companies-data .abt-company-container .company-video .abt-hdr {
+  color: #282724;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+}
+.get-hired-section .dashboard .explore-companies-data .abt-company-container .company-video .info {
+  color: #8a847e;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.get-hired-section .dashboard .explore-companies-data .abt-company-container .company-video video {
+  width: 60%;
+}
+.get-hired-section .dashboard .explore-companies-data .abt-company-container .company-video .note {
+  display: block;
+  color: #a39ea6;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.get-hired-section .dashboard .explore-companies-data .abt-company-container .company-video .download-btn {
+  background-color: white;
+  border: 0;
+  color: #4d4e4e;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.8rem;
+  border-radius: 0;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container {
+  display: flex;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-left .graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7f5f4;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-left .graph img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-left .graph .title {
+  text-transform: uppercase;
+  color: #27364d;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right {
+  width: 100%;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7f5f4;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .metric .rating {
+  margin-bottom: 0.2rem;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .metric .rating .rate-block {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1rem;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .metric .rate-type {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e1196f;
+  margin-bottom: 0.2rem;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .metric .rate-for {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #27364d;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .low .block1 {
+  background-color: #27364d;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .low .block2,
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .low .block3 {
+  background-color: #bfbfbf;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .med .block1,
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .med .block2 {
+  background-color: #27364d;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .med .block3 {
+  background-color: #bfbfbf;
+}
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .high .block1,
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .high .block2,
+.get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .high .block3 {
+  background-color: #27364d;
+}
+.get-hired-section .dashboard .my-account-data {
+  width: 100%;
+}
+.get-hired-section .dashboard .my-account-data #my-account-tabContent {
+  max-height: calc(100vh - 313px);
+  overflow: auto;
+}
+.get-hired-section .dashboard .my-account-data .table-container {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  overflow: auto;
+}
+.get-hired-section .dashboard .my-account-data .table-container .filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.get-hired-section .dashboard .my-account-data .table-container .filters label {
+  color: #858487;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.get-hired-section .dashboard .my-account-data .table-container .filters select,
+.get-hired-section .dashboard .my-account-data .table-container .filters input {
+  border-radius: 0.2rem;
+  border: 0.12rem solid #dedede;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  color: #8c8d9e;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.get-hired-section .dashboard .my-account-data .table-container .filters select:focus,
+.get-hired-section .dashboard .my-account-data .table-container .filters input:focus {
+  box-shadow: none;
+}
+.get-hired-section .dashboard .my-account-data .table-container table {
+  margin-bottom: 0.5rem;
+}
+.get-hired-section .dashboard .my-account-data .table-container table thead tr th {
+  color: #6f6f83;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.3rem;
+}
+.get-hired-section .dashboard .my-account-data .table-container table tbody tr th,
+.get-hired-section .dashboard .my-account-data .table-container table tbody tr td {
+  color: #8c8b8c;
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.3rem;
+}
+.get-hired-section .dashboard .my-account-data .table-container table tbody tr th .status,
+.get-hired-section .dashboard .my-account-data .table-container table tbody tr td .status {
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.1rem 0.5rem;
+  text-transform: uppercase;
+  background-color: #5bc0de;
+  color: #fafefd;
+}
+.get-hired-section .dashboard .my-account-data .table-container table tbody tr th .view-profile,
+.get-hired-section .dashboard .my-account-data .table-container table tbody tr td .view-profile {
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.1rem 0.5rem;
+  text-transform: uppercase;
+  background-color: #04021c;
+  color: #e1f5f6;
+  cursor: pointer;
+}
+.get-hired-section .dashboard .my-account-data .table-container table tbody tr th .view-profile:hover,
+.get-hired-section .dashboard .my-account-data .table-container table tbody tr td .view-profile:hover {
+  opacity: 0.7;
+}
+.get-hired-section .dashboard .my-account-data .table-container table tbody tr th .view-profile:active,
+.get-hired-section .dashboard .my-account-data .table-container table tbody tr td .view-profile:active {
+  opacity: 0.5;
+}
+.get-hired-section .dashboard .my-account-data .table-container .pagination-dets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.get-hired-section .dashboard .my-account-data .table-container .pagination-dets .viewing-entries {
+  color: #999990;
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+.get-hired-section .dashboard .my-account-data .table-container .pagination-dets nav {
+  padding: 0;
+}
+.get-hired-section .dashboard .my-account-data .table-container .pagination-dets nav ul {
+  display: flex !important;
+  margin: 0;
+}
+.get-hired-section .dashboard .my-account-data .table-container .pagination-dets nav ul a {
+  color: #999990;
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+}
+.get-hired-section .dashboard .my-account-data .table-container .pagination-dets nav ul a:focus {
+  box-shadow: none;
+}
+.get-hired-section .dashboard .my-account-data .table-container .pagination-dets nav ul .active {
+  background-color: transparent;
+  border: 1px solid #8cb2d4;
+}
+.get-hired-section .dashboard .my-account-data .share-profile-hdr {
+  color: #4aacaa;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.get-hired-section .dashboard .my-account-data .share-profile-srch .input-group-text {
+  border: 1px solid #e4e4e4;
+}
+.get-hired-section .dashboard .my-account-data .share-profile-srch .fa {
+  color: #cccccc;
+}
+.get-hired-section .dashboard .my-account-data .share-profile-srch input {
+  border: 1px solid #e4e4e4;
+  border-left: 0;
+  color: #27435b;
+  font-size: 0.85rem;
+}
+.get-hired-section .dashboard .my-account-data .share-profile-srch input:focus {
+  box-shadow: none;
+  border: 1px solid #e4e4e4;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .account {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .account:hover {
+  opacity: 0.7;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .account:active {
+  opacity: 0.5;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .account .icon .fa {
+  font-size: 1.5rem;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .account .icon .fa-facebook-square {
+  color: #1877f2;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .account .icon .fa-twitter-square {
+  color: #1d9bf0;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .account .icon .fa-linkedin-square {
+  color: #007bb5;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .account .icon .fa-tumblr-square {
+  color: #36475d;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .account .icon .fa-pinterest-square {
+  color: #bd081c;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .account .type {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3283ff;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .add-more .add-icon {
+  cursor: pointer;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .add-more .add-icon:hover {
+  opacity: 0.7;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .add-more .add-icon:active {
+  opacity: 0.5;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .add-more .fa-plus-square {
+  font-size: 1rem;
+  color: #0166ff;
+}
+.get-hired-section .dashboard .my-account-data .social-accounts .add-more .addTxt {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #3283ff;
+}
 .get-hired-section .dashboard {
   height: calc(100vh - 175px);
 }
@@ -2390,6 +2718,9 @@ label {
   }
   .get-hired-section .dashboard .profile-data .my-profile #my-profile-tabContent {
     max-height: calc(100vh - 332px);
+  }
+  .get-hired-section .dashboard .my-account-data #my-account-tabContent {
+    max-height: calc(100vh - 356px);
   }
 }
 @media screen and (max-width: 1071px) {
@@ -2506,6 +2837,12 @@ label {
   .get-hired-section .dashboard .profile-data .my-profile #my-profile-tabContent {
     max-height: calc(100vh - 310px);
   }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container .content-left {
+    justify-content: flex-start;
+  }
+  .get-hired-section .dashboard .my-account-data #my-account-tabContent {
+    max-height: calc(100vh - 310px);
+  }
 }
 @media screen and (max-width: 800px) {
   .get-hired-section .dashboard .profile-nav-pills .nav-item .nav-link {
@@ -2609,6 +2946,13 @@ label {
     max-height: calc(100vh - 313px);
   }
   .get-hired-section .dashboard .profile-data .my-profile #my-profile-tabContent {
+    max-height: calc(100vh - 269px);
+  }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .get-hired-section .dashboard .my-account-data #my-account-tabContent {
     max-height: calc(100vh - 269px);
   }
 }
@@ -2917,6 +3261,67 @@ label {
   .get-hired-section .dashboard .explore-jobs-data .technology-container {
     background: #f0f0f0;
     padding: 0.5rem;
+  }
+  .get-hired-section .dashboard .explore-companies-data .abt-company-container .company-video .company {
+    font-size: 1rem;
+    border-bottom: 0.1rem solid #282724;
+  }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container {
+    flex-direction: column;
+  }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container .content-left {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container .content-left .graph {
+    padding: 0.5rem;
+  }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container .content-left .graph img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container .content-left .graph .title {
+    font-size: 0.7rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .metric {
+    padding: 0.5rem;
+  }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .metric .rating .rate-block {
+    width: 1rem;
+    height: 0.6rem;
+  }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .metric .rate-type {
+    font-size: 0.75rem;
+  }
+  .get-hired-section .dashboard .explore-companies-data .metrics-container .content-right .metric .rate-for {
+    font-size: 0.65rem;
+  }
+  .get-hired-section .dashboard .my-account-data .table-container {
+    padding: 0.5rem;
+  }
+  .get-hired-section .dashboard .my-account-data .table-container table tbody tr td .view-profile {
+    display: block;
+    text-align: center;
+  }
+  .get-hired-section .dashboard .my-account-data .table-container .pagination-dets {
+    flex-direction: column;
+  }
+  .get-hired-section .dashboard .my-account-data .share-profile-hdr {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .my-account-data .social-accounts .account .icon {
+    font-size: 1rem;
+  }
+  .get-hired-section .dashboard .my-account-data .social-accounts .account .type {
+    font-size: 0.7rem;
+  }
+  .get-hired-section .dashboard .my-account-data .social-accounts .add-more .fa-plus-square {
+    font-size: 0.8rem;
+  }
+  .get-hired-section .dashboard .my-account-data .social-accounts .add-more .addTxt {
+    font-size: 0.65rem;
   }
 }
 @media screen and (max-width: 426px) {
