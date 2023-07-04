@@ -1,0 +1,2955 @@
+@font-face {
+  font-family: "Abeatbykai";
+  src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
+}
+/* Light */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Normal */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+/* Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+html,
+body {
+  font-family: "Abeatbykai", sans-serif;
+  font-family: "CreatoDisplay", sans-serif;
+  font-size: 16px;
+}
+
+.font-kai {
+  font-family: "Abeatbykai", sans-serif;
+}
+
+.font-cd {
+  font-family: "CreatoDisplay", sans-serif;
+}
+
+.pri-clr {
+  color: #263650;
+}
+
+.pri-bg {
+  background-color: #263650;
+}
+
+.sec-clr {
+  color: #8dcdcb;
+}
+
+.sec-bg {
+  background-color: #8dcdcb;
+}
+
+.yellow-clr {
+  color: #f4d552;
+}
+
+.yellow-bg {
+  background-color: #f4d552;
+}
+
+.lite-white {
+  color: #f2f2f2;
+}
+
+.black-clr {
+  color: #000000;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.5625rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+}
+
+.fs-11 {
+  font-size: 0.6875rem !important;
+}
+
+.fs-12 {
+  font-size: 0.75rem !important;
+}
+
+.fs-13 {
+  font-size: 0.8125rem !important;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-15 {
+  font-size: 0.9375rem !important;
+}
+
+.fs-16 {
+  font-size: 1rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263650;
+}
+
+::-webkit-scrollbar-track {
+  background: #939ba8;
+}
+
+body {
+  scrollbar-face-color: #263650;
+  scrollbar-track-color: #939ba8;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.karya-px {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.karya-py {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.karya-p {
+  padding: 4rem;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+.hoverable:hover {
+  opacity: 0.7;
+}
+
+.karya-btn {
+  padding: 0.2rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
+
+.karya-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.karya-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+.gx-5rem {
+  --bs-gutter-x: 5rem;
+}
+
+.karya-select {
+  border: 1px solid #8dcdcb;
+  color: #263650;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.karya-select:focus {
+  box-shadow: none;
+  border: 1px solid #8dcdcb !important;
+}
+
+.role-card {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+}
+.role-card h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.role-card .role {
+  color: #7a858b;
+}
+.role-card .company {
+  color: #999a9a;
+  text-decoration: underline;
+}
+.role-card .location,
+.role-card .rm,
+.role-card .expire-dets {
+  color: #fa43a6;
+}
+.role-card .expire-dets {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+.role-card .expire-dets .date {
+  font-weight: 600;
+}
+.role-card .summary-dets {
+  margin-top: 1.2rem;
+}
+.role-card .summary-dets .title {
+  color: #fa43a6;
+}
+.role-card .summary-dets .summary {
+  margin-bottom: 0.25rem;
+  color: #52513e;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.role-card .card-btn {
+  background-color: #337ab7;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 0;
+  color: #e5f7fd;
+}
+.role-card .card-btn:hover {
+  opacity: 0.7;
+}
+.role-card .card-btn:active {
+  opacity: 0.5;
+  color: #e5f7fd !important;
+  background-color: #337ab7 !important;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
+@font-face {
+  font-family: "Abeatbykai";
+  src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
+}
+/* Light */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Normal */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+/* Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+html,
+body {
+  font-family: "Abeatbykai", sans-serif;
+  font-family: "CreatoDisplay", sans-serif;
+  font-size: 16px;
+}
+
+.font-kai {
+  font-family: "Abeatbykai", sans-serif;
+}
+
+.font-cd {
+  font-family: "CreatoDisplay", sans-serif;
+}
+
+.pri-clr {
+  color: #263650;
+}
+
+.pri-bg {
+  background-color: #263650;
+}
+
+.sec-clr {
+  color: #8dcdcb;
+}
+
+.sec-bg {
+  background-color: #8dcdcb;
+}
+
+.yellow-clr {
+  color: #f4d552;
+}
+
+.yellow-bg {
+  background-color: #f4d552;
+}
+
+.lite-white {
+  color: #f2f2f2;
+}
+
+.black-clr {
+  color: #000000;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.5625rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+}
+
+.fs-11 {
+  font-size: 0.6875rem !important;
+}
+
+.fs-12 {
+  font-size: 0.75rem !important;
+}
+
+.fs-13 {
+  font-size: 0.8125rem !important;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-15 {
+  font-size: 0.9375rem !important;
+}
+
+.fs-16 {
+  font-size: 1rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263650;
+}
+
+::-webkit-scrollbar-track {
+  background: #939ba8;
+}
+
+body {
+  scrollbar-face-color: #263650;
+  scrollbar-track-color: #939ba8;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.karya-px {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.karya-py {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.karya-p {
+  padding: 4rem;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+.hoverable:hover {
+  opacity: 0.7;
+}
+
+.karya-btn {
+  padding: 0.2rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
+
+.karya-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.karya-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+.gx-5rem {
+  --bs-gutter-x: 5rem;
+}
+
+.karya-select {
+  border: 1px solid #8dcdcb;
+  color: #263650;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.karya-select:focus {
+  box-shadow: none;
+  border: 1px solid #8dcdcb !important;
+}
+
+.role-card {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+}
+.role-card h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.role-card .role {
+  color: #7a858b;
+}
+.role-card .company {
+  color: #999a9a;
+  text-decoration: underline;
+}
+.role-card .location,
+.role-card .rm,
+.role-card .expire-dets {
+  color: #fa43a6;
+}
+.role-card .expire-dets {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+.role-card .expire-dets .date {
+  font-weight: 600;
+}
+.role-card .summary-dets {
+  margin-top: 1.2rem;
+}
+.role-card .summary-dets .title {
+  color: #fa43a6;
+}
+.role-card .summary-dets .summary {
+  margin-bottom: 0.25rem;
+  color: #52513e;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.role-card .card-btn {
+  background-color: #337ab7;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 0;
+  color: #e5f7fd;
+}
+.role-card .card-btn:hover {
+  opacity: 0.7;
+}
+.role-card .card-btn:active {
+  opacity: 0.5;
+  color: #e5f7fd !important;
+  background-color: #337ab7 !important;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
+nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+nav .brand {
+  width: 10rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+nav ul a:hover {
+  opacity: 0.7;
+}
+nav .menu-icon {
+  display: none;
+  color: #263650;
+  cursor: pointer;
+}
+nav .menu-icon:hover {
+  opacity: 0.7;
+}
+
+#offcanvasMenu {
+  display: none;
+  width: 15rem;
+  background: linear-gradient(rgb(50, 201, 194), rgb(50, 201, 194));
+}
+#offcanvasMenu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+#offcanvasMenu ul li {
+  margin-bottom: 1.5rem;
+}
+#offcanvasMenu ul a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#offcanvasMenu ul a:hover {
+  opacity: 0.7;
+}
+
+.offcanvas-backdrop {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #offcanvasMenu,
+  .offcanvas-backdrop {
+    display: block;
+  }
+  nav .brand {
+    width: 9rem;
+  }
+  nav ul {
+    display: none !important;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #offcanvasMenu {
+    width: 10rem;
+  }
+  #offcanvasMenu ul li {
+    margin-bottom: 1rem;
+  }
+  #offcanvasMenu ul a {
+    font-size: 0.8rem;
+  }
+}
+@font-face {
+  font-family: "Abeatbykai";
+  src: url("../fonts/abeatbykai/abeatbyKaiRegular.otf");
+}
+/* Light */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Normal */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+/* Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra Bold */
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+html,
+body {
+  font-family: "Abeatbykai", sans-serif;
+  font-family: "CreatoDisplay", sans-serif;
+  font-size: 16px;
+}
+
+.font-kai {
+  font-family: "Abeatbykai", sans-serif;
+}
+
+.font-cd {
+  font-family: "CreatoDisplay", sans-serif;
+}
+
+.pri-clr {
+  color: #263650;
+}
+
+.pri-bg {
+  background-color: #263650;
+}
+
+.sec-clr {
+  color: #8dcdcb;
+}
+
+.sec-bg {
+  background-color: #8dcdcb;
+}
+
+.yellow-clr {
+  color: #f4d552;
+}
+
+.yellow-bg {
+  background-color: #f4d552;
+}
+
+.lite-white {
+  color: #f2f2f2;
+}
+
+.black-clr {
+  color: #000000;
+}
+
+.fs-8 {
+  font-size: 0.5rem !important;
+}
+
+.fs-9 {
+  font-size: 0.5625rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+}
+
+.fs-11 {
+  font-size: 0.6875rem !important;
+}
+
+.fs-12 {
+  font-size: 0.75rem !important;
+}
+
+.fs-13 {
+  font-size: 0.8125rem !important;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-15 {
+  font-size: 0.9375rem !important;
+}
+
+.fs-16 {
+  font-size: 1rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263650;
+}
+
+::-webkit-scrollbar-track {
+  background: #939ba8;
+}
+
+body {
+  scrollbar-face-color: #263650;
+  scrollbar-track-color: #939ba8;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.karya-px {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.karya-py {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.karya-p {
+  padding: 4rem;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+.hoverable:hover {
+  opacity: 0.7;
+}
+
+.karya-btn {
+  padding: 0.2rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
+
+.karya-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.karya-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+.gx-5rem {
+  --bs-gutter-x: 5rem;
+}
+
+.karya-select {
+  border: 1px solid #8dcdcb;
+  color: #263650;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.karya-select:focus {
+  box-shadow: none;
+  border: 1px solid #8dcdcb !important;
+}
+
+.role-card {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+}
+.role-card h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.role-card .role {
+  color: #7a858b;
+}
+.role-card .company {
+  color: #999a9a;
+  text-decoration: underline;
+}
+.role-card .location,
+.role-card .rm,
+.role-card .expire-dets {
+  color: #fa43a6;
+}
+.role-card .expire-dets {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+.role-card .expire-dets .date {
+  font-weight: 600;
+}
+.role-card .summary-dets {
+  margin-top: 1.2rem;
+}
+.role-card .summary-dets .title {
+  color: #fa43a6;
+}
+.role-card .summary-dets .summary {
+  margin-bottom: 0.25rem;
+  color: #52513e;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.role-card .card-btn {
+  background-color: #337ab7;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 0;
+  color: #e5f7fd;
+}
+.role-card .card-btn:hover {
+  opacity: 0.7;
+}
+.role-card .card-btn:active {
+  opacity: 0.5;
+  color: #e5f7fd !important;
+  background-color: #337ab7 !important;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
+.stepper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 3.2rem 1.5rem;
+  border: 2px solid #263650;
+  border-radius: 1.5rem;
+}
+.stepper-container .hor-line {
+  display: block;
+  width: 5rem;
+  height: 0.1rem;
+  background-color: #7f7f7f;
+}
+.stepper-container .ver-line {
+  display: block;
+  width: 0.16rem;
+  height: 1rem;
+  background-color: #7f7f7f;
+}
+.stepper-container .start {
+  display: flex;
+  align-items: center;
+  margin-right: 0.3rem;
+}
+.stepper-container .start .txt {
+  margin-right: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #27364d;
+}
+.stepper-container .start .circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  background-color: #263650;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px 0.35rem #f4d552;
+}
+.stepper-container .personal-info .progress-lines .hor-line {
+  width: 2.5rem;
+}
+.stepper-container .personal-info:after {
+  content: "Personal\aInformation";
+  position: absolute;
+  top: 1.5rem;
+  left: 28%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .upload-resume:after {
+  content: "Upload\aResume";
+  position: absolute;
+  top: 1.5rem;
+  left: 70%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .personality-assessment:after {
+  content: "Personality\a Assessment";
+  position: absolute;
+  top: 1.5rem;
+  left: 59%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .interview-prep:after {
+  content: "Interview\aPreperation";
+  position: absolute;
+  top: 1.5rem;
+  left: 63%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .upload-vid:after {
+  content: "Upload\aVideo";
+  position: absolute;
+  top: 1.5rem;
+  left: 75%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .incomplete {
+  display: flex;
+  align-items: center;
+}
+.stepper-container .incomplete .hor-line {
+  width: 2.5rem;
+}
+.stepper-container .incomplete .txt {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  color: #27364d;
+}
+.stepper-container .incomplete .circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px 0.35rem #7f7f7f;
+}
+.stepper-container .complete .hor-line {
+  background-color: #f4d552;
+}
+.stepper-container .complete .circle {
+  background-color: #263650;
+  box-shadow: 0px 0px 0px 0.35rem #f4d552;
+}
+.stepper-container .completed .hor-line,
+.stepper-container .completed .ver-line {
+  background-color: #f4d552;
+}
+.stepper-container .company-info:after {
+  content: "Company\aInformation";
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .upload-gallery:after {
+  content: "Upload Video\a&Gallery";
+  position: absolute;
+  top: 1.5rem;
+  left: 72%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .engagement-assessment:after {
+  content: "Engagement\a Assessment";
+  position: absolute;
+  top: 1.5rem;
+  left: 64%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+
+@media screen and (max-width: 860px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    overflow: auto;
+    justify-content: unset !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    overflow: auto;
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 626px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    justify-content: unset !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    justify-content: center !important;
+  }
+  .stepper-container {
+    border: 1.5px solid #263650;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .stepper-container .hor-line {
+    width: 3rem;
+  }
+  .stepper-container .ver-line {
+    height: 0.6rem;
+    width: 0.1rem;
+  }
+  .stepper-container .start {
+    margin-right: 0.25rem;
+  }
+  .stepper-container .start .txt {
+    font-size: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .stepper-container .start .circle {
+    width: 0.3rem;
+    height: 0.3rem;
+    box-shadow: 0px 0px 0px 0.25rem #f4d552;
+  }
+  .stepper-container .personal-info .progress-lines .hor-line {
+    width: 1.5rem;
+  }
+  .stepper-container .personal-info:after {
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 16%;
+  }
+  .stepper-container .company-info .progress-lines .hor-line {
+    width: 1.5rem;
+  }
+  .stepper-container .company-info:after {
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 51%;
+  }
+  .stepper-container .upload-resume:after {
+    color: #2e3c53;
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 68%;
+  }
+  .stepper-container .upload-gallery:after {
+    color: #2e3c53;
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 72%;
+  }
+  .stepper-container .personality-assessment:after {
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 55%;
+  }
+  .stepper-container .interview-prep:after {
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 59%;
+  }
+  .stepper-container .upload-vid:after {
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 72%;
+  }
+  .stepper-container .engagement-assessment:after {
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 62%;
+  }
+  .stepper-container .incomplete .hor-line {
+    width: 1.5rem;
+  }
+  .stepper-container .incomplete .circle {
+    width: 0.3rem;
+    height: 0.3rem;
+    box-shadow: 0px 0px 0px 0.25rem #7f7f7f;
+  }
+  .stepper-container .incomplete .txt {
+    font-size: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .stepper-container .complete .hor-line {
+    width: 1.5rem;
+  }
+  .stepper-container .complete .circle {
+    background-color: #263650;
+    box-shadow: 0px 0px 0px 0.25rem #f4d552;
+  }
+  .stepper-container .complete .txt {
+    font-size: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 398px) {
+  .get-hired-section .dashboard .profile-data .for-stepper {
+    justify-content: unset !important;
+  }
+}
+.karya-container {
+  scroll-snap-align: unset;
+  overflow-y: auto;
+}
+.karya-container .karya-section {
+  scroll-snap-align: unset;
+}
+
+.get-talent-section nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.get-talent-section nav .menu-icon {
+  color: #50b4b2;
+}
+.get-talent-section nav ul a {
+  color: #50b4b2;
+}
+.get-talent-section .company-details {
+  padding-bottom: 1rem;
+}
+.get-talent-section .company-details .company-greet {
+  margin-right: 2rem;
+}
+.get-talent-section .company-details .company-greet .greeting {
+  color: #50b4b2;
+  font-size: 3.4rem;
+  margin-right: 8rem;
+}
+.get-talent-section .company-details .company-greet .companyName {
+  font-size: 2.2rem;
+}
+.get-talent-section .company-details .status .status-txt {
+  font-size: 0.8rem;
+}
+.get-talent-section .switchToggle input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.get-talent-section .switchToggle label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 5rem;
+  max-width: 5rem;
+  height: 1.5rem;
+  background: #263650;
+  display: block;
+  border-radius: 15rem;
+  position: relative;
+  border: 0.1rem solid #50b4b2;
+}
+.get-talent-section .switchToggle label:after {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #50b4b2;
+  border-radius: 15rem;
+  transition: all 0.3s;
+}
+.get-talent-section .switchToggle input:checked + label,
+.get-talent-section .switchToggle input:checked + input + label {
+  background: #263650;
+}
+.get-talent-section .switchToggle input + label:before,
+.get-talent-section .switchToggle input + input + label:before {
+  content: "OFF";
+  position: absolute;
+  top: 13%;
+  right: 16%;
+  font-size: 0.8rem;
+  border-radius: 15rem;
+  transition: 0.3s;
+  text-indent: 0;
+  color: #fff;
+}
+.get-talent-section .switchToggle input:checked + label:before,
+.get-talent-section .switchToggle input:checked + input + label:before {
+  content: "ON";
+  position: absolute;
+  top: 13%;
+  left: 16%;
+  font-size: 0.8rem;
+  border-radius: 15rem;
+  transition: 0.3s;
+  text-indent: 0;
+  color: #fff;
+}
+.get-talent-section .switchToggle input:checked + label:after,
+.get-talent-section .switchToggle input:checked + input + label:after {
+  top: 8%;
+  right: 3%;
+  left: auto;
+  background-color: #fff;
+}
+.get-talent-section .switchToggle label:active:after {
+  width: 60px;
+}
+.get-talent-section .toggle-switchArea {
+  margin: 10px 0 10px 0;
+}
+.get-talent-section #offcanvasMenu ul a {
+  color: #263650;
+}
+.get-talent-section .get-talent-btn {
+  background-color: #e1196f;
+  color: #fef7fa;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  padding: 0.35rem 1.2rem;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+.get-talent-section .get-talent-btn:hover {
+  opacity: 0.7;
+}
+.get-talent-section .get-talent-btn:active {
+  opacity: 0.5;
+  background-color: #e1196f;
+  color: #fef7fa;
+}
+.get-talent-section .dashboard {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f9f9f9;
+}
+.get-talent-section .dashboard .menu {
+  padding-left: 4rem;
+  padding-right: 2rem;
+  flex: 0 0 auto;
+}
+.get-talent-section .dashboard .menu .menu-items {
+  list-style: none;
+}
+.get-talent-section .dashboard .menu .menu-items .menu-item {
+  border-bottom: 1px solid #c9c9c9;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #50b4b2;
+  position: relative;
+  cursor: pointer;
+}
+.get-talent-section .dashboard .menu .menu-items .profile {
+  padding: 0;
+}
+.get-talent-section .dashboard .menu .menu-items .active::before {
+  content: "";
+  position: absolute;
+  width: 0.3rem;
+  height: 1.5rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: #e1196f;
+  left: -1.5rem;
+}
+.get-talent-section .dashboard .menu .menu-items .menu-item:first-child {
+  padding-top: 0 !important;
+  color: #27364d;
+  font-size: 1.2rem;
+}
+.get-talent-section .dashboard .menu .menu-items .forDashboard::before {
+  top: 3%;
+  transform: unset;
+}
+.get-talent-section .dashboard .menu .menu-items .profile-dropdown .profile-dropdown-toggle,
+.get-talent-section .dashboard .menu .menu-items .profile-dropdown .myAcc-dropdown-toggle,
+.get-talent-section .dashboard .menu .menu-items .myAcc-dropdown .profile-dropdown-toggle,
+.get-talent-section .dashboard .menu .menu-items .myAcc-dropdown .myAcc-dropdown-toggle {
+  width: 100%;
+  background: transparent;
+  padding: 1rem 0;
+  text-align: left;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #50b4b2;
+  text-transform: uppercase;
+}
+.get-talent-section .dashboard .menu .menu-items .profile-dropdown .profile-dropdown-toggle::after,
+.get-talent-section .dashboard .menu .menu-items .profile-dropdown .myAcc-dropdown-toggle::after,
+.get-talent-section .dashboard .menu .menu-items .myAcc-dropdown .profile-dropdown-toggle::after,
+.get-talent-section .dashboard .menu .menu-items .myAcc-dropdown .myAcc-dropdown-toggle::after {
+  position: absolute;
+  top: 38%;
+  left: 90%;
+  font-size: 1rem;
+}
+.get-talent-section .dashboard .menu .menu-items .profile-dropdown ul,
+.get-talent-section .dashboard .menu .menu-items .myAcc-dropdown ul {
+  border: 0px;
+  padding: 0;
+  border-radius: 0;
+}
+.get-talent-section .dashboard .menu .menu-items .profile-dropdown ul button,
+.get-talent-section .dashboard .menu .menu-items .myAcc-dropdown ul button {
+  border-bottom: 1px solid #c9c9c9;
+  padding: 1rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #50b4b2;
+  position: relative;
+  cursor: pointer;
+}
+.get-talent-section .dashboard .select-menu {
+  display: none;
+}
+.get-talent-section .dashboard .profile-nav-pills .nav-item {
+  flex: 1 1 0;
+  background-color: #b0dedd;
+  max-width: 16rem;
+  padding: 0;
+  display: flex;
+}
+.get-talent-section .dashboard .profile-nav-pills .nav-item .nav-link {
+  color: #27364d;
+  font-weight: 600;
+  background-color: #b0dedd;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  position: relative;
+}
+.get-talent-section .dashboard .profile-nav-pills .nav-item .active::after {
+  content: "";
+  width: 50%;
+  height: 0.2rem;
+  background-color: #d3175a;
+  display: block;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.get-talent-section .dashboard .profile-accordion .accordion-button {
+  background-color: #b0dedd;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #27364d;
+}
+.get-talent-section .dashboard .profile-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.get-talent-section .dashboard .profile-accordion .accordion-button:after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+.get-talent-section .dashboard .profile-accordion .accordion-body {
+  color: #27364d;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.get-talent-section .dashboard .profile-accordion .accordion-body .spot-qstns-list {
+  padding-left: 0.7rem;
+}
+.get-talent-section .dashboard .dominant-data .content {
+  background-color: #3c3837;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get-talent-section .dashboard .dominant-data .content .hdr {
+  color: #a0bfd3;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.get-talent-section .dashboard .dominant-data .content .sub-hdr {
+  color: #f02f98;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.get-talent-section .dashboard .dominant-data .content .sub-sub-hdr {
+  color: #e8ebdd;
+  font-size: 0.7rem;
+}
+.get-talent-section .dashboard .dominant-data .content dl .title {
+  color: #f02f98;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.get-talent-section .dashboard .dominant-data .content .txt {
+  color: #e8ebdd;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+}
+.get-talent-section .dashboard .dominant-data .content-right {
+  background: linear-gradient(rgba(60, 56, 55, 0.9), rgba(60, 56, 55, 0.9)), url(../assets/images/dominant-person.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.get-talent-section .dashboard .competency-data .hdr {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #203a50;
+}
+.get-talent-section .dashboard .competency-data .content {
+  background-color: #595959;
+  padding: 2rem;
+}
+.get-talent-section .dashboard .competency-data .content .graph-data {
+  padding: 1rem;
+  background: linear-gradient(90deg, rgb(54, 54, 54) 0%, rgb(81, 81, 81) 50%, rgb(54, 54, 54) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get-talent-section .dashboard .competency-data .content .graph-data .title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #d8dce0;
+}
+.get-talent-section .dashboard .competency-data .content .graph-data .graph {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.get-talent-section .dashboard .competency-data .content .list {
+  padding: 2rem 0 0 1rem;
+  margin: 0;
+}
+.get-talent-section .dashboard .video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.get-talent-section .dashboard .video-container video {
+  border: 2rem solid #27364d;
+  flex: 0;
+}
+.get-talent-section .dashboard .data {
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+.get-talent-section .dashboard .dashboard-data .info {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.get-talent-section .dashboard .dashboard-data .step .step-banner {
+  background-color: #f7f7f7;
+  color: #ff214f;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+.get-talent-section .dashboard .dashboard-data .step .step-num {
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+.get-talent-section .dashboard .dashboard-data .step .fa {
+  color: #a6a6a6;
+  font-size: 2rem;
+}
+.get-talent-section .dashboard .dashboard-data .step .title {
+  color: #27364d;
+  text-align: center;
+  font-weight: 600;
+}
+.get-talent-section .dashboard .dashboard-data .step .step-info {
+  color: #1f7882;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 600;
+}
+.get-talent-section .dashboard .status-data {
+  width: 100%;
+}
+.get-talent-section .dashboard .status-data .info {
+  margin-bottom: 1rem;
+}
+.get-talent-section .dashboard .status-data .stats-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #d6f2ef;
+  border-radius: 1rem;
+  border: 2px solid #d8dede;
+}
+.get-talent-section .dashboard .status-data .stats-card h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+  color: #27364d;
+}
+.get-talent-section .dashboard .status-data .stats-card h6 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+  color: #344459;
+}
+.get-talent-section .dashboard .status-data .stats-card img {
+  width: 100%;
+}
+.get-talent-section .dashboard .status-data .h-48 {
+  height: 48.5%;
+}
+.get-talent-section .dashboard .status-data .jobs-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.get-talent-section .dashboard .status-data .jobs-card .stats-sub-card {
+  margin: 0.5rem;
+}
+.get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .content {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  border: 2px solid #d8dede;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+.get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .content h1 {
+  font-size: 3.2rem;
+}
+.get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .content h6 {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+.get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .indicator .title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #595959;
+}
+.get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .views-indicator,
+.get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .applied-indicator {
+  display: block;
+  border-radius: 0.2rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #acdcda;
+}
+.get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .applied-indicator {
+  background-color: #27364d;
+}
+.get-talent-section .dashboard .cart-data {
+  width: 100%;
+  height: 100%;
+}
+.get-talent-section .dashboard .cart-data .table-container {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  overflow: auto;
+  height: 100%;
+}
+.get-talent-section .dashboard .cart-data .table-container table {
+  margin-bottom: 1rem;
+}
+.get-talent-section .dashboard .cart-data .table-container table thead tr th {
+  color: #6f6f83;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+.get-talent-section .dashboard .cart-data .table-container table tbody tr th,
+.get-talent-section .dashboard .cart-data .table-container table tbody tr td {
+  color: #8c8b8c;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+.get-talent-section .dashboard .cart-data .table-container table tbody tr th .remove-cart-btn,
+.get-talent-section .dashboard .cart-data .table-container table tbody tr td .remove-cart-btn {
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding: 0.1rem 0.5rem;
+  text-transform: uppercase;
+  background-color: #fcf8e3;
+  color: #94959a;
+  border: 0;
+  cursor: pointer;
+}
+.get-talent-section .dashboard .cart-data .table-container table tbody tr th .remove-cart-btn:hover,
+.get-talent-section .dashboard .cart-data .table-container table tbody tr td .remove-cart-btn:hover {
+  opacity: 0.7;
+}
+.get-talent-section .dashboard .cart-data .table-container table tbody tr th .remove-cart-btn:active,
+.get-talent-section .dashboard .cart-data .table-container table tbody tr td .remove-cart-btn:active {
+  opacity: 0.5;
+}
+.get-talent-section .dashboard .cart-data .table-container table tbody tr .ttl-amnt {
+  background-color: #d9edf7;
+}
+.get-talent-section .dashboard .cart-data .table-container table tbody tr .amnt {
+  background-color: #dff0d8;
+}
+.get-talent-section .dashboard .cart-data .table-container table tbody tr .amnt-txt,
+.get-talent-section .dashboard .cart-data .table-container table tbody tr .amnt-val {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.get-talent-section .dashboard .cart-data .table-container .prcd-payment-btn {
+  background-color: #5cb85c;
+  border: 0;
+  color: #f1fbf9;
+  border-radius: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.7rem 0.6rem;
+}
+.get-talent-section .dashboard .profile-data {
+  width: 100%;
+}
+.get-talent-section .dashboard .profile-data .for-stepper {
+  padding-bottom: 1rem;
+}
+.get-talent-section .dashboard .profile-data .stepper-container .start {
+  margin-right: 0.36rem;
+}
+.get-talent-section .dashboard .profile-data .stepper-container .company-info .hor-line {
+  width: 4rem;
+}
+.get-talent-section .dashboard .profile-data .stepper-container .hor-line {
+  width: 6rem;
+}
+.get-talent-section .dashboard .profile-data .stepper-container .incomplete .hor-line {
+  width: 4rem;
+}
+.get-talent-section .dashboard .profile-data .stepper-container .start .circle,
+.get-talent-section .dashboard .profile-data .stepper-container .incomplete .circle {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0px 0.35rem #e1196f;
+}
+.get-talent-section .dashboard .profile-data .stepper-container .hor-line {
+  background-color: #cfcfcf;
+}
+.get-talent-section .dashboard .profile-data .stepper-container .completed .hor-line,
+.get-talent-section .dashboard .profile-data .stepper-container .completed .ver-line {
+  background-color: #e1196f;
+}
+.get-talent-section .dashboard .profile-data .profile-forms-btn {
+  border: 2px solid #7f7f7f;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #f4d552;
+  color: #323e4d;
+}
+.get-talent-section .dashboard .profile-data .profile-forms-btn:hover {
+  opacity: 0.7;
+}
+.get-talent-section .dashboard .profile-data .company-info-form {
+  max-height: calc(100vh - 352px);
+  overflow: auto;
+}
+.get-talent-section .dashboard .profile-data .company-info-form ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a6a6a6;
+  opacity: 1; /* Firefox */
+  font-size: 0.8rem;
+}
+.get-talent-section .dashboard .profile-data .company-info-form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a6a6a6;
+  opacity: 1; /* Firefox */
+  font-size: 0.8rem;
+}
+.get-talent-section .dashboard .profile-data .company-info-form input,
+.get-talent-section .dashboard .profile-data .company-info-form select,
+.get-talent-section .dashboard .profile-data .company-info-form textarea {
+  border: 1px solid #c9ced1;
+  color: #745e81;
+  font-size: 0.8rem;
+  font-weight: 500;
+  resize: none;
+}
+.get-talent-section .dashboard .profile-data .company-info-form input:focus,
+.get-talent-section .dashboard .profile-data .company-info-form select:focus,
+.get-talent-section .dashboard .profile-data .company-info-form textarea:focus {
+  box-shadow: none !important;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .fa {
+  color: #a6a6a6;
+}
+.get-talent-section .dashboard .profile-data .company-info-form form {
+  padding: 0.5rem 1rem 0 1rem;
+}
+.get-talent-section .dashboard .profile-data .company-info-form form .hdr {
+  color: #34495e;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .form-2 .input-icon {
+  border-bottom-left-radius: 0;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .form-2 .details {
+  border-bottom-right-radius: 0;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .form-2 select {
+  border-bottom-left-radius: 0;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .form-2 .info-txt {
+  background-color: #f2f4fa;
+  color: #7b7b7c;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border: 1px solid #c9ced1;
+  border-top: 0;
+  border-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-left: 0.1% !important;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .form-2 .info-txt .hlpr-txt {
+  color: #9d9d9d;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .vacancy-details {
+  padding: 1rem;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .vacancy-details .vacancy-hdr {
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .vacancy-details .vacancy-btns {
+  border: 2px solid #cbcbcb;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .vacancy-details .vacancy-btns .btn {
+  font-size: 0.9rem;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .vacancy-details .vacancy-btns .activeBtn {
+  margin-bottom: 0.25rem;
+}
+.get-talent-section .dashboard .profile-data .company-info-form .vacancy-details .vacancy-btns .inactiveBtn {
+  background-color: #d9d9d9;
+  color: #7f7f7f;
+  pointer-events: none;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery {
+  max-height: calc(100vh - 352px);
+  overflow: auto;
+  padding: 1rem;
+  background-color: #f7f7f7;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .file-upload {
+  color: #bfbfbf;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #8e8e8e;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .file-upload:focus {
+  box-shadow: none;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .hlpr-txt {
+  background-color: #e1196f;
+  color: #fef7fa;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  padding: 0.35rem 1.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .hlpr-txt:hover {
+  opacity: 0.7;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .hlpr-txt:active {
+  opacity: 0.5;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .sample-pics img {
+  height: 12rem;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-files-labels .label-names {
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-files {
+  border: 2px solid #c6c6c6;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-video-file .abt {
+  color: #27364d;
+  font-weight: 600;
+  text-align: justify;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-video-file .file-upload {
+  width: 60%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-video-file .upload-video-file-label {
+  display: flex;
+  justify-content: space-between;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-video-file video {
+  width: 100%;
+  border: 0.8rem solid #1c1c1c;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .image-upload label {
+  color: #6c6d6e;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .image-upload input {
+  padding: 0.2rem;
+  font-size: 0.75rem;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .add-btn {
+  background-color: #5bc0de;
+  color: #a2eefc;
+  text-transform: uppercase;
+  border: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 1rem;
+  width: 11rem;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container {
+  background-color: #f7f7f7;
+  overflow: auto;
+  height: 100%;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table {
+  margin-bottom: 1rem;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table thead tr th {
+  color: #5d5a55;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table tbody tr th,
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table tbody tr td {
+  color: #686a74;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table tbody tr th .delete-icon,
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table tbody tr td .delete-icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #d5554c;
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table tbody tr th .delete-icon:hover,
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table tbody tr td .delete-icon:hover {
+  opacity: 0.7;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table tbody tr th .delete-icon:active,
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table tbody tr td .delete-icon:active {
+  opacity: 0.5;
+}
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table tbody tr th .delete-icon .fa,
+.get-talent-section .dashboard .profile-data .upload-video-gallery .upload-img-table .table-container table tbody tr td .delete-icon .fa {
+  color: white;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment {
+  max-height: calc(100vh - 352px);
+  overflow: auto;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-dets .info {
+  color: #27364d;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: justify;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-dets .highlight {
+  color: #e63e66;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-dets .strt-assessment-btn {
+  text-transform: capitalize;
+  padding: 0.35rem 2rem;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-title {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: #27364d;
+  padding: 1rem;
+  border: 2px solid #27364d;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices {
+  display: flex;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices div {
+  flex: 1 1 0px;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices label {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  flex: 1 1 0px;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices label:hover {
+  background-color: #fff;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices label .option {
+  color: #e1196f;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices label .option-txt {
+  color: #27364d;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .btn-check:checked + .btn {
+  background-color: #fff;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-a-lbl,
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-b-lbl,
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-c-lbl,
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-d-lbl {
+  border-radius: 0;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-a-lbl {
+  border: 2px solid #27364d;
+  border-top: 0;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-b-lbl,
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-c-lbl,
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-d-lbl {
+  border: 2px solid #27364d;
+  border-left: 0px solid #27364d;
+  border-top: 0;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .thanks-note .thanks-hdr {
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 100%;
+  display: flex;
+  text-align: justify;
+}
+.get-talent-section .dashboard .profile-data .talent-engagement-assessment .thanks-note .publish-btn {
+  text-transform: uppercase;
+  padding: 0.35rem 2rem;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company {
+  max-height: calc(100vh - 239px);
+  overflow: auto;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .abt-company-container {
+  background-color: #f7f7f7;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .abt-company-container .company-video .company {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #282724;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-bottom: 0.2rem solid #282724;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .abt-company-container .company-video .abt-hdr {
+  color: #282724;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .abt-company-container .company-video .info {
+  color: #8a847e;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .abt-company-container .company-video video {
+  width: 60%;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .abt-company-container .company-video .note {
+  display: block;
+  color: #a39ea6;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .abt-company-container .company-video .download-btn {
+  background-color: white;
+  border: 0;
+  color: #4d4e4e;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.8rem;
+  border-radius: 0;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .title {
+  color: #27364d;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container {
+  display: flex;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-left .graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7f5f4;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-left .graph img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-left .graph .title {
+  text-transform: uppercase;
+  color: #27364d;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right {
+  width: 100%;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .metric {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7f5f4;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .metric .rating {
+  margin-bottom: 0.2rem;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .metric .rating .rate-block {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1rem;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .metric .rate-type {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e1196f;
+  margin-bottom: 0.2rem;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .metric .rate-for {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #27364d;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .low .block1 {
+  background-color: #27364d;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .low .block2,
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .low .block3 {
+  background-color: #bfbfbf;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .med .block1,
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .med .block2 {
+  background-color: #27364d;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .med .block3 {
+  background-color: #bfbfbf;
+}
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .high .block1,
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .high .block2,
+.get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-right .high .block3 {
+  background-color: #27364d;
+}
+.get-talent-section .dashboard .profile-data .to-fro-btns {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+.get-talent-section .dashboard .profile-data .to-fro-btns .btn {
+  background-color: #203a50;
+  color: #14d4d4;
+  border: 1px solid #97a8c5;
+  font-size: 0.7rem;
+  font-weight: 500;
+  width: 5.5rem;
+}
+.get-talent-section .dashboard .profile-data .to-fro-btns .btn:hover {
+  opacity: 0.7;
+}
+.get-talent-section .dashboard .profile-data .to-fro-btns .back-btn {
+  margin-right: 1rem;
+}
+.get-talent-section .dashboard {
+  height: calc(100vh - 175px);
+}
+.get-talent-section .dashboard .menu,
+.get-talent-section .dashboard .data {
+  max-height: calc(100vh - 175px);
+}
+.get-talent-section .dashboard .data {
+  overflow: auto;
+}
+
+@media screen and (max-width: 1120px) {
+  .get-talent-section .company-details .company-greet .greeting {
+    font-size: 2.8rem;
+  }
+  .get-talent-section .company-details .company-greet .companyName {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 1101px) {
+  .get-talent-section .dashboard {
+    height: calc(100vh - 163px);
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form {
+    max-height: calc(100vh - 340px);
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery {
+    max-height: calc(100vh - 371px);
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment {
+    max-height: calc(100vh - 371px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company {
+    max-height: calc(100vh - 227px);
+  }
+}
+@media screen and (max-width: 1044px) {
+  .get-talent-section .dashboard {
+    height: calc(100vh - 177px);
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form {
+    max-height: calc(100vh - 354px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company {
+    max-height: calc(100vh - 241px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .get-talent-section .company-details .company-greet {
+    margin-right: 2rem;
+  }
+  .get-talent-section .company-details .company-greet .greeting {
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+  .get-talent-section .company-details .company-greet .companyName {
+    font-size: 1.3rem;
+  }
+  .get-talent-section .dashboard {
+    height: calc(100vh - 148px);
+  }
+  .get-talent-section .dashboard .menu .menu-items .menu-item {
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .menu .menu-items .menu-item:first-child {
+    font-size: 1rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .gx-5rem {
+    --bs-gutter-x: 2rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .info {
+    font-size: 1.1rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .step .title {
+    font-size: 1.1rem;
+  }
+  .get-talent-section .dashboard .status-data .info {
+    font-size: 1.1rem;
+  }
+  .get-talent-section .dashboard .status-data .stats-card h1 {
+    font-size: 2.5rem;
+  }
+  .get-talent-section .dashboard .status-data .stats-card h6 {
+    font-size: 0.75rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .content h1 {
+    font-size: 2.2rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .content h6 {
+    font-size: 0.7rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .views-indicator,
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .applied-indicator {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .indicator .title {
+    font-size: 0.7rem;
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form {
+    max-height: calc(100vh - 329px);
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery {
+    max-height: calc(100vh - 329px);
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment {
+    max-height: calc(100vh - 329px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company {
+    max-height: calc(100vh - 212px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .abt-company-container .company-video video {
+    width: 100%;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-left {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 800px) {
+  .get-talent-section .dashboard .profile-nav-pills .nav-item .nav-link {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 789px) {
+  .get-talent-section .dashboard {
+    height: calc(100vh - 159px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company {
+    max-height: calc(100vh - 223px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .get-talent-section nav {
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  .get-talent-section nav .brand {
+    width: 6rem;
+  }
+  .get-talent-section .company-details {
+    padding: 1rem;
+  }
+  .get-talent-section .company-details .company-greet {
+    margin-right: 1rem;
+  }
+  .get-talent-section .company-details .company-greet .greeting {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+  .get-talent-section .company-details .company-greet .companyName {
+    font-size: 1rem;
+  }
+  .get-talent-section .dashboard {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: calc(100vh - 119px);
+    flex-direction: column;
+  }
+  .get-talent-section .dashboard .data {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .get-talent-section .dashboard .menu {
+    display: none;
+  }
+  .get-talent-section .dashboard .select-menu {
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    justify-content: end;
+  }
+  .get-talent-section .dashboard .select-menu select {
+    width: auto;
+  }
+  .get-talent-section .dashboard .dashboard-data .gx-5rem {
+    --bs-gutter-x: 2rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .info {
+    font-size: 1rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .step .title {
+    font-size: 1rem;
+  }
+  .get-talent-section .dashboard .status-data .stats .gx-3 {
+    --bs-gutter-x: 0.5rem;
+  }
+  .get-talent-section .dashboard .status-data .info {
+    font-size: 1rem;
+  }
+  .get-talent-section .dashboard .status-data .stats-card h1 {
+    font-size: 2.2rem;
+  }
+  .get-talent-section .dashboard .status-data .stats-card h6 {
+    font-size: 0.7rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .content h1 {
+    font-size: 1.9rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .content h6 {
+    font-size: 0.65rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .views-indicator,
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .applied-indicator {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .indicator .title {
+    font-size: 0.65rem;
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form {
+    max-height: calc(100vh - 317px);
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery {
+    max-height: calc(100vh - 317px);
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment {
+    max-height: calc(100vh - 317px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company {
+    max-height: calc(100vh - 200px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .metrics-container .content-right .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 582px) {
+  .get-talent-section .dashboard {
+    height: calc(100vh - 123px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .get-talent-section nav .brand {
+    width: 5rem;
+  }
+  .get-talent-section .company-details .company-greet {
+    margin-right: 0.5rem;
+  }
+  .get-talent-section .company-details .company-greet .greeting {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  .get-talent-section .company-details .company-greet .companyName {
+    font-size: 0.8rem;
+  }
+  .get-talent-section .company-details .status .status-txt {
+    font-size: 0.6rem;
+  }
+  .get-talent-section .switchToggle label {
+    width: 4rem;
+    max-width: 4rem;
+    height: 1rem;
+  }
+  .get-talent-section .switchToggle input + label:before,
+  .get-talent-section .get-talent-section .switchToggle input + input + label:before {
+    top: 9%;
+    right: 20%;
+    font-size: 0.6rem;
+  }
+  .get-talent-section .switchToggle label:after {
+    top: 3%;
+    left: 3%;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .get-talent-section .switchToggle input:checked + label:before,
+  .get-talent-section .get-talent-section .switchToggle input:checked + input + label:before {
+    top: 9%;
+    left: 20%;
+    font-size: 0.6rem;
+  }
+  .get-talent-section .switchToggle input:checked + label:after,
+  .get-talent-section .get-talent-section .switchToggle input:checked + input + label:after {
+    top: 3%;
+    right: 3%;
+    left: auto;
+  }
+  .get-talent-section .dashboard {
+    height: calc(100vh - 108px);
+  }
+  .get-talent-section .dashboard .competency-data .hdr {
+    font-size: 1rem;
+  }
+  .get-talent-section .dashboard .competency-data .content {
+    padding: 1rem;
+  }
+  .get-talent-section .dashboard .competency-data .content .graph-data {
+    padding: 0.5rem;
+  }
+  .get-talent-section .dashboard .competency-data .content .graph-data .title {
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .competency-data .content .list {
+    padding: 1rem 0 0 1rem;
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .video-container video {
+    border: 1rem solid #27364d;
+  }
+  .get-talent-section .dashboard .data {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .info {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .step .step-banner {
+    padding: 0.8rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .step .step-num {
+    font-size: 0.9rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .step .fa {
+    font-size: 1.5rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .step .title {
+    font-size: 0.9rem;
+  }
+  .get-talent-section .dashboard .dashboard-data .step .step-info {
+    font-size: 0.7rem;
+  }
+  .get-talent-section .dashboard .status-data .info {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .get-talent-section .dashboard .status-data .stats .stats-row-1 {
+    margin-bottom: 0.6rem !important;
+  }
+  .get-talent-section .dashboard .status-data .h-48 {
+    height: 47.8%;
+  }
+  .get-talent-section .dashboard .status-data .stats-card h1 {
+    font-size: 1.8rem;
+  }
+  .get-talent-section .dashboard .status-data .stats-card h6 {
+    font-size: 0.6rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .content h1 {
+    font-size: 1.5rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .content h6 {
+    font-size: 0.6rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .views-indicator,
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .applied-indicator {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .get-talent-section .dashboard .status-data .jobs-card .stats-sub-card .indicator .title {
+    font-size: 0.6rem;
+  }
+  .get-talent-section .dashboard .profile-data .for-stepper {
+    padding-bottom: 0.5rem;
+    overflow: auto;
+  }
+  .get-talent-section .dashboard .profile-data .stepper-container {
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+  }
+  .get-talent-section .dashboard .profile-data .stepper-container .company-info .hor-line {
+    width: 3rem;
+  }
+  .get-talent-section .dashboard .profile-data .stepper-container .hor-line {
+    width: 4rem;
+  }
+  .get-talent-section .dashboard .profile-data .stepper-container .incomplete .hor-line {
+    width: 3rem;
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form {
+    max-height: calc(100vh - 257px);
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form form {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form form .hdr {
+    font-size: 1.2rem;
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form .vacancy-details {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form .vacancy-details .vacancy-hdr {
+    padding-top: 0;
+    font-size: 1rem;
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form .vacancy-details .vacancy-btns .btn {
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery {
+    max-height: calc(100vh - 257px);
+    padding: 0.5rem;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .row {
+    margin: 0;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .sample-pics .row {
+    --bs-gutter-x: 0.25rem;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .sample-pics img {
+    height: 100%;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .upload-files-labels .label-names {
+    font-size: 0.75rem;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .upload-files .row {
+    --bs-gutter-x: 0.25rem;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .file-upload {
+    font-size: 0.75rem;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .hlpr-txt {
+    font-size: 0.75rem;
+    width: 100%;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .upload-video-file .abt {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .upload-video-file video {
+    border: 0.4rem solid #1c1c1c;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .upload-video-file .upload-video-file-label {
+    flex-direction: column;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery .upload-video-file .file-upload {
+    width: 100%;
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment {
+    max-height: calc(100vh - 257px);
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-dets .info {
+    font-size: 1rem;
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-dets .strt-assessment-btn {
+    padding: 0.35rem 1rem;
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-title {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices {
+    flex-direction: column;
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices label {
+    padding: 0.5rem;
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices label .option {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices label .option-txt {
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-b-lbl,
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-c-lbl,
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .assessment-qstn .qstn-choices .choice-d-lbl {
+    border-left: 3px solid #27364d;
+  }
+  .get-talent-section .dashboard .profile-data .talent-engagement-assessment .thanks-note .thanks-hdr {
+    font-size: 1rem;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company {
+    max-height: calc(100vh - 189px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .abt-company-container .company-video .company {
+    font-size: 1rem;
+    border-bottom: 0.1rem solid #282724;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .metrics-container {
+    flex-direction: column;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .metrics-container .content-left {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .metrics-container .content-left .graph {
+    padding: 0.5rem;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .metrics-container .content-left .graph img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .metrics-container .content-left .graph .title {
+    font-size: 0.7rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .metrics-container .content-right .metric {
+    padding: 0.5rem;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .metrics-container .content-right .metric .rating .rate-block {
+    width: 1rem;
+    height: 0.6rem;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .metrics-container .content-right .metric .rate-type {
+    font-size: 0.75rem;
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company .metrics-container .content-right .metric .rate-for {
+    font-size: 0.65rem;
+  }
+  .get-talent-section .dashboard .profile-data .to-fro-btns {
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  .get-talent-section .dashboard {
+    height: calc(100vh - 109px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company {
+    max-height: calc(100vh - 190px);
+  }
+}
+@media screen and (max-width: 426px) {
+  .get-talent-section .dashboard {
+    height: calc(100vh - 109px);
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form {
+    max-height: calc(100vh - 260px);
+  }
+}
+@media screen and (max-width: 398px) {
+  .get-talent-section .dashboard .profile-data .for-stepper {
+    margin-bottom: 0.5rem;
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery {
+    max-height: calc(100vh - 260px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company {
+    max-height: calc(100vh - 190px);
+  }
+}
+@media screen and (max-width: 379px) {
+  .get-talent-section .dashboard {
+    height: calc(100vh - 125px);
+  }
+  .get-talent-section .dashboard .profile-data .company-info-form {
+    max-height: calc(100vh - 276px);
+  }
+  .get-talent-section .dashboard .profile-data .upload-video-gallery {
+    max-height: calc(100vh - 276px);
+  }
+  .get-talent-section .dashboard .profile-data .my-profile-abt-company {
+    max-height: calc(100vh - 276px);
+  }
+}
+@media screen and (max-width: 360px) {
+  .get-talent-section .dashboard .profile-data .company-info-form {
+    max-height: calc(100vh - 280px);
+  }
+}
+@media screen and (max-width: 350px) {
+  .for-stepper {
+    justify-content: unset !important;
+  }
+}/*# sourceMappingURL=getTalent.css.map */

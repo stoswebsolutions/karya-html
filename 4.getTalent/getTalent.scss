@@ -1,0 +1,1891 @@
+// styles
+@import '../assets/styles.scss';
+
+// nav
+@import '../assets/nav.scss';
+
+// stepper
+@import '../assets/stepper.scss';
+
+.karya-container {
+  scroll-snap-align: unset;
+  overflow-y: auto;
+  .karya-section {
+    scroll-snap-align: unset;
+  }
+}
+
+.get-talent-section {
+  nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .menu-icon {
+      color: #50b4b2;
+    }
+    ul {
+      a {
+        color: #50b4b2;
+      }
+    }
+  }
+
+  .company-details {
+    padding-bottom: 1rem;
+    .company-greet {
+      margin-right: 2rem;
+      .greeting {
+        color: #50b4b2;
+        font-size: 3.4rem;
+        margin-right: 8rem;
+      }
+      .companyName {
+        font-size: 2.2rem;
+      }
+    }
+    .status {
+      .status-txt {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  // for ON OFF switch
+  .switchToggle input[type='checkbox'] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+  .switchToggle label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 5rem;
+    max-width: 5rem;
+    height: 1.5rem;
+    background: $primary-color;
+    display: block;
+    border-radius: 15rem;
+    position: relative;
+    border: 0.1rem solid #50b4b2;
+  }
+  .switchToggle label:after {
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #50b4b2;
+    border-radius: 15rem;
+    transition: all 0.3s;
+  }
+  .switchToggle input:checked + label,
+  .switchToggle input:checked + input + label {
+    background: $primary-color;
+  }
+  .switchToggle input + label:before,
+  .switchToggle input + input + label:before {
+    content: 'OFF';
+    position: absolute;
+    top: 13%;
+    right: 16%;
+    font-size: 0.8rem;
+    border-radius: 15rem;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+  }
+  .switchToggle input:checked + label:before,
+  .switchToggle input:checked + input + label:before {
+    content: 'ON';
+    position: absolute;
+    top: 13%;
+    left: 16%;
+    font-size: 0.8rem;
+    border-radius: 15rem;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+  }
+  .switchToggle input:checked + label:after,
+  .switchToggle input:checked + input + label:after {
+    top: 8%;
+    right: 3%;
+    left: auto;
+    background-color: #fff;
+  }
+  .switchToggle label:active:after {
+    width: 60px;
+  }
+  .toggle-switchArea {
+    margin: 10px 0 10px 0;
+  }
+  // ends::for ON OFF switch
+
+  #offcanvasMenu {
+    ul {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .get-talent-btn {
+    background-color: #e1196f;
+    color: #fef7fa;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    padding: 0.35rem 1.2rem;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+      background-color: #e1196f;
+      color: #fef7fa;
+    }
+  }
+
+  .dashboard {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #f9f9f9;
+    .menu {
+      padding-left: 4rem;
+      padding-right: 2rem;
+      flex: 0 0 auto;
+      .menu-items {
+        list-style: none;
+        .menu-item {
+          border-bottom: 1px solid #c9c9c9;
+          padding: 1rem 0;
+          font-size: 0.8rem;
+          font-weight: 600;
+          color: #50b4b2;
+          position: relative;
+          cursor: pointer;
+        }
+        .profile {
+          padding: 0;
+        }
+        .active::before {
+          content: '';
+          position: absolute;
+          width: 0.3rem;
+          height: 1.5rem;
+          top: 50%;
+          transform: translate(0, -50%);
+          background: #e1196f;
+          left: -1.5rem;
+        }
+        .menu-item:first-child {
+          padding-top: 0 !important;
+          color: #27364d;
+          font-size: 1.2rem;
+        }
+        .forDashboard::before {
+          top: 3%;
+          transform: unset;
+        }
+        .profile-dropdown,
+        .myAcc-dropdown {
+          .profile-dropdown-toggle,
+          .myAcc-dropdown-toggle {
+            width: 100%;
+            background: transparent;
+            padding: 1rem 0;
+            text-align: left;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #50b4b2;
+            text-transform: uppercase;
+            &::after {
+              position: absolute;
+              top: 38%;
+              left: 90%;
+              font-size: 1rem;
+            }
+          }
+          ul {
+            border: 0px;
+            padding: 0;
+            border-radius: 0;
+            // top: 0.5rem !important;
+            button {
+              border-bottom: 1px solid #c9c9c9;
+              padding: 1rem 0.5rem;
+              font-size: 0.8rem;
+              font-weight: 600;
+              color: #50b4b2;
+              position: relative;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .select-menu {
+      display: none;
+    }
+    .profile-nav-pills {
+      .nav-item {
+        flex: 1 1 0;
+        background-color: #b0dedd;
+        max-width: 16rem;
+        padding: 0;
+        display: flex;
+        .nav-link {
+          color: #27364d;
+          font-weight: 600;
+          background-color: #b0dedd;
+          padding-top: 0.8rem;
+          padding-bottom: 0.8rem;
+          position: relative;
+        }
+        .active::after {
+          content: '';
+          width: 50%;
+          height: 0.2rem;
+          background-color: #d3175a;
+          display: block;
+          position: absolute;
+          bottom: -20%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+      }
+    }
+
+    .profile-accordion {
+      .accordion-button {
+        background-color: #b0dedd;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #27364d;
+        &:focus {
+          box-shadow: none;
+        }
+        &:after {
+          background-image: var(--bs-accordion-btn-icon);
+        }
+      }
+      .accordion-body {
+        color: #27364d;
+        font-weight: 600;
+        font-size: 0.8rem;
+        .spot-qstns-list {
+          padding-left: 0.7rem;
+        }
+      }
+    }
+
+    .dominant-data {
+      .content {
+        background-color: #3c3837;
+        height: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .hdr {
+          color: #a0bfd3;
+          font-size: 0.75rem;
+          font-weight: 600;
+        }
+        .sub-hdr {
+          color: #f02f98;
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
+        .sub-sub-hdr {
+          color: #e8ebdd;
+          font-size: 0.7rem;
+        }
+        dl {
+          .title {
+            color: #f02f98;
+            font-size: 0.7rem;
+            font-weight: 400;
+          }
+        }
+        .txt {
+          color: #e8ebdd;
+          font-size: 0.7rem;
+          font-weight: 400;
+          text-align: left;
+          width: 100%;
+        }
+      }
+      .content-right {
+        background: linear-gradient(
+            rgba(60, 56, 55, 0.9),
+            rgba(60, 56, 55, 0.9)
+          ),
+          url(../assets/images/dominant-person.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .competency-data {
+      .hdr {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #203a50;
+      }
+      .content {
+        background-color: #595959;
+        padding: 2rem;
+        .graph-data {
+          padding: 1rem;
+          background: linear-gradient(
+            90deg,
+            rgba(54, 54, 54, 1) 0%,
+            rgba(81, 81, 81, 1) 50%,
+            rgba(54, 54, 54, 1) 100%
+          );
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #d8dce0;
+          }
+          .graph {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .list {
+          padding: 2rem 0 0 1rem;
+          margin: 0;
+        }
+      }
+    }
+
+    .video-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      video {
+        border: 2rem solid #27364d;
+        flex: 0;
+      }
+    }
+
+    .data {
+      padding-left: 2rem;
+      padding-right: 4rem;
+    }
+    .dashboard-data {
+      .info {
+        text-align: justify;
+        margin-bottom: 1rem;
+      }
+      .step {
+        .step-banner {
+          background-color: #f7f7f7;
+          color: #ff214f;
+          font-size: 1rem;
+          font-weight: 600;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        .step-num {
+          margin-bottom: 0.2rem;
+          text-align: center;
+        }
+        .fa {
+          color: #a6a6a6;
+          font-size: 2rem;
+        }
+        .title {
+          color: #27364d;
+          text-align: center;
+          font-weight: 600;
+        }
+        .step-info {
+          color: #1f7882;
+          text-align: center;
+          font-size: 0.8rem;
+          line-height: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+    .status-data {
+      width: 100%;
+      .info {
+        margin-bottom: 1rem;
+      }
+      .stats-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        background-color: #d6f2ef;
+        border-radius: 1rem;
+        border: 2px solid #d8dede;
+        h1 {
+          font-size: 3.5rem;
+          font-weight: 600;
+          text-align: center;
+          margin-bottom: 0;
+          color: #27364d;
+        }
+        h6 {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          text-align: center;
+          margin-bottom: 0;
+          color: #344459;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .h-48 {
+        height: 48.5%;
+      }
+      .jobs-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .stats-sub-card {
+          margin: 0.5rem;
+          .content {
+            background-color: #fff;
+            border-radius: 0.8rem;
+            border: 2px solid #d8dede;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+            h1 {
+              font-size: 3.2rem;
+            }
+            h6 {
+              font-size: 0.75rem;
+              text-transform: capitalize;
+            }
+          }
+
+          .indicator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .title {
+              font-size: 0.75rem;
+              font-weight: 600;
+              color: #595959;
+            }
+          }
+          .views-indicator,
+          .applied-indicator {
+            display: block;
+            border-radius: 0.2rem;
+            width: 0.75rem;
+            height: 0.75rem;
+            background-color: #acdcda;
+          }
+          .applied-indicator {
+            background-color: #27364d;
+          }
+        }
+      }
+    }
+    .cart-data {
+      width: 100%;
+      height: 100%;
+      .table-container {
+        background-color: #f7f7f7;
+        padding: 1rem;
+        overflow: auto;
+        height: 100%;
+
+        table {
+          margin-bottom: 1rem;
+          thead {
+            tr {
+              th {
+                color: #6f6f83;
+                font-size: 0.85rem;
+                font-weight: 600;
+                padding: 0.5rem;
+              }
+            }
+          }
+          tbody {
+            tr {
+              th,
+              td {
+                color: #8c8b8c;
+                font-size: 0.8rem;
+                font-weight: 500;
+                padding: 0.5rem;
+                .remove-cart-btn {
+                  font-size: 0.7rem;
+                  font-weight: 400;
+                  padding: 0.1rem 0.5rem;
+                  text-transform: uppercase;
+                  background-color: #fcf8e3;
+                  color: #94959a;
+                  border: 0;
+                  cursor: pointer;
+                  &:hover {
+                    opacity: 0.7;
+                  }
+                  &:active {
+                    opacity: 0.5;
+                  }
+                }
+              }
+              .ttl-amnt {
+                background-color: #d9edf7;
+              }
+              .amnt {
+                background-color: #dff0d8;
+              }
+              .amnt-txt,
+              .amnt-val {
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+              }
+            }
+          }
+        }
+        .prcd-payment-btn {
+          background-color: #5cb85c;
+          border: 0;
+          color: #f1fbf9;
+          border-radius: 0;
+          font-size: 0.85rem;
+          font-weight: 500;
+          padding: 0.7rem 0.6rem;
+        }
+      }
+    }
+    .profile-data {
+      width: 100%;
+      .for-stepper {
+        padding-bottom: 1rem;
+      }
+      .stepper-container {
+        .start {
+          margin-right: 0.36rem;
+        }
+        .company-info {
+          .hor-line {
+            width: 4rem;
+          }
+        }
+        .hor-line {
+          width: 6rem;
+        }
+        .incomplete {
+          .hor-line {
+            width: 4rem;
+          }
+        }
+        .start,
+        .incomplete {
+          .circle {
+            background-color: #ffffff;
+            box-shadow: 0px 0px 0px 0.35rem #e1196f;
+          }
+        }
+        .hor-line {
+          background-color: #cfcfcf;
+        }
+        .completed {
+          .hor-line,
+          .ver-line {
+            background-color: #e1196f;
+          }
+        }
+      }
+      .profile-forms-btn {
+        border: 2px solid #7f7f7f;
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: #f4d552;
+        color: #323e4d;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      .company-info-form {
+        max-height: calc(100vh - 352px);
+        overflow: auto;
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #a6a6a6;
+          opacity: 1; /* Firefox */
+          font-size: 0.8rem;
+        }
+        //for select placeholder
+        input,
+        select,
+        textarea {
+          border: 1px solid #c9ced1;
+          color: #745e81;
+          font-size: 0.8rem;
+          font-weight: 500;
+          resize: none;
+          &:focus {
+            box-shadow: none !important;
+          }
+        }
+        .fa {
+          color: #a6a6a6;
+        }
+        form {
+          padding: 0.5rem 1rem 0 1rem;
+          .hdr {
+            color: #34495e;
+            font-size: 1.8rem;
+            font-weight: 500;
+          }
+        }
+        .form-2 {
+          .input-icon {
+            border-bottom-left-radius: 0;
+          }
+          .details {
+            border-bottom-right-radius: 0;
+          }
+          select {
+            border-bottom-left-radius: 0;
+          }
+          .info-txt {
+            background-color: #f2f4fa;
+            color: #7b7b7c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+            border: 1px solid #c9ced1;
+            border-top: 0;
+            border-radius: 0.25rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-left: 0.1% !important;
+            .hlpr-txt {
+              color: #9d9d9d;
+            }
+          }
+        }
+        .vacancy-details {
+          padding: 1rem;
+          .vacancy-hdr {
+            font-size: 1.2rem;
+            font-weight: 600;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+          }
+          .vacancy-btns {
+            border: 2px solid #cbcbcb;
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+            .btn {
+              // border: 2px solid #7f7f7f;
+              // font-weight: 600;
+              font-size: 0.9rem;
+              // &:hover {
+              //   opacity: 0.7;
+              // }
+            }
+            .activeBtn {
+              margin-bottom: 0.25rem;
+              // background-color: $yellow-color;
+              // color: $primary-color;
+            }
+            .inactiveBtn {
+              background-color: #d9d9d9;
+              color: #7f7f7f;
+              pointer-events: none;
+            }
+          }
+        }
+      }
+      .upload-video-gallery {
+        max-height: calc(100vh - 352px);
+        overflow: auto;
+        padding: 1rem;
+        background-color: #f7f7f7;
+        .file-upload {
+          color: #bfbfbf;
+          font-size: 0.9rem;
+          font-weight: 500;
+          border: 1px solid #8e8e8e;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        .hlpr-txt {
+          background-color: #e1196f;
+          color: #fef7fa;
+          text-transform: uppercase;
+          font-size: 1rem;
+          font-weight: 600;
+          border-radius: 0.3rem;
+          padding: 0.35rem 1.2rem;
+          text-align: center;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.7;
+          }
+          &:active {
+            opacity: 0.5;
+          }
+        }
+        .sample-pics {
+          img {
+            height: 12rem;
+          }
+        }
+        .upload-files-labels {
+          .label-names {
+            color: #000000;
+            font-size: 0.8rem;
+            font-weight: 600;
+          }
+        }
+        .upload-files {
+          border: 2px solid #c6c6c6;
+        }
+        .upload-video-file {
+          .abt {
+            color: #27364d;
+            font-weight: 600;
+            text-align: justify;
+          }
+          .file-upload {
+            width: 60%;
+            height: fit-content;
+          }
+          .upload-video-file-label {
+            display: flex;
+            justify-content: space-between;
+          }
+          video {
+            width: 100%;
+            border: 0.8rem solid #1c1c1c;
+          }
+        }
+        .upload-img-table {
+          .image-upload {
+            label {
+              color: #6c6d6e;
+              font-size: 0.75rem;
+              font-weight: 600;
+            }
+            input {
+              padding: 0.2rem;
+              font-size: 0.75rem;
+            }
+          }
+          .add-btn {
+            background-color: #5bc0de;
+            color: #a2eefc;
+            text-transform: uppercase;
+            border: 0;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.2rem 1rem;
+            width: 11rem;
+          }
+          .table-container {
+            background-color: #f7f7f7;
+            overflow: auto;
+            height: 100%;
+
+            table {
+              margin-bottom: 1rem;
+              thead {
+                tr {
+                  th {
+                    color: #5d5a55;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    padding: 0.3rem;
+                  }
+                }
+              }
+              tbody {
+                tr {
+                  th,
+                  td {
+                    color: #686a74;
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    padding: 0.3rem;
+                    .delete-icon {
+                      width: fit-content;
+                      background-color: #d5554c;
+                      padding: 0.1rem 0.5rem;
+                      cursor: pointer;
+                      &:hover {
+                        opacity: 0.7;
+                      }
+                      &:active {
+                        opacity: 0.5;
+                      }
+                      .fa {
+                        color: white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .talent-engagement-assessment {
+        max-height: calc(100vh - 352px);
+        overflow: auto;
+        .assessment-dets {
+          .info {
+            color: #27364d;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: justify;
+          }
+          .highlight {
+            color: #e63e66;
+          }
+          .strt-assessment-btn {
+            text-transform: capitalize;
+            padding: 0.35rem 2rem;
+          }
+        }
+        .assessment-qstn {
+          .qstn-title {
+            color: #ffffff;
+            font-size: 1.6rem;
+            font-weight: 500;
+            text-align: center;
+            background-color: #27364d;
+            padding: 1rem;
+            border: 2px solid #27364d;
+          }
+          .qstn-choices {
+            display: flex;
+            div {
+              flex: 1 1 0px;
+            }
+            label {
+              display: flex;
+              flex-direction: column;
+              border: none;
+              background-color: #f2f2f2;
+              padding: 1rem;
+              flex: 1 1 0px;
+              &:hover {
+                background-color: #fff;
+              }
+              .option {
+                color: #e1196f;
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+              }
+              .option-txt {
+                color: #27364d;
+                font-size: 0.9rem;
+                font-weight: 600;
+                line-height: 1.2rem;
+              }
+            }
+            .btn-check:checked + .btn {
+              background-color: #fff;
+            }
+            .choice-a-lbl,
+            .choice-b-lbl,
+            .choice-c-lbl,
+            .choice-d-lbl {
+              border-radius: 0;
+            }
+            .choice-a-lbl {
+              border: 2px solid #27364d;
+              border-top: 0;
+            }
+            .choice-b-lbl,
+            .choice-c-lbl,
+            .choice-d-lbl {
+              border: 2px solid #27364d;
+              border-left: 0px solid #27364d;
+              border-top: 0;
+            }
+          }
+        }
+        .thanks-note {
+          .thanks-hdr {
+            font-size: 1.2rem;
+            font-weight: 600;
+            height: 100%;
+            display: flex;
+            text-align: justify;
+          }
+          .publish-btn {
+            text-transform: uppercase;
+            padding: 0.35rem 2rem;
+          }
+        }
+      }
+      .my-profile-abt-company {
+        max-height: calc(100vh - 239px);
+        overflow: auto;
+        .abt-company-container {
+          background-color: #f7f7f7;
+          .company-video {
+            .company {
+              width: fit-content;
+              color: #282724;
+              text-transform: uppercase;
+              font-size: 1.2rem;
+              font-weight: 800;
+              border-bottom: 0.2rem solid #282724;
+            }
+            .abt-hdr {
+              color: #282724;
+              text-transform: uppercase;
+              font-size: 0.8rem;
+              font-weight: 600;
+              margin: 1rem 0 0.5rem 0;
+            }
+            .info {
+              color: #8a847e;
+              font-size: 0.75rem;
+              font-weight: 500;
+              margin-bottom: 0.5rem;
+            }
+            video {
+              width: 60%;
+            }
+            .note {
+              display: block;
+              color: #a39ea6;
+              font-size: 0.7rem;
+              font-weight: 500;
+            }
+            .download-btn {
+              background-color: white;
+              border: 0;
+              color: #4d4e4e;
+              font-size: 0.7rem;
+              font-weight: 600;
+              padding: 0.25rem 0.8rem;
+              border-radius: 0;
+            }
+          }
+        }
+        .engagement-metrics {
+          .title {
+            color: #27364d;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+          .metrics-container {
+            display: flex;
+            .content-left {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .graph {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #e7f5f4;
+                padding: 1rem;
+                border-radius: 0.4rem;
+
+                img {
+                  width: 4.5rem;
+                  height: 4.5rem;
+                }
+                .title {
+                  text-transform: uppercase;
+                  color: #27364d;
+                  font-size: 1rem;
+                  font-weight: 600;
+                  margin-top: 0.5rem;
+                }
+              }
+            }
+            .content-right {
+              width: 100%;
+              .metric {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #e7f5f4;
+                padding: 0.8rem;
+                border-radius: 0.4rem;
+                .rating {
+                  .rate-block {
+                    display: inline-block;
+                    width: 1.4rem;
+                    height: 1rem;
+                  }
+                  margin-bottom: 0.2rem;
+                }
+                .rate-type {
+                  text-transform: uppercase;
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  color: #e1196f;
+                  margin-bottom: 0.2rem;
+                }
+                .rate-for {
+                  font-size: 0.72rem;
+                  font-weight: 600;
+                  color: #27364d;
+                  margin-bottom: 0.2rem;
+                  text-align: center;
+                  line-height: 0.8rem;
+                }
+              }
+              .low {
+                .block1 {
+                  background-color: #27364d;
+                }
+                .block2,
+                .block3 {
+                  background-color: #bfbfbf;
+                }
+              }
+              .med {
+                .block1,
+                .block2 {
+                  background-color: #27364d;
+                }
+                .block3 {
+                  background-color: #bfbfbf;
+                }
+              }
+              .high {
+                .block1,
+                .block2,
+                .block3 {
+                  background-color: #27364d;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .to-fro-btns {
+        display: flex;
+        justify-content: end;
+        padding: 1rem;
+        .btn {
+          background-color: #203a50;
+          color: #14d4d4;
+          border: 1px solid #97a8c5;
+          font-size: 0.7rem;
+          font-weight: 500;
+          width: 5.5rem;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        .back-btn {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  .dashboard {
+    // height: calc(100vh - 175px);
+    height: calc(100vh - 175px);
+    .menu,
+    .data {
+      max-height: calc(100vh - 175px);
+      // overflow: auto;
+    }
+    .data {
+      overflow: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .get-talent-section {
+    .company-details {
+      .company-greet {
+        .greeting {
+          font-size: 2.8rem;
+        }
+        .companyName {
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1101px) {
+  .get-talent-section {
+    .dashboard {
+      height: calc(100vh - 163px);
+      .profile-data {
+        .company-info-form {
+          max-height: calc(100vh - 340px);
+        }
+        .upload-video-gallery {
+          max-height: calc(100vh - 371px);
+        }
+        .talent-engagement-assessment {
+          max-height: calc(100vh - 371px);
+        }
+        .my-profile-abt-company {
+          max-height: calc(100vh - 227px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1071px) {
+  .get-talent-section {
+    .dashboard {
+      .profile-data {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .get-talent-section {
+    .dashboard {
+      height: calc(100vh - 177px);
+      .profile-data {
+        .company-info-form {
+          max-height: calc(100vh - 354px);
+        }
+        .my-profile-abt-company {
+          max-height: calc(100vh - 241px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .get-talent-section {
+    .company-details {
+      .company-greet {
+        margin-right: 2rem;
+        .greeting {
+          font-size: 2rem;
+          margin-right: 2rem;
+        }
+        .companyName {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .dashboard {
+      height: calc(100vh - 148px);
+      .menu {
+        .menu-items {
+          .menu-item {
+            font-size: 0.8rem;
+          }
+          .menu-item:first-child {
+            font-size: 1rem;
+          }
+        }
+      }
+      .dashboard-data {
+        .gx-5rem {
+          --bs-gutter-x: 2rem;
+        }
+        .info {
+          font-size: 1.1rem;
+        }
+        .step {
+          .title {
+            font-size: 1.1rem;
+          }
+        }
+      }
+      .status-data {
+        .info {
+          font-size: 1.1rem;
+        }
+        .stats-card {
+          h1 {
+            font-size: 2.5rem;
+          }
+          h6 {
+            font-size: 0.75rem;
+          }
+        }
+        .jobs-card {
+          .stats-sub-card {
+            .content {
+              h1 {
+                font-size: 2.2rem;
+              }
+              h6 {
+                font-size: 0.7rem;
+              }
+            }
+            .views-indicator,
+            .applied-indicator {
+              width: 0.7rem;
+              height: 0.7rem;
+            }
+            .indicator {
+              .title {
+                font-size: 0.7rem;
+              }
+            }
+          }
+        }
+      }
+      .profile-data {
+        .company-info-form {
+          max-height: calc(100vh - 329px);
+        }
+        .upload-video-gallery {
+          max-height: calc(100vh - 329px);
+        }
+        .talent-engagement-assessment {
+          max-height: calc(100vh - 329px);
+        }
+        .my-profile-abt-company {
+          max-height: calc(100vh - 212px);
+        }
+        .my-profile-abt-company {
+          .abt-company-container {
+            .company-video {
+              video {
+                width: 100%;
+              }
+            }
+          }
+          .engagement-metrics {
+            .metrics-container {
+              .content-left {
+                justify-content: flex-start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .get-talent-section {
+    .dashboard {
+      .profile-nav-pills {
+        .nav-item {
+          .nav-link {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .get-talent-section {
+    .dashboard {
+      height: calc(100vh - 159px);
+      .profile-data {
+        .my-profile-abt-company {
+          max-height: calc(100vh - 223px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .get-talent-section {
+    nav {
+      padding: 1rem;
+      padding-bottom: 0;
+      .brand {
+        width: 6rem;
+      }
+    }
+    .company-details {
+      padding: 1rem;
+      .company-greet {
+        margin-right: 1rem;
+        .greeting {
+          font-size: 1.8rem;
+          margin-right: 1rem;
+        }
+        .companyName {
+          font-size: 1rem;
+        }
+      }
+    }
+    .dashboard {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      height: calc(100vh - 119px);
+      flex-direction: column;
+      .data {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .menu {
+        display: none;
+      }
+      .select-menu {
+        padding: 0 1rem 1rem 1rem;
+        display: flex;
+        justify-content: end;
+        select {
+          width: auto;
+        }
+      }
+      .dashboard-data {
+        .gx-5rem {
+          --bs-gutter-x: 2rem;
+        }
+        .info {
+          font-size: 1rem;
+        }
+        .step {
+          .title {
+            font-size: 1rem;
+          }
+        }
+      }
+      .status-data {
+        .stats {
+          .gx-3 {
+            --bs-gutter-x: 0.5rem;
+          }
+        }
+        .info {
+          font-size: 1rem;
+        }
+        .stats-card {
+          h1 {
+            font-size: 2.2rem;
+          }
+          h6 {
+            font-size: 0.7rem;
+          }
+        }
+        .jobs-card {
+          .stats-sub-card {
+            .content {
+              h1 {
+                font-size: 1.9rem;
+              }
+              h6 {
+                font-size: 0.65rem;
+              }
+            }
+            .views-indicator,
+            .applied-indicator {
+              width: 0.65rem;
+              height: 0.65rem;
+            }
+            .indicator {
+              .title {
+                font-size: 0.65rem;
+              }
+            }
+          }
+        }
+      }
+      .profile-data {
+        .company-info-form {
+          max-height: calc(100vh - 317px);
+        }
+        .upload-video-gallery {
+          max-height: calc(100vh - 317px);
+        }
+        .talent-engagement-assessment {
+          max-height: calc(100vh - 317px);
+        }
+        .my-profile-abt-company {
+          max-height: calc(100vh - 200px);
+          .metrics-container {
+            .content-right {
+              .row {
+                margin-left: 0;
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 654px) {
+  .get-talent-section {
+    .dashboard {
+      .profile-data {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .get-talent-section {
+    .dashboard {
+      height: calc(100vh - 123px);
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .get-talent-section {
+    nav {
+      .brand {
+        width: 5rem;
+      }
+    }
+    .company-details {
+      .company-greet {
+        margin-right: 0.5rem;
+        .greeting {
+          font-size: 1.5rem;
+          margin-right: 0.5rem;
+        }
+        .companyName {
+          font-size: 0.8rem;
+        }
+      }
+      .status {
+        .status-txt {
+          font-size: 0.6rem;
+        }
+      }
+    }
+    .switchToggle label {
+      width: 4rem;
+      max-width: 4rem;
+      height: 1rem;
+    }
+    .switchToggle input + label:before,
+    .get-talent-section .switchToggle input + input + label:before {
+      top: 9%;
+      right: 20%;
+      font-size: 0.6rem;
+    }
+    .switchToggle label:after {
+      top: 3%;
+      left: 3%;
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+    .switchToggle input:checked + label:before,
+    .get-talent-section .switchToggle input:checked + input + label:before {
+      top: 9%;
+      left: 20%;
+      font-size: 0.6rem;
+    }
+    .switchToggle input:checked + label:after,
+    .get-talent-section .switchToggle input:checked + input + label:after {
+      top: 3%;
+      right: 3%;
+      left: auto;
+    }
+    .dashboard {
+      height: calc(100vh - 108px);
+      .competency-data {
+        .hdr {
+          font-size: 1rem;
+        }
+        .content {
+          padding: 1rem;
+          .graph-data {
+            padding: 0.5rem;
+            .title {
+              font-size: 0.8rem;
+            }
+          }
+          .list {
+            padding: 1rem 0 0 1rem;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .video-container {
+        video {
+          border: 1rem solid #27364d;
+        }
+      }
+      .data {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .dashboard-data {
+        .info {
+          font-size: 0.9rem;
+          margin-bottom: 0.5rem;
+        }
+        .step {
+          .step-banner {
+            padding: 0.8rem;
+          }
+          .step-num {
+            font-size: 0.9rem;
+          }
+          .fa {
+            font-size: 1.5rem;
+          }
+          .title {
+            font-size: 0.9rem;
+          }
+          .step-info {
+            font-size: 0.7rem;
+          }
+        }
+      }
+      .status-data {
+        .info {
+          font-size: 0.9rem;
+          margin-bottom: 0.5rem;
+        }
+        .stats {
+          .stats-row-1 {
+            margin-bottom: 0.6rem !important;
+          }
+        }
+        .h-48 {
+          height: 47.8%;
+        }
+        .stats-card {
+          h1 {
+            font-size: 1.8rem;
+          }
+          h6 {
+            font-size: 0.6rem;
+          }
+        }
+        .jobs-card {
+          .stats-sub-card {
+            .content {
+              h1 {
+                font-size: 1.5rem;
+              }
+              h6 {
+                font-size: 0.6rem;
+              }
+            }
+            .views-indicator,
+            .applied-indicator {
+              width: 0.6rem;
+              height: 0.6rem;
+            }
+            .indicator {
+              .title {
+                font-size: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+      .profile-data {
+        .for-stepper {
+          padding-bottom: 0.5rem;
+          overflow: auto;
+        }
+        .stepper-container {
+          padding: 0.5rem 0.5rem 2rem 0.5rem;
+          .company-info {
+            .hor-line {
+              width: 3rem;
+            }
+          }
+          .hor-line {
+            width: 4rem;
+          }
+          .incomplete {
+            .hor-line {
+              width: 3rem;
+            }
+          }
+        }
+        .company-info-form {
+          max-height: calc(100vh - 257px);
+          form {
+            padding: 0.5rem 0.5rem 0 0.5rem;
+            .hdr {
+              font-size: 1.2rem;
+            }
+          }
+          .vacancy-details {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            .vacancy-hdr {
+              padding-top: 0;
+              font-size: 1rem;
+            }
+            .vacancy-btns {
+              .btn {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+        .upload-video-gallery {
+          max-height: calc(100vh - 257px);
+          padding: 0.5rem;
+          .row {
+            margin: 0;
+          }
+          .sample-pics {
+            .row {
+              --bs-gutter-x: 0.25rem;
+            }
+            img {
+              height: 100%;
+            }
+          }
+          .upload-files-labels {
+            .label-names {
+              font-size: 0.75rem;
+            }
+          }
+          .upload-files {
+            .row {
+              --bs-gutter-x: 0.25rem;
+            }
+          }
+          .file-upload {
+            font-size: 0.75rem;
+          }
+          .hlpr-txt {
+            font-size: 0.75rem;
+            width: 100%;
+          }
+          .upload-video-file {
+            .abt {
+              font-size: 0.75rem;
+              line-height: 1rem;
+            }
+            video {
+              border: 0.4rem solid #1c1c1c;
+            }
+            .upload-video-file-label {
+              flex-direction: column;
+            }
+            .file-upload {
+              width: 100%;
+            }
+          }
+        }
+        .talent-engagement-assessment {
+          max-height: calc(100vh - 257px);
+          .assessment-dets {
+            .info {
+              font-size: 1rem;
+            }
+            .strt-assessment-btn {
+              padding: 0.35rem 1rem;
+            }
+          }
+          .assessment-qstn {
+            .qstn-title {
+              padding: 0.5rem;
+              font-size: 1.2rem;
+            }
+            .qstn-choices {
+              flex-direction: column;
+              label {
+                padding: 0.5rem;
+                .option {
+                  font-size: 1rem;
+                  margin-bottom: 0.5rem;
+                }
+                .option-txt {
+                  font-size: 0.8rem;
+                }
+              }
+              .choice-b-lbl,
+              .choice-c-lbl,
+              .choice-d-lbl {
+                border-left: 3px solid #27364d;
+              }
+            }
+          }
+          .thanks-note {
+            .thanks-hdr {
+              font-size: 1rem;
+            }
+          }
+        }
+        .my-profile-abt-company {
+          max-height: calc(100vh - 189px);
+          .abt-company-container {
+            .company-video {
+              .company {
+                font-size: 1rem;
+                border-bottom: 0.1rem solid #282724;
+              }
+            }
+          }
+          .metrics-container {
+            flex-direction: column;
+            .content-left {
+              flex-direction: row;
+              justify-content: space-between;
+              .graph {
+                padding: 0.5rem;
+                img {
+                  width: 3.5rem;
+                  height: 3.5rem;
+                }
+                .title {
+                  font-size: 0.7rem;
+                  margin-top: 0.25rem;
+                  margin-bottom: 0.25rem;
+                }
+              }
+            }
+            .content-right {
+              .metric {
+                padding: 0.5rem;
+                .rating {
+                  .rate-block {
+                    width: 1rem;
+                    height: 0.6rem;
+                  }
+                }
+                .rate-type {
+                  font-size: 0.75rem;
+                }
+                .rate-for {
+                  font-size: 0.65rem;
+                }
+              }
+            }
+          }
+        }
+
+        .to-fro-btns {
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .get-talent-section {
+    .dashboard {
+      height: calc(100vh - 109px);
+      .profile-data {
+        .my-profile-abt-company {
+          max-height: calc(100vh - 190px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .get-talent-section {
+    .dashboard {
+      height: calc(100vh - 109px);
+      .profile-data {
+        .company-info-form {
+          max-height: calc(100vh - 260px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .get-talent-section {
+    .dashboard {
+      .profile-data {
+        .for-stepper {
+          margin-bottom: 0.5rem;
+        }
+        .upload-video-gallery {
+          max-height: calc(100vh - 260px);
+        }
+        .my-profile-abt-company {
+          max-height: calc(100vh - 190px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .get-talent-section {
+    .dashboard {
+      height: calc(100vh - 125px);
+      .profile-data {
+        .company-info-form {
+          max-height: calc(100vh - 276px);
+        }
+        .upload-video-gallery {
+          max-height: calc(100vh - 276px);
+        }
+        .my-profile-abt-company {
+          max-height: calc(100vh - 276px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .get-talent-section {
+    .dashboard {
+      .profile-data {
+        .company-info-form {
+          max-height: calc(100vh - 280px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .for-stepper {
+    justify-content: unset !important;
+  }
+}
+
+@media screen and (max-width: 280px) {
+}
