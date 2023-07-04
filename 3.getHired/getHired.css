@@ -1210,6 +1210,39 @@ label {
 .stepper-container .completed .ver-line {
   background-color: #f4d552;
 }
+.stepper-container .company-info:after {
+  content: "Company\aInformation";
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .upload-gallery:after {
+  content: "Upload Video\a&Gallery";
+  position: absolute;
+  top: 1.5rem;
+  left: 72%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
+.stepper-container .engagement-assessment:after {
+  content: "Engagement\a Assessment";
+  position: absolute;
+  top: 1.5rem;
+  left: 64%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #2e3c53;
+}
 
 @media screen and (max-width: 860px) {
   .get-hired-section .dashboard .profile-data .for-stepper {
@@ -1265,12 +1298,28 @@ label {
     top: 0.7rem;
     left: 16%;
   }
+  .stepper-container .company-info .progress-lines .hor-line {
+    width: 1.5rem;
+  }
+  .stepper-container .company-info:after {
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 51%;
+  }
   .stepper-container .upload-resume:after {
     color: #2e3c53;
     font-size: 0.5rem;
     line-height: 0.6rem;
     top: 0.7rem;
     left: 68%;
+  }
+  .stepper-container .upload-gallery:after {
+    color: #2e3c53;
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 72%;
   }
   .stepper-container .personality-assessment:after {
     font-size: 0.5rem;
@@ -1289,6 +1338,12 @@ label {
     line-height: 0.6rem;
     top: 0.7rem;
     left: 72%;
+  }
+  .stepper-container .engagement-assessment:after {
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    top: 0.7rem;
+    left: 62%;
   }
   .stepper-container .incomplete .hor-line {
     width: 1.5rem;

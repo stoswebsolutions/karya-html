@@ -1715,6 +1715,374 @@ label {
   border: 2rem solid #27364d;
   flex: 0;
 }
+.get-talent-section .dashboard .get-talent-table-container,
+.get-talent-section .dashboard .purchased-profiles-table-container,
+.get-talent-section .dashboard .shortlisted-profiles-table-container,
+.get-talent-section .dashboard .transactions-table-container {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  overflow: auto;
+}
+.get-talent-section .dashboard .get-talent-table-container .filters,
+.get-talent-section .dashboard .purchased-profiles-table-container .filters,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .filters,
+.get-talent-section .dashboard .transactions-table-container .filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.get-talent-section .dashboard .get-talent-table-container .filters label,
+.get-talent-section .dashboard .purchased-profiles-table-container .filters label,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .filters label,
+.get-talent-section .dashboard .transactions-table-container .filters label {
+  color: #858487;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.get-talent-section .dashboard .get-talent-table-container .filters select,
+.get-talent-section .dashboard .get-talent-table-container .filters input,
+.get-talent-section .dashboard .purchased-profiles-table-container .filters select,
+.get-talent-section .dashboard .purchased-profiles-table-container .filters input,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .filters select,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .filters input,
+.get-talent-section .dashboard .transactions-table-container .filters select,
+.get-talent-section .dashboard .transactions-table-container .filters input {
+  border-radius: 0.2rem;
+  border: 0.12rem solid #dedede;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  color: #8c8d9e;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.get-talent-section .dashboard .get-talent-table-container .filters select:focus,
+.get-talent-section .dashboard .get-talent-table-container .filters input:focus,
+.get-talent-section .dashboard .purchased-profiles-table-container .filters select:focus,
+.get-talent-section .dashboard .purchased-profiles-table-container .filters input:focus,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .filters select:focus,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .filters input:focus,
+.get-talent-section .dashboard .transactions-table-container .filters select:focus,
+.get-talent-section .dashboard .transactions-table-container .filters input:focus {
+  box-shadow: none;
+}
+.get-talent-section .dashboard .get-talent-table-container table,
+.get-talent-section .dashboard .purchased-profiles-table-container table,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table,
+.get-talent-section .dashboard .transactions-table-container table {
+  margin-bottom: 0.5rem;
+}
+.get-talent-section .dashboard .get-talent-table-container table thead tr th,
+.get-talent-section .dashboard .purchased-profiles-table-container table thead tr th,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table thead tr th,
+.get-talent-section .dashboard .transactions-table-container table thead tr th {
+  color: #6f6f83;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.3rem;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td {
+  color: #8c8b8c;
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.3rem;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .status,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .status,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .status,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .status,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .status,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .status,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .status,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .status {
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.1rem 0.5rem;
+  text-transform: uppercase;
+  background-color: #5bc0de;
+  color: #fafefd;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .view-profile,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .view-profile,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .view-profile,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .view-profile,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .view-profile,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .view-profile,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .view-profile,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .view-profile {
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.1rem 0.5rem;
+  text-transform: uppercase;
+  background-color: #04021c;
+  color: #e1f5f6;
+  cursor: pointer;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .view-profile:hover,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .view-profile:hover,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .view-profile:hover,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .view-profile:hover,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .view-profile:hover,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .view-profile:hover,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .view-profile:hover,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .view-profile:hover {
+  opacity: 0.7;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .view-profile:active,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .view-profile:active,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .view-profile:active,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .view-profile:active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .view-profile:active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .view-profile:active,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .view-profile:active,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .view-profile:active {
+  opacity: 0.5;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .profile-status-slct,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .profile-status-slct,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .profile-status-slct,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .profile-status-slct,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .profile-status-slct,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .profile-status-slct,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .profile-status-slct,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .profile-status-slct {
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: #8c8b8c;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .profile-status-slct:focus,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .profile-status-slct:focus,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .profile-status-slct:focus,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .profile-status-slct:focus,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .profile-status-slct:focus,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .profile-status-slct:focus,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .profile-status-slct:focus,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .profile-status-slct:focus {
+  box-shadow: none;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .view-prfl-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .vid-applicant-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .remove-cart-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .add-cart-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .view-prfl-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .vid-applicant-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .remove-cart-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .add-cart-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .view-prfl-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .vid-applicant-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .remove-cart-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .add-cart-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .view-prfl-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .vid-applicant-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .remove-cart-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .add-cart-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .view-prfl-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .vid-applicant-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .remove-cart-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .add-cart-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .view-prfl-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .vid-applicant-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .remove-cart-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .add-cart-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .view-prfl-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .vid-applicant-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .remove-cart-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .add-cart-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .view-prfl-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .vid-applicant-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .remove-cart-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .add-cart-btn {
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.1rem 0.5rem;
+  text-transform: capitalize;
+  color: #e1f5f6;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .view-prfl-btn:hover,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .vid-applicant-btn:hover,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .remove-cart-btn:hover,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .add-cart-btn:hover,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .view-prfl-btn:hover,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .vid-applicant-btn:hover,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .remove-cart-btn:hover,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .add-cart-btn:hover,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .view-prfl-btn:hover,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .vid-applicant-btn:hover,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .remove-cart-btn:hover,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .add-cart-btn:hover,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .view-prfl-btn:hover,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .vid-applicant-btn:hover,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .remove-cart-btn:hover,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .add-cart-btn:hover,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .view-prfl-btn:hover,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .vid-applicant-btn:hover,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .remove-cart-btn:hover,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .add-cart-btn:hover,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .view-prfl-btn:hover,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .vid-applicant-btn:hover,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .remove-cart-btn:hover,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .add-cart-btn:hover,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .view-prfl-btn:hover,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .vid-applicant-btn:hover,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .remove-cart-btn:hover,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .add-cart-btn:hover,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .view-prfl-btn:hover,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .vid-applicant-btn:hover,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .remove-cart-btn:hover,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .add-cart-btn:hover {
+  opacity: 0.7;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .view-prfl-btn:active,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .vid-applicant-btn:active,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .remove-cart-btn:active,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .add-cart-btn:active,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .view-prfl-btn:active,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .vid-applicant-btn:active,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .remove-cart-btn:active,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .add-cart-btn:active,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .view-prfl-btn:active,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .vid-applicant-btn:active,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .remove-cart-btn:active,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .add-cart-btn:active,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .view-prfl-btn:active,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .vid-applicant-btn:active,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .remove-cart-btn:active,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .add-cart-btn:active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .view-prfl-btn:active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .vid-applicant-btn:active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .remove-cart-btn:active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .add-cart-btn:active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .view-prfl-btn:active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .vid-applicant-btn:active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .remove-cart-btn:active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .add-cart-btn:active,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .view-prfl-btn:active,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .vid-applicant-btn:active,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .remove-cart-btn:active,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .add-cart-btn:active,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .view-prfl-btn:active,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .vid-applicant-btn:active,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .remove-cart-btn:active,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .add-cart-btn:active {
+  opacity: 0.5;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .view-prfl-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .view-prfl-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .view-prfl-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .view-prfl-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .view-prfl-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .view-prfl-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .view-prfl-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .view-prfl-btn {
+  background-color: #337ab7;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .vid-applicant-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .vid-applicant-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .vid-applicant-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .vid-applicant-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .vid-applicant-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .vid-applicant-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .vid-applicant-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .vid-applicant-btn {
+  background-color: #5cb85c;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .remove-cart-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .remove-cart-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .remove-cart-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .remove-cart-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .remove-cart-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .remove-cart-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .remove-cart-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .remove-cart-btn {
+  background-color: #fcf8e3;
+  color: #8c8b8c;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody tr th .add-cart-btn,
+.get-talent-section .dashboard .get-talent-table-container table tbody tr td .add-cart-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr th .add-cart-btn,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .add-cart-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr th .add-cart-btn,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .add-cart-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr th .add-cart-btn,
+.get-talent-section .dashboard .transactions-table-container table tbody tr td .add-cart-btn {
+  background-color: #d9edf7;
+  color: #8c8b8c;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody .debited-row td,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody .debited-row td,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody .debited-row td,
+.get-talent-section .dashboard .transactions-table-container table tbody .debited-row td {
+  color: #f55236;
+}
+.get-talent-section .dashboard .get-talent-table-container table tbody .credited-row td,
+.get-talent-section .dashboard .purchased-profiles-table-container table tbody .credited-row td,
+.get-talent-section .dashboard .shortlisted-profiles-table-container table tbody .credited-row td,
+.get-talent-section .dashboard .transactions-table-container table tbody .credited-row td {
+  color: #528d42;
+}
+.get-talent-section .dashboard .get-talent-table-container .pagination-dets,
+.get-talent-section .dashboard .purchased-profiles-table-container .pagination-dets,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .pagination-dets,
+.get-talent-section .dashboard .transactions-table-container .pagination-dets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.get-talent-section .dashboard .get-talent-table-container .pagination-dets .viewing-entries,
+.get-talent-section .dashboard .purchased-profiles-table-container .pagination-dets .viewing-entries,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .pagination-dets .viewing-entries,
+.get-talent-section .dashboard .transactions-table-container .pagination-dets .viewing-entries {
+  color: #999990;
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+.get-talent-section .dashboard .get-talent-table-container .pagination-dets nav,
+.get-talent-section .dashboard .purchased-profiles-table-container .pagination-dets nav,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .pagination-dets nav,
+.get-talent-section .dashboard .transactions-table-container .pagination-dets nav {
+  padding: 0;
+}
+.get-talent-section .dashboard .get-talent-table-container .pagination-dets nav ul,
+.get-talent-section .dashboard .purchased-profiles-table-container .pagination-dets nav ul,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .pagination-dets nav ul,
+.get-talent-section .dashboard .transactions-table-container .pagination-dets nav ul {
+  display: flex !important;
+  margin: 0;
+}
+.get-talent-section .dashboard .get-talent-table-container .pagination-dets nav ul a,
+.get-talent-section .dashboard .purchased-profiles-table-container .pagination-dets nav ul a,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .pagination-dets nav ul a,
+.get-talent-section .dashboard .transactions-table-container .pagination-dets nav ul a {
+  color: #999990;
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+}
+.get-talent-section .dashboard .get-talent-table-container .pagination-dets nav ul a:focus,
+.get-talent-section .dashboard .purchased-profiles-table-container .pagination-dets nav ul a:focus,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .pagination-dets nav ul a:focus,
+.get-talent-section .dashboard .transactions-table-container .pagination-dets nav ul a:focus {
+  box-shadow: none;
+}
+.get-talent-section .dashboard .get-talent-table-container .pagination-dets nav ul .active,
+.get-talent-section .dashboard .purchased-profiles-table-container .pagination-dets nav ul .active,
+.get-talent-section .dashboard .shortlisted-profiles-table-container .pagination-dets nav ul .active,
+.get-talent-section .dashboard .transactions-table-container .pagination-dets nav ul .active {
+  background-color: transparent;
+  border: 1px solid #8cb2d4;
+}
 .get-talent-section .dashboard .data {
   padding-left: 2rem;
   padding-right: 4rem;
@@ -1839,30 +2207,30 @@ label {
   width: 100%;
   height: 100%;
 }
-.get-talent-section .dashboard .cart-data .table-container {
+.get-talent-section .dashboard .cart-table-container {
   background-color: #f7f7f7;
   padding: 1rem;
   overflow: auto;
   height: 100%;
 }
-.get-talent-section .dashboard .cart-data .table-container table {
+.get-talent-section .dashboard .cart-table-container table {
   margin-bottom: 1rem;
 }
-.get-talent-section .dashboard .cart-data .table-container table thead tr th {
+.get-talent-section .dashboard .cart-table-container table thead tr th {
   color: #6f6f83;
   font-size: 0.85rem;
   font-weight: 600;
   padding: 0.5rem;
 }
-.get-talent-section .dashboard .cart-data .table-container table tbody tr th,
-.get-talent-section .dashboard .cart-data .table-container table tbody tr td {
+.get-talent-section .dashboard .cart-table-container table tbody tr th,
+.get-talent-section .dashboard .cart-table-container table tbody tr td {
   color: #8c8b8c;
   font-size: 0.8rem;
   font-weight: 500;
   padding: 0.5rem;
 }
-.get-talent-section .dashboard .cart-data .table-container table tbody tr th .remove-cart-btn,
-.get-talent-section .dashboard .cart-data .table-container table tbody tr td .remove-cart-btn {
+.get-talent-section .dashboard .cart-table-container table tbody tr th .remove-cart-btn,
+.get-talent-section .dashboard .cart-table-container table tbody tr td .remove-cart-btn {
   font-size: 0.7rem;
   font-weight: 400;
   padding: 0.1rem 0.5rem;
@@ -1872,27 +2240,27 @@ label {
   border: 0;
   cursor: pointer;
 }
-.get-talent-section .dashboard .cart-data .table-container table tbody tr th .remove-cart-btn:hover,
-.get-talent-section .dashboard .cart-data .table-container table tbody tr td .remove-cart-btn:hover {
+.get-talent-section .dashboard .cart-table-container table tbody tr th .remove-cart-btn:hover,
+.get-talent-section .dashboard .cart-table-container table tbody tr td .remove-cart-btn:hover {
   opacity: 0.7;
 }
-.get-talent-section .dashboard .cart-data .table-container table tbody tr th .remove-cart-btn:active,
-.get-talent-section .dashboard .cart-data .table-container table tbody tr td .remove-cart-btn:active {
+.get-talent-section .dashboard .cart-table-container table tbody tr th .remove-cart-btn:active,
+.get-talent-section .dashboard .cart-table-container table tbody tr td .remove-cart-btn:active {
   opacity: 0.5;
 }
-.get-talent-section .dashboard .cart-data .table-container table tbody tr .ttl-amnt {
+.get-talent-section .dashboard .cart-table-container table tbody tr .ttl-amnt {
   background-color: #d9edf7;
 }
-.get-talent-section .dashboard .cart-data .table-container table tbody tr .amnt {
+.get-talent-section .dashboard .cart-table-container table tbody tr .amnt {
   background-color: #dff0d8;
 }
-.get-talent-section .dashboard .cart-data .table-container table tbody tr .amnt-txt,
-.get-talent-section .dashboard .cart-data .table-container table tbody tr .amnt-val {
+.get-talent-section .dashboard .cart-table-container table tbody tr .amnt-txt,
+.get-talent-section .dashboard .cart-table-container table tbody tr .amnt-val {
   width: 100%;
   display: inline-block;
   text-align: center;
 }
-.get-talent-section .dashboard .cart-data .table-container .prcd-payment-btn {
+.get-talent-section .dashboard .cart-table-container .prcd-payment-btn {
   background-color: #5cb85c;
   border: 0;
   color: #f1fbf9;
@@ -2399,6 +2767,462 @@ label {
 .get-talent-section .dashboard .profile-data .to-fro-btns .back-btn {
   margin-right: 1rem;
 }
+.get-talent-section .dashboard .vacancies-data {
+  width: 100%;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .nav-item {
+  max-width: 100%;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .nav-item .active::after {
+  width: 25%;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content #vacancies-tabContent {
+  max-height: calc(100vh - 313px);
+  overflow: auto;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .title {
+  color: #34495e;
+  font-size: 2.5rem;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a6a6a6;
+  opacity: 1; /* Firefox */
+  font-size: 0.8rem;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a6a6a6;
+  opacity: 1; /* Firefox */
+  font-size: 0.8rem;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content input,
+.get-talent-section .dashboard .vacancies-data .vacancies-content select {
+  border: 1px solid #d5d9dc;
+  color: #7a6f85;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content input:focus,
+.get-talent-section .dashboard .vacancies-data .vacancies-content select:focus {
+  box-shadow: none !important;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .fa {
+  color: #a6a6a6;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content form label {
+  color: #705e79;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content form .info-txt {
+  background-color: #f2f4fa;
+  color: #857c89;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border: 1px solid #c9ced1;
+  border-top: 0;
+  border-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-left: 0.1% !important;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content textarea {
+  color: #7a6f85;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content textarea:focus {
+  box-shadow: none;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .skills-text {
+  padding-top: 8px;
+  border-bottom-right-radius: 0;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .input-icon {
+  border-bottom-left-radius: 0;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .job-specs input {
+  border-radius: 0.25rem !important;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .job-specs .radio-options {
+  display: flex;
+  flex: 1;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .job-specs .radio-options .radio-input {
+  flex: 1 1 0px;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .job-specs .radio-options .form-check-input {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100% !important;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .generated-card .label {
+  color: #b4b4b4;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .generated-card .desc {
+  color: #313131;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  text-align: justify;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .job-dets-card {
+  background-color: #f2f2f2;
+  border-radius: 0.4rem;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .job-dets-card .label {
+  color: #b4b4b4;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .job-dets-card .desc {
+  color: #313131;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: justify;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .job-dets-card .main-label {
+  font-size: 0.85rem;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns .title {
+  font-size: 2rem;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns .qstn {
+  pointer-events: none;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns .job-post-title {
+  color: #2c3854;
+  font-size: 1.2rem;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns .info {
+  color: #2f4e6d;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: #d0e6fd;
+  border-radius: 0.2rem;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns video {
+  height: 10rem;
+}
+.get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns .note {
+  color: #b13a4d;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+}
+.get-talent-section .dashboard .explore-talents-data {
+  width: 100%;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .nav-item {
+  max-width: 100%;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .nav-item .active::after {
+  width: 25%;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content #explore-talents-tabContent {
+  max-height: calc(100vh - 313px);
+  overflow: auto;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .filter .roles-dropdown {
+  border: 2px solid #8a65a6;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .filter .roles-dropdown ul {
+  border: 0;
+  background-color: #f2f2f2;
+  top: 10px !important;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .filter .roles-dropdown ul a {
+  color: #847f7f;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .filter .roles-dropdown ul a:active {
+  background-color: transparent;
+  opacity: 0.5;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .filter .roles-dropdown-btn {
+  text-transform: capitalize;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .filter .label {
+  color: #bfbfbf;
+  border: 2px solid #4fac9a;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  padding: 0.1rem 3rem 0.1rem 1rem;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card {
+  background-color: #fff;
+  box-shadow: 2px 2px 8px #e5e5e5;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .profile-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: 4px solid #dee6df;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .username {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #484640;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status {
+  display: flex;
+  justify-content: center;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .snap-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .add-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .save-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .offline-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .view-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .snap-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .add-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .save-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .offline-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .view-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .snap-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .add-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .save-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .offline-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .view-btn {
+  text-transform: capitalize;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.65rem;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .add-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .add-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .add-btn {
+  background-color: #0093fd;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .save-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .view-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .save-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .view-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .save-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .view-btn {
+  background-color: #000000;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .shortlist-talent-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .purchase-profile-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .online-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .view-profile-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .shortlist-talent-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .purchase-profile-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .online-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .view-profile-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .shortlist-talent-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .purchase-profile-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .online-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .view-profile-btn {
+  text-transform: uppercase;
+  border-radius: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1rem;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .shortlist-talent-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .view-profile-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .shortlist-talent-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .view-profile-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .shortlist-talent-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .view-profile-btn {
+  background-color: #8faadc;
+  color: #000000;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .purchase-profile-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .purchase-profile-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .purchase-profile-btn {
+  background-color: #2f5597;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .offline-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .offline-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .offline-btn {
+  background-color: #d6524e;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .online-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .online-btn,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .online-btn {
+  background-color: #71af47;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .snapshot-txt {
+  color: #243d53;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card {
+  background-color: #e7f0f9;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .title {
+  text-transform: uppercase;
+  color: #203a50;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .rating .rate-block {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #002060;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .medium .block4 {
+  background-color: #7f7f7f;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .average .block3,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .average .block4 {
+  background-color: #7f7f7f;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .low .block2,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .low .block3,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .low .block4 {
+  background-color: #7f7f7f;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .poor .rate-block {
+  background-color: #7f7f7f;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .percent {
+  color: #40b8ca;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .user-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .user-image img {
+  padding: 0.2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: 1px solid #4e9694;
+  margin-bottom: 0.2rem;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .user-image .username {
+  color: #000000;
+  font-weight: 600;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .graph-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  overflow: auto;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .graph-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .graph-card img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.2rem;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .graph-card .title {
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .user-info-card {
+  background-color: #f2f2f2;
+  border-radius: 0.4rem;
+  padding: 0.8rem 0.8rem 0.3rem 0.8rem;
+  height: 100%;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .user-info-card ul li {
+  list-style: square;
+  color: #000000;
+  font-size: 0.825rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .user-info-card ul li::marker {
+  color: #31939b !important;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ep-graph-container {
+  background-color: #f2f2f2;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ep-graph-container .ep-graph img {
+  width: 6rem;
+  height: 6rem;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-profile-card-container,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .selected-profile-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-profile-card-container .talent-card,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .selected-profile-card-container .talent-card {
+  width: 50%;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-profile-card-container .talent-card .profile-img,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .selected-profile-card-container .talent-card .profile-img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+}
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-profile-card-container .talent-card .username,
+.get-talent-section .dashboard .explore-talents-data .explore-talents-content .selected-profile-card-container .talent-card .username {
+  font-size: 0.9rem;
+}
+.get-talent-section .dashboard .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #potential-tab {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  line-height: 1.2rem;
+}
+.get-talent-section .dashboard .explore-talents-data .my-profile-content #my-profile-tabContent {
+  max-height: calc(100vh - 313px);
+  overflow: auto;
+}
+.get-talent-section .dashboard .explore-talents-data .potential-container {
+  padding-right: 0.1rem;
+}
+.get-talent-section .dashboard .explore-talents-data .potential-container .text-content .hdr {
+  color: #e63e66;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.get-talent-section .dashboard .explore-talents-data .potential-container .text-content .info {
+  color: #374151;
+  font-weight: 600;
+  text-align: justify;
+  line-height: 1.4rem;
+}
+.get-talent-section .dashboard .my-account-data {
+  width: 100%;
+}
+.get-talent-section .dashboard .my-account-data .my-account-content .nav-item {
+  max-width: 100%;
+}
+.get-talent-section .dashboard .my-account-data .my-account-content .nav-item .active::after {
+  width: 30%;
+}
+.get-talent-section .dashboard .my-account-data .my-account-content #my-account-tabContent {
+  max-height: calc(100vh - 313px);
+  overflow: auto;
+}
 .get-talent-section .dashboard {
   height: calc(100vh - 175px);
 }
@@ -2444,6 +3268,30 @@ label {
   }
   .get-talent-section .dashboard .profile-data .my-profile-abt-company {
     max-height: calc(100vh - 241px);
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content #vacancies-tabContent {
+    max-height: calc(100vh - 315px);
+  }
+  .get-talent-section .dashboard .explore-talents-data {
+    width: 100%;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content #explore-talents-tabContent {
+    max-height: calc(100vh - 315px);
+    overflow: auto;
+  }
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content #my-profile-tabContent {
+    max-height: calc(100vh - 315px);
+    overflow: auto;
+  }
+  .get-talent-section .dashboard .my-account-data .my-account-content #my-account-tabContent {
+    max-height: calc(100vh - 315px);
+  }
+}
+@media screen and (max-width: 1029px) {
+  .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #video-pitch-tab {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    line-height: 1.2rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -2516,10 +3364,57 @@ label {
   .get-talent-section .dashboard .profile-data .my-profile-abt-company .engagement-metrics .metrics-container .content-left {
     justify-content: flex-start;
   }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content #vacancies-tabContent {
+    max-height: calc(100vh - 286px);
+  }
+  .get-talent-section .dashboard .explore-talents-data {
+    width: 100%;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content #explore-talents-tabContent {
+    max-height: calc(100vh - 286px);
+  }
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content #my-profile-tabContent {
+    max-height: calc(100vh - 286px);
+    overflow: auto;
+  }
+  .get-talent-section .dashboard .my-account-data .my-account-content #vacancies-tabContent {
+    max-height: calc(100vh - 286px);
+  }
+}
+@media screen and (max-width: 925px) {
+  .explore-talents-data .my-profile-content .profile-nav-pills .nav-item .nav-link {
+    padding: 0.5rem;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+  }
+  .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #video-pitch-tab,
+  .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #potential-tab {
+    padding: 0.5rem;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 837px) {
+  .explore-talents-data .my-profile-content .profile-nav-pills .nav-item .nav-link {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #video-pitch-tab,
+  .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #potential-tab {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 @media screen and (max-width: 800px) {
   .get-talent-section .dashboard .profile-nav-pills .nav-item .nav-link {
     font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content .profile-nav-pills .nav-item .nav-link {
+    font-size: 0.7rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #video-pitch-tab,
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #potential-tab {
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 789px) {
@@ -2528,6 +3423,15 @@ label {
   }
   .get-talent-section .dashboard .profile-data .my-profile-abt-company {
     max-height: calc(100vh - 223px);
+  }
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content .profile-nav-pills .nav-item .nav-link {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #video-pitch-tab,
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #potential-tab {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2623,10 +3527,47 @@ label {
     margin-left: 0;
     margin-right: 0;
   }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content #vacancies-tabContent {
+    max-height: calc(100vh - 269px);
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content #explore-talents-tabContent {
+    max-height: calc(100vh - 269px);
+  }
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content #my-profile-tabContent {
+    max-height: calc(100vh - 269px);
+    overflow: auto;
+  }
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content .profile-nav-pills .nav-item .nav-link {
+    padding: 0.3rem;
+    line-height: 1rem;
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #video-pitch-tab,
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content .profile-nav-pills .nav-item #potential-tab {
+    padding: 0.3rem;
+    line-height: 1rem;
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .my-account-data .my-account-content #vacancies-tabContent {
+    max-height: calc(100vh - 269px);
+  }
 }
 @media screen and (max-width: 582px) {
   .get-talent-section .dashboard {
     height: calc(100vh - 123px);
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content #vacancies-tabContent {
+    max-height: calc(100vh - 273px);
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content #explore-talents-tabContent {
+    max-height: calc(100vh - 273px);
+  }
+  .get-talent-section .dashboard .explore-talents-data .my-profile-content #my-profile-tabContent {
+    max-height: calc(100vh - 273px);
+    overflow: auto;
+  }
+  .get-talent-section .dashboard .my-account-data .my-account-content #vacancies-tabContent {
+    max-height: calc(100vh - 273px);
   }
 }
 @media screen and (max-width: 576px) {
@@ -2696,6 +3637,25 @@ label {
   }
   .get-talent-section .dashboard .video-container video {
     border: 1rem solid #27364d;
+  }
+  .get-talent-section .dashboard .get-talent-table-container,
+  .get-talent-section .dashboard .purchased-profiles-table-container,
+  .get-talent-section .dashboard .shortlisted-profiles-table-container,
+  .get-talent-section .dashboard .transactions-table-container {
+    padding: 0.5rem;
+  }
+  .get-talent-section .dashboard .get-talent-table-container table tbody tr td .view-profile,
+  .get-talent-section .dashboard .purchased-profiles-table-container table tbody tr td .view-profile,
+  .get-talent-section .dashboard .shortlisted-profiles-table-container table tbody tr td .view-profile,
+  .get-talent-section .dashboard .transactions-table-container table tbody tr td .view-profile {
+    display: block;
+    text-align: center;
+  }
+  .get-talent-section .dashboard .get-talent-table-container .pagination-dets,
+  .get-talent-section .dashboard .purchased-profiles-table-container .pagination-dets,
+  .get-talent-section .dashboard .shortlisted-profiles-table-container .pagination-dets,
+  .get-talent-section .dashboard .transactions-table-container .pagination-dets {
+    flex-direction: column;
   }
   .get-talent-section .dashboard .data {
     padding-left: 1rem;
@@ -2900,6 +3860,133 @@ label {
   }
   .get-talent-section .dashboard .profile-data .to-fro-btns {
     padding: 0.5rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .title {
+    font-size: 1.2rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .job-specs .radio-options {
+    flex-direction: column;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .job-specs .radio-options .radio-input {
+    margin-bottom: 0.5rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .generated-card .label {
+    font-size: 0.7rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .generated-card .desc {
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .job-dets-card .main-label {
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .job-dets-card .label {
+    font-size: 0.7rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .ai-generated-posting .job-dets-card .desc {
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns .title {
+    font-size: 1.2rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns .job-post-title {
+    font-size: 1rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns .info {
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns video {
+    height: auto;
+  }
+  .get-talent-section .dashboard .vacancies-data .vacancies-content .video-job-qstns .note {
+    font-size: 0.8rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .filter .roles-dropdown {
+    flex-direction: column-reverse;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .filter .roles-dropdown ul a {
+    font-size: 0.75rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .filter .label {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .filter .roles-dropdown-btn {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .profile-img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .username {
+    font-size: 0.7rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .snap-btn,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .add-btn,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .save-btn,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .offline-btn,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .view-btn,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .shortlist-talent-btn,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .purchase-profile-btn,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .action-btns .view-profile-btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.6rem;
+    width: 5rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .offline-btn,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .offline-status .online-btn,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .offline-btn,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-card .online-status .online-btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.6rem;
+    width: 5rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .snapshot-txt {
+    font-size: 0.85rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card {
+    padding: 0.5rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .title {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .ratings-card .rating .rate-block {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .user-image img {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.1rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .graph-card img {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.1rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .graph-card .title {
+    font-size: 0.7rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .user-info-card {
+    padding: 0.3rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .user-stats .user-info-card ul li {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-profile-card-container .talent-card,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .selected-profile-card-container .talent-card {
+    width: auto;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-profile-card-container .talent-card .profile-img,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .selected-profile-card-container .talent-card .profile-img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .talent-profile-card-container .talent-card .username,
+  .get-talent-section .dashboard .explore-talents-data .explore-talents-content .selected-profile-card-container .talent-card .username {
+    font-size: 0.75rem;
   }
 }
 @media screen and (max-width: 465px) {

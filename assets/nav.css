@@ -76,6 +76,14 @@ body {
   background-color: #f4d552;
 }
 
+.lite-white {
+  color: #f2f2f2;
+}
+
+.black-clr {
+  color: #000000;
+}
+
 .fs-8 {
   font-size: 0.5rem !important;
 }
@@ -137,6 +145,17 @@ body {
   width: 100vw;
 }
 
+.anchor-link {
+  text-decoration: none;
+}
+.anchor-link:hover {
+  opacity: 0.7;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
 ::-webkit-scrollbar {
   width: 0.3em;
   height: 0.3em;
@@ -186,6 +205,12 @@ label {
   font-weight: 500;
   font-size: 1rem;
 }
+.karya-btn:hover {
+  opacity: 0.7;
+}
+.karya-btn:active {
+  opacity: 0.6;
+}
 
 .karya-container {
   height: 100vh;
@@ -199,6 +224,113 @@ label {
   height: 100vh;
 }
 
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card .circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card h1 {
+  text-align: center;
+}
+.info-card h6 {
+  text-align: center;
+}
+
+.gx-5rem {
+  --bs-gutter-x: 5rem;
+}
+
+.karya-select {
+  border: 1px solid #8dcdcb;
+  color: #263650;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.karya-select:focus {
+  box-shadow: none;
+  border: 1px solid #8dcdcb !important;
+}
+
+.role-card {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+}
+.role-card h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.role-card .role {
+  color: #7a858b;
+}
+.role-card .company {
+  color: #999a9a;
+  text-decoration: underline;
+}
+.role-card .location,
+.role-card .rm,
+.role-card .expire-dets {
+  color: #fa43a6;
+}
+.role-card .expire-dets {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+.role-card .expire-dets .date {
+  font-weight: 600;
+}
+.role-card .summary-dets {
+  margin-top: 1.2rem;
+}
+.role-card .summary-dets .title {
+  color: #fa43a6;
+}
+.role-card .summary-dets .summary {
+  margin-bottom: 0.25rem;
+  color: #52513e;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.role-card .card-btn {
+  background-color: #337ab7;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 0;
+  color: #e5f7fd;
+}
+.role-card .card-btn:hover {
+  opacity: 0.7;
+}
+.role-card .card-btn:active {
+  opacity: 0.5;
+  color: #e5f7fd !important;
+  background-color: #337ab7 !important;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .d-none-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-none-mobile {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
 nav {
   padding-top: 2rem;
   padding-bottom: 2rem;

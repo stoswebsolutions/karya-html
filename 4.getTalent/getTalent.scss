@@ -384,6 +384,169 @@
       }
     }
 
+    .get-talent-table-container,
+    .purchased-profiles-table-container,
+    .shortlisted-profiles-table-container,
+    .transactions-table-container {
+      background-color: #f7f7f7;
+      padding: 1rem;
+      overflow: auto;
+      .filters {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        label {
+          color: #858487;
+          font-size: 0.75rem;
+          font-weight: 500;
+        }
+        select,
+        input {
+          border-radius: 0.2rem;
+          border: 0.12rem solid #dedede;
+          padding-top: 0.2rem;
+          padding-bottom: 0.2rem;
+          color: #8c8d9e;
+          font-size: 0.8rem;
+          font-weight: 500;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+      table {
+        margin-bottom: 0.5rem;
+        thead {
+          tr {
+            th {
+              color: #6f6f83;
+              font-size: 0.7rem;
+              font-weight: 600;
+              padding: 0.3rem;
+            }
+          }
+        }
+        tbody {
+          tr {
+            th,
+            td {
+              color: #8c8b8c;
+              font-size: 0.65rem;
+              font-weight: 500;
+              padding: 0.3rem;
+              .status {
+                font-size: 0.65rem;
+                font-weight: 500;
+                padding: 0.1rem 0.5rem;
+                text-transform: uppercase;
+                background-color: #5bc0de;
+                color: #fafefd;
+              }
+              .view-profile {
+                font-size: 0.65rem;
+                font-weight: 500;
+                padding: 0.1rem 0.5rem;
+                text-transform: uppercase;
+                background-color: #04021c;
+                color: #e1f5f6;
+                cursor: pointer;
+                &:hover {
+                  opacity: 0.7;
+                }
+                &:active {
+                  opacity: 0.5;
+                }
+              }
+              .profile-status-slct {
+                font-size: 0.65rem;
+                font-weight: 400;
+                color: #8c8b8c;
+                background-color: #fff;
+                border-radius: 0.2rem;
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+              .view-prfl-btn,
+              .vid-applicant-btn,
+              .remove-cart-btn,
+              .add-cart-btn {
+                font-size: 0.65rem;
+                font-weight: 500;
+                padding: 0.1rem 0.5rem;
+                text-transform: capitalize;
+                color: #e1f5f6;
+                cursor: pointer;
+                border: 0;
+                border-radius: 0;
+                &:hover {
+                  opacity: 0.7;
+                }
+                &:active {
+                  opacity: 0.5;
+                }
+              }
+              .view-prfl-btn {
+                background-color: #337ab7;
+              }
+              .vid-applicant-btn {
+                background-color: #5cb85c;
+              }
+              .remove-cart-btn {
+                background-color: #fcf8e3;
+                color: #8c8b8c;
+              }
+              .add-cart-btn {
+                background-color: #d9edf7;
+                color: #8c8b8c;
+              }
+            }
+          }
+          .debited-row {
+            td {
+              color: #f55236;
+            }
+          }
+          .credited-row {
+            td {
+              color: #528d42;
+            }
+          }
+        }
+      }
+      .pagination-dets {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .viewing-entries {
+          color: #999990;
+          font-size: 0.65rem;
+          font-weight: 500;
+        }
+        nav {
+          padding: 0;
+          ul {
+            display: flex !important;
+            margin: 0;
+            a {
+              color: #999990;
+              font-size: 0.65rem;
+              font-weight: 500;
+              padding: 0.3rem 0.5rem;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+            .active {
+              background-color: transparent;
+              border: 1px solid #8cb2d4;
+            }
+          }
+        }
+      }
+    }
+
     .data {
       padding-left: 2rem;
       padding-right: 4rem;
@@ -512,75 +675,76 @@
     .cart-data {
       width: 100%;
       height: 100%;
-      .table-container {
-        background-color: #f7f7f7;
-        padding: 1rem;
-        overflow: auto;
-        height: 100%;
+    }
+    .cart-table-container {
+      background-color: #f7f7f7;
+      padding: 1rem;
+      overflow: auto;
+      height: 100%;
 
-        table {
-          margin-bottom: 1rem;
-          thead {
-            tr {
-              th {
-                color: #6f6f83;
-                font-size: 0.85rem;
-                font-weight: 600;
-                padding: 0.5rem;
-              }
+      table {
+        margin-bottom: 1rem;
+        thead {
+          tr {
+            th {
+              color: #6f6f83;
+              font-size: 0.85rem;
+              font-weight: 600;
+              padding: 0.5rem;
             }
           }
-          tbody {
-            tr {
-              th,
-              td {
-                color: #8c8b8c;
-                font-size: 0.8rem;
-                font-weight: 500;
-                padding: 0.5rem;
-                .remove-cart-btn {
-                  font-size: 0.7rem;
-                  font-weight: 400;
-                  padding: 0.1rem 0.5rem;
-                  text-transform: uppercase;
-                  background-color: #fcf8e3;
-                  color: #94959a;
-                  border: 0;
-                  cursor: pointer;
-                  &:hover {
-                    opacity: 0.7;
-                  }
-                  &:active {
-                    opacity: 0.5;
-                  }
+        }
+        tbody {
+          tr {
+            th,
+            td {
+              color: #8c8b8c;
+              font-size: 0.8rem;
+              font-weight: 500;
+              padding: 0.5rem;
+              .remove-cart-btn {
+                font-size: 0.7rem;
+                font-weight: 400;
+                padding: 0.1rem 0.5rem;
+                text-transform: uppercase;
+                background-color: #fcf8e3;
+                color: #94959a;
+                border: 0;
+                cursor: pointer;
+                &:hover {
+                  opacity: 0.7;
+                }
+                &:active {
+                  opacity: 0.5;
                 }
               }
-              .ttl-amnt {
-                background-color: #d9edf7;
-              }
-              .amnt {
-                background-color: #dff0d8;
-              }
-              .amnt-txt,
-              .amnt-val {
-                width: 100%;
-                display: inline-block;
-                text-align: center;
-              }
+            }
+            .ttl-amnt {
+              background-color: #d9edf7;
+            }
+            .amnt {
+              background-color: #dff0d8;
+            }
+            .amnt-txt,
+            .amnt-val {
+              width: 100%;
+              display: inline-block;
+              text-align: center;
             }
           }
         }
-        .prcd-payment-btn {
-          background-color: #5cb85c;
-          border: 0;
-          color: #f1fbf9;
-          border-radius: 0;
-          font-size: 0.85rem;
-          font-weight: 500;
-          padding: 0.7rem 0.6rem;
-        }
+      }
+      .prcd-payment-btn {
+        background-color: #5cb85c;
+        border: 0;
+        color: #f1fbf9;
+        border-radius: 0;
+        font-size: 0.85rem;
+        font-weight: 500;
+        padding: 0.7rem 0.6rem;
       }
     }
+
     .profile-data {
       width: 100%;
       .for-stepper {
@@ -1121,6 +1285,468 @@
         }
       }
     }
+
+    .vacancies-data {
+      width: 100%;
+      .vacancies-content {
+        .nav-item {
+          max-width: 100%;
+          .active::after {
+            width: 25%;
+          }
+        }
+        #vacancies-tabContent {
+          max-height: calc(100vh - 313px);
+          overflow: auto;
+        }
+        .title {
+          color: #34495e;
+          font-size: 2.5rem;
+        }
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #a6a6a6;
+          opacity: 1; /* Firefox */
+          font-size: 0.8rem;
+        }
+        //for select placeholder
+        input,
+        select {
+          border: 1px solid #d5d9dc;
+          color: #7a6f85;
+          font-size: 0.8rem;
+          font-weight: 500;
+          &:focus {
+            box-shadow: none !important;
+          }
+        }
+        .fa {
+          color: #a6a6a6;
+        }
+        form {
+          // select {
+          //   border-bottom-left-radius: 0;
+          // }
+          label {
+            color: #705e79;
+            font-size: 0.7rem;
+            font-weight: 600;
+          }
+          .info-txt {
+            background-color: #f2f4fa;
+            color: #857c89;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+            border: 1px solid #c9ced1;
+            border-top: 0;
+            border-radius: 0.25rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-left: 0.1% !important;
+          }
+        }
+        textarea {
+          color: #7a6f85;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        .skills-text {
+          padding-top: 8px;
+          border-bottom-right-radius: 0;
+        }
+        .input-icon {
+          border-bottom-left-radius: 0;
+        }
+        .job-specs {
+          input {
+            border-radius: 0.25rem !important;
+          }
+          .radio-options {
+            display: flex;
+            flex: 1;
+            .radio-input {
+              flex: 1 1 0px;
+            }
+
+            .form-check-input {
+              width: 1rem;
+              height: 1rem;
+              border-radius: 100% !important;
+            }
+          }
+        }
+        .ai-generated-posting {
+          .generated-card {
+            .label {
+              color: #b4b4b4;
+              font-size: 0.8rem;
+              font-weight: 500;
+            }
+            .desc {
+              color: #313131;
+              background-color: #f2f2f2;
+              font-size: 1rem;
+              font-weight: 600;
+              border-radius: 0.4rem;
+              text-align: justify;
+            }
+          }
+          .job-dets-card {
+            background-color: #f2f2f2;
+            border-radius: 0.4rem;
+            .label {
+              color: #b4b4b4;
+              font-size: 0.8rem;
+              font-weight: 500;
+            }
+            .desc {
+              color: #313131;
+              font-size: 1rem;
+              font-weight: 600;
+              text-align: justify;
+            }
+            .main-label {
+              font-size: 0.85rem;
+            }
+          }
+        }
+        .video-job-qstns {
+          .title {
+            font-size: 2rem;
+          }
+          .qstn {
+            pointer-events: none;
+          }
+          .job-post-title {
+            color: #2c3854;
+            font-size: 1.2rem;
+          }
+          .info {
+            color: #2f4e6d;
+            font-size: 0.85rem;
+            font-weight: 500;
+            background-color: #d0e6fd;
+            border-radius: 0.2rem;
+          }
+          video {
+            height: 10rem;
+          }
+          .note {
+            color: #b13a4d;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .explore-talents-data {
+      width: 100%;
+      .explore-talents-content {
+        .nav-item {
+          max-width: 100%;
+          .active::after {
+            width: 25%;
+          }
+        }
+        #explore-talents-tabContent {
+          max-height: calc(100vh - 313px);
+          overflow: auto;
+        }
+        .filter {
+          .roles-dropdown {
+            border: 2px solid #8a65a6;
+            ul {
+              border: 0;
+              background-color: #f2f2f2;
+              top: 10px !important;
+              a {
+                color: #847f7f;
+                &:active {
+                  background-color: transparent;
+                  opacity: 0.5;
+                }
+              }
+            }
+          }
+          .roles-dropdown-btn {
+            text-transform: capitalize;
+          }
+          .label {
+            color: #bfbfbf;
+            border: 2px solid #4fac9a;
+            border-radius: 0.4rem;
+            font-weight: 500;
+            padding: 0.1rem 3rem 0.1rem 1rem;
+          }
+        }
+        .talent-card {
+          background-color: #fff;
+          box-shadow: 2px 2px 8px #e5e5e5;
+          .profile-img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 100%;
+            border: 4px solid #dee6df;
+          }
+          .username {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #484640;
+          }
+          .action-btns,
+          .offline-status,
+          .online-status {
+            display: flex;
+            justify-content: center;
+            .snap-btn,
+            .add-btn,
+            .save-btn,
+            .offline-btn,
+            .view-btn {
+              text-transform: capitalize;
+              padding: 0.2rem 0.8rem;
+              font-size: 0.65rem;
+            }
+            .add-btn {
+              background-color: #0093fd;
+            }
+            .save-btn,
+            .view-btn {
+              background-color: #000000;
+            }
+            .shortlist-talent-btn,
+            .purchase-profile-btn,
+            .online-btn,
+            .view-profile-btn {
+              text-transform: uppercase;
+              border-radius: 0;
+              font-size: 0.75rem;
+              font-weight: 600;
+              width: 6rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              line-height: 1rem;
+            }
+            .shortlist-talent-btn,
+            .view-profile-btn {
+              background-color: #8faadc;
+              color: #000000;
+            }
+            .purchase-profile-btn {
+              background-color: #2f5597;
+            }
+            .offline-btn {
+              background-color: #d6524e;
+            }
+            .online-btn {
+              background-color: #71af47;
+            }
+          }
+        }
+        .user-stats {
+          .snapshot-txt {
+            color: #243d53;
+            font-weight: 600;
+            font-size: 1rem;
+          }
+          .ratings-card {
+            background-color: #e7f0f9;
+            border-radius: 0.6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            .title {
+              text-transform: uppercase;
+              color: #203a50;
+              font-weight: 600;
+              font-size: 0.9rem;
+            }
+            .rating {
+              .rate-block {
+                display: inline-block;
+                width: 1.2rem;
+                height: 1.2rem;
+                background-color: #002060;
+              }
+            }
+            .medium {
+              .block4 {
+                background-color: #7f7f7f;
+              }
+            }
+            .average {
+              .block3,
+              .block4 {
+                background-color: #7f7f7f;
+              }
+            }
+            .low {
+              .block2,
+              .block3,
+              .block4 {
+                background-color: #7f7f7f;
+              }
+            }
+            .poor {
+              .rate-block {
+                background-color: #7f7f7f;
+              }
+            }
+            .percent {
+              color: #40b8ca;
+              font-size: 0.85rem;
+              font-weight: 500;
+            }
+          }
+          .user-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            img {
+              padding: 0.2rem;
+              width: 5rem;
+              height: 5rem;
+              border-radius: 100%;
+              border: 1px solid #4e9694;
+              margin-bottom: 0.2rem;
+            }
+            .username {
+              color: #000000;
+              font-weight: 600;
+            }
+          }
+          .graph-container {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            overflow: auto;
+          }
+          .graph-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            img {
+              width: 5rem;
+              height: 5rem;
+              margin-bottom: 0.2rem;
+            }
+            .title {
+              color: #000000;
+              font-size: 0.8rem;
+              font-weight: 600;
+              text-align: center;
+            }
+          }
+          .user-info-card {
+            background-color: #f2f2f2;
+            border-radius: 0.4rem;
+            padding: 0.8rem 0.8rem 0.3rem 0.8rem;
+            height: 100%;
+            ul {
+              li {
+                list-style: square;
+                color: #000000;
+                font-size: 0.825rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+              }
+              li::marker {
+                color: #31939b !important;
+              }
+            }
+          }
+          .ep-graph-container {
+            background-color: #f2f2f2;
+            border-radius: 0.4rem;
+            padding: 0.8rem;
+            align-items: center;
+            justify-content: center;
+            .ep-graph {
+              img {
+                width: 6rem;
+                height: 6rem;
+              }
+            }
+          }
+        }
+        .talent-profile-card-container,
+        .selected-profile-card-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .talent-card {
+            width: 50%;
+            .profile-img {
+              width: 6rem;
+              height: 6rem;
+              border-radius: 100%;
+            }
+            .username {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+      .my-profile-content {
+        .profile-nav-pills {
+          .nav-item {
+            #potential-tab {
+              padding-top: 0.1rem;
+              padding-bottom: 0.1rem;
+              line-height: 1.2rem;
+            }
+          }
+        }
+        #my-profile-tabContent {
+          max-height: calc(100vh - 313px);
+          overflow: auto;
+        }
+      }
+      .potential-container {
+        padding-right: 0.1rem;
+        .text-content {
+          .hdr {
+            color: #e63e66;
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+          .info {
+            color: #374151;
+            font-weight: 600;
+            text-align: justify;
+            line-height: 1.4rem;
+          }
+        }
+      }
+    }
+
+    .my-account-data {
+      width: 100%;
+      .my-account-content {
+        .nav-item {
+          max-width: 100%;
+          .active::after {
+            width: 30%;
+          }
+        }
+        #my-account-tabContent {
+          max-height: calc(100vh - 313px);
+          overflow: auto;
+        }
+      }
+    }
   }
   .dashboard {
     // height: calc(100vh - 175px);
@@ -1192,6 +1818,51 @@
         }
         .my-profile-abt-company {
           max-height: calc(100vh - 241px);
+        }
+      }
+      .vacancies-data {
+        .vacancies-content {
+          #vacancies-tabContent {
+            max-height: calc(100vh - 315px);
+          }
+        }
+      }
+      .explore-talents-data {
+        width: 100%;
+        .explore-talents-content {
+          #explore-talents-tabContent {
+            max-height: calc(100vh - 315px);
+            overflow: auto;
+          }
+        }
+        .my-profile-content {
+          #my-profile-tabContent {
+            max-height: calc(100vh - 315px);
+            overflow: auto;
+          }
+        }
+      }
+      .my-account-data {
+        .my-account-content {
+          #my-account-tabContent {
+            max-height: calc(100vh - 315px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1029px) {
+  .explore-talents-data {
+    .my-profile-content {
+      .profile-nav-pills {
+        .nav-item {
+          #video-pitch-tab {
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
+            line-height: 1.2rem;
+          }
         }
       }
     }
@@ -1302,6 +1973,76 @@
           }
         }
       }
+      .vacancies-data {
+        .vacancies-content {
+          #vacancies-tabContent {
+            max-height: calc(100vh - 286px);
+          }
+        }
+      }
+      .explore-talents-data {
+        width: 100%;
+        .explore-talents-content {
+          #explore-talents-tabContent {
+            max-height: calc(100vh - 286px);
+          }
+        }
+        .my-profile-content {
+          #my-profile-tabContent {
+            max-height: calc(100vh - 286px);
+            overflow: auto;
+          }
+        }
+      }
+      .my-account-data {
+        .my-account-content {
+          #vacancies-tabContent {
+            max-height: calc(100vh - 286px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .explore-talents-data {
+    .my-profile-content {
+      .profile-nav-pills {
+        .nav-item {
+          .nav-link {
+            padding: 0.5rem;
+            line-height: 1.2rem;
+            font-size: 0.8rem;
+          }
+          #video-pitch-tab,
+          #potential-tab {
+            padding: 0.5rem;
+            line-height: 1.2rem;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 837px) {
+  .explore-talents-data {
+    .my-profile-content {
+      .profile-nav-pills {
+        .nav-item {
+          .nav-link {
+            font-size: 0.75rem;
+            line-height: 1rem;
+          }
+          #video-pitch-tab,
+          #potential-tab {
+            font-size: 0.75rem;
+            line-height: 1rem;
+          }
+        }
+      }
     }
   }
 }
@@ -1316,6 +2057,21 @@
           }
         }
       }
+      .explore-talents-data {
+        .my-profile-content {
+          .profile-nav-pills {
+            .nav-item {
+              .nav-link {
+                font-size: 0.7rem;
+              }
+              #video-pitch-tab,
+              #potential-tab {
+                font-size: 0.7rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -1327,6 +2083,23 @@
       .profile-data {
         .my-profile-abt-company {
           max-height: calc(100vh - 223px);
+        }
+      }
+      .explore-talents-data {
+        .my-profile-content {
+          .profile-nav-pills {
+            .nav-item {
+              .nav-link {
+                font-size: 0.7rem;
+                line-height: 0.9rem;
+              }
+              #video-pitch-tab,
+              #potential-tab {
+                font-size: 0.7rem;
+                line-height: 0.9rem;
+              }
+            }
+          }
         }
       }
     }
@@ -1450,6 +2223,52 @@
           }
         }
       }
+      .vacancies-data {
+        .vacancies-content {
+          #vacancies-tabContent {
+            max-height: calc(100vh - 269px);
+          }
+        }
+      }
+      .explore-talents-data {
+        .explore-talents-content {
+          #explore-talents-tabContent {
+            max-height: calc(100vh - 269px);
+          }
+        }
+        .my-profile-content {
+          #my-profile-tabContent {
+            max-height: calc(100vh - 269px);
+            overflow: auto;
+          }
+        }
+      }
+      .explore-talents-data {
+        .my-profile-content {
+          .profile-nav-pills {
+            .nav-item {
+              .nav-link {
+                padding: 0.3rem;
+                line-height: 1rem;
+                font-size: 0.8rem;
+              }
+              #video-pitch-tab,
+              #potential-tab {
+                padding: 0.3rem;
+                line-height: 1rem;
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+      .my-account-data {
+        .my-account-content {
+          #vacancies-tabContent {
+            max-height: calc(100vh - 269px);
+          }
+        }
+      }
     }
   }
 }
@@ -1467,6 +2286,33 @@
   .get-talent-section {
     .dashboard {
       height: calc(100vh - 123px);
+      .vacancies-data {
+        .vacancies-content {
+          #vacancies-tabContent {
+            max-height: calc(100vh - 273px);
+          }
+        }
+      }
+      .explore-talents-data {
+        .explore-talents-content {
+          #explore-talents-tabContent {
+            max-height: calc(100vh - 273px);
+          }
+        }
+        .my-profile-content {
+          #my-profile-tabContent {
+            max-height: calc(100vh - 273px);
+            overflow: auto;
+          }
+        }
+      }
+      .my-account-data {
+        .my-account-content {
+          #vacancies-tabContent {
+            max-height: calc(100vh - 273px);
+          }
+        }
+      }
     }
   }
 }
@@ -1526,6 +2372,7 @@
     }
     .dashboard {
       height: calc(100vh - 108px);
+
       .competency-data {
         .hdr {
           font-size: 1rem;
@@ -1544,9 +2391,31 @@
           }
         }
       }
+
       .video-container {
         video {
           border: 1rem solid #27364d;
+        }
+      }
+      .get-talent-table-container,
+      .purchased-profiles-table-container,
+      .shortlisted-profiles-table-container,
+      .transactions-table-container {
+        padding: 0.5rem;
+        table {
+          tbody {
+            tr {
+              td {
+                .view-profile {
+                  display: block;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+        .pagination-dets {
+          flex-direction: column;
         }
       }
       .data {
@@ -1800,6 +2669,171 @@
 
         .to-fro-btns {
           padding: 0.5rem;
+        }
+      }
+      .vacancies-data {
+        .vacancies-content {
+          .title {
+            font-size: 1.2rem;
+          }
+          .job-specs {
+            .radio-options {
+              flex-direction: column;
+              .radio-input {
+                margin-bottom: 0.5rem;
+              }
+            }
+          }
+          .ai-generated-posting {
+            .generated-card {
+              .label {
+                font-size: 0.7rem;
+              }
+              .desc {
+                font-size: 0.8rem;
+              }
+            }
+            .job-dets-card {
+              .main-label {
+                font-size: 0.8rem;
+              }
+              .label {
+                font-size: 0.7rem;
+              }
+              .desc {
+                font-size: 0.8rem;
+              }
+            }
+          }
+          .video-job-qstns {
+            .title {
+              font-size: 1.2rem;
+            }
+            .job-post-title {
+              font-size: 1rem;
+            }
+            .info {
+              font-size: 0.8rem;
+            }
+            video {
+              height: auto;
+            }
+            .note {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      .explore-talents-data {
+        .explore-talents-content {
+          .filter {
+            .roles-dropdown {
+              flex-direction: column-reverse;
+              ul {
+                a {
+                  font-size: 0.75rem;
+                }
+              }
+            }
+            .label {
+              font-size: 0.7rem;
+              padding: 0.2rem 0.5rem;
+            }
+            .roles-dropdown-btn {
+              font-size: 0.8rem;
+              width: 100%;
+            }
+          }
+          .talent-card {
+            .profile-img {
+              width: 4rem;
+              height: 4rem;
+            }
+            .username {
+              font-size: 0.7rem;
+            }
+            .action-btns {
+              .snap-btn,
+              .add-btn,
+              .save-btn,
+              .offline-btn,
+              .view-btn,
+              .shortlist-talent-btn,
+              .purchase-profile-btn,
+              .view-profile-btn {
+                padding: 0.2rem 0.4rem;
+                font-size: 0.6rem;
+                width: 5rem;
+              }
+            }
+            .offline-status,
+            .online-status {
+              .offline-btn,
+              .online-btn {
+                padding: 0.2rem 0.4rem;
+                font-size: 0.6rem;
+                width: 5rem;
+              }
+            }
+          }
+          .user-stats {
+            .snapshot-txt {
+              font-size: 0.85rem;
+            }
+            .ratings-card {
+              padding: 0.5rem;
+              .title {
+                font-size: 0.8rem;
+                margin-bottom: 0.25rem;
+              }
+              .rating {
+                .rate-block {
+                  width: 0.8rem;
+                  height: 0.8rem;
+                }
+              }
+            }
+            .user-image {
+              img {
+                width: 4rem;
+                height: 4rem;
+                padding: 0.1rem;
+              }
+            }
+            .graph-card {
+              img {
+                width: 4rem;
+                height: 4rem;
+                margin-bottom: 0.1rem;
+              }
+
+              .title {
+                font-size: 0.7rem;
+              }
+            }
+            .user-info-card {
+              padding: 0.3rem;
+              ul {
+                li {
+                  font-size: 0.8rem;
+                  margin-bottom: 0.25rem;
+                }
+              }
+            }
+          }
+          .talent-profile-card-container,
+          .selected-profile-card-container {
+            .talent-card {
+              width: auto;
+              .profile-img {
+                width: 5rem;
+                height: 5rem;
+              }
+              .username {
+                font-size: 0.75rem;
+              }
+            }
+          }
         }
       }
     }
